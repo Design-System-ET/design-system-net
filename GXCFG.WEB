@@ -1,0 +1,88 @@
+<configuration>
+   <configSections>
+      <section  name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net" requirePermission="false"/>
+      <sectionGroup  name="languages" type="System.Configuration.NameValueSectionHandler">
+         <section  name="Spanish" type="System.Configuration.SingleTagSectionHandler" requirePermission="false"/>
+      </sectionGroup>
+      <section  name="sustainsys.saml2" type="Sustainsys.Saml2.Configuration.SustainsysSaml2Section, Sustainsys.Saml2"/>
+      <section  name="system.identityModel" type="System.IdentityModel.Configuration.SystemIdentityModelSection, System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+   </configSections>
+   <appSettings>
+      <add  key="AppMainNamespace" value="DesignSystem.Programs"/>
+      <add  key="DataStore1" value="GAM"/>
+      <add  key="DataStore2" value="Default"/>
+      <add  key="DataStore-Count" value="2"/>
+      <add  key="DataStore-Default" value="Default"/>
+      <add  key="Connection-GAM-DBMS" value="mysql"/>
+      <add  key="Connection-GAM-Port" value="3306"/>
+      <add  key="Connection-GAM-PROVIDER" value="MySQLDriverCS"/>
+      <add  key="Connection-GAM-LockRetryCount" value="10"/>
+      <add  key="Connection-GAM-IsolationLevel" value="CR"/>
+      <add  key="Connection-GAM-Datasource" value="tp0YzesoIjYC+KqrWaS8w8+7P9Jua5vLtVnlgKoNQqWh80lRVhpAFuNVdaasrNdU"/>
+      <add  key="Connection-GAM-User" value="lDhkEMO1isz7KuCQ4M358c=="/>
+      <add  key="Connection-GAM-Password" value="E9JPJYw/ygBTKuyyZ3plZn=="/>
+      <add  key="Connection-GAM-DB" value="design-system_gam"/>
+      <add  key="Connection-GAM-Opts" value=";Integrated Security=no;"/>
+      <add  key="Connection-GAM-TrnInt" value="1"/>
+      <add  key="Connection-Default-DBMS" value="mysql"/>
+      <add  key="Connection-Default-Port" value="3306"/>
+      <add  key="Connection-Default-PROVIDER" value="MySQLDriverCS"/>
+      <add  key="Connection-Default-LockRetryCount" value="10"/>
+      <add  key="Connection-Default-IsolationLevel" value="CR"/>
+      <add  key="Connection-Default-Datasource" value="tp0YzesoIjYC+KqrWaS8w8+7P9Jua5vLtVnlgKoNQqWh80lRVhpAFuNVdaasrNdU"/>
+      <add  key="Connection-Default-User" value="lDhkEMO1isz7KuCQ4M358c=="/>
+      <add  key="Connection-Default-Password" value="E9JPJYw/ygBTKuyyZ3plZn=="/>
+      <add  key="Connection-Default-DB" value="design-system"/>
+      <add  key="Connection-Default-Opts" value=";Integrated Security=no;"/>
+      <add  key="Connection-Default-TrnInt" value="1"/>
+      <add  key="DateFormat" value="DMY"/>
+      <add  key="YearLimit" value="1940"/>
+      <add  key="TimeAmPmFormat" value="24"/>
+      <add  key="VER_STAMP" value="20241217.013146"/>
+      <add  key="CS_BLOB_PATH" value="PublicTempStorage"/>
+      <add  key="TMPMEDIA_DIR" value="PrivateTempStorage"/>
+      <add  key="PRINT_LAYOUT_METADATA_DIR" value="LayoutMetadata"/>
+      <add  key="PDF_RPT_LIBRARY" value="ITEXT"/>
+      <add  key="StorageTimeZone" value="2"/>
+      <add  key="LOGIN_AS_USERID" value="0"/>
+      <add  key="LANGUAGE" value="spa"/>
+      <add  key="LANG_NAME" value="Spanish"/>
+      <add  key="DECIMAL_POINT" value=","/>
+      <add  key="DATE_FMT" value="DMY"/>
+      <add  key="CTOD_DATE_FMT" value="L"/>
+      <add  key="Culture" value="es-ES"/>
+      <add  key="Theme" value="WorkWithPlusDS"/>
+      <add  key="UseNamedParameters" value="1"/>
+      <add  key="USE_ENCRYPTION" value="SESSION"/>
+      <add  key="EnableIntegratedSecurity" value="1"/>
+      <add  key="IntegratedSecurityLoginWeb" value="dslogin"/>
+      <add  key="IntegratedSecurityNotAuthorizedWeb" value="gamnotauthorized"/>
+      <add  key="MAX_CURSOR" value="100"/>
+      <add  key="STATIC_CONTENT" value=""/>
+      <add  key="GX_BUILD_NUMBER" value="1318140"/>
+      <add  key="CACHE_CONTENT_EXPIRATION" value="36"/>
+      <add  key="FTP_DEFAULT_USER" value="Zd8hx1OPJaolo5nN5s4nmc=="/>
+      <add  key="FTP_DEFAULT_PASSWORD" value="kvwmxbHzjMA66dQNAHRlhn=="/>
+      <add  key="ENABLE_MANAGEMENT" value="0"/>
+      <add  key="OFFLINE_EVENT_BEFORE_REPLICATION" value="general.services.gxbeforeeventreplicator"/>
+      <add  key="OFFLINE_EVENT_AFTER_REPLICATION" value="general.services.gxaftereventreplicator"/>
+      <add  key="OFFLINE_EVENT_REPLICATION_ERROR" value="general.services.gxonpendingeventfailed"/>
+      <add  key="COMPRESS_HTML" value="1"/>
+      <add  key="IE_COMPATIBILITY_VIEW" value="EmulateIE7"/>
+      <add  key="DocumentType" value="HTML5"/>
+      <add  key="EXPOSE_METADATA" value="0"/>
+      <add  key="SMART_CACHING" value="0"/>
+      <add  key="wcf:serviceHostingEnvironment:useClassicReadEntityBodyMode" value="true"/>
+      <add  key="HTTP_PROTOCOL" value="Unsecure"/>
+      <add  key="SAMESITE_COOKIE" value="Lax"/>
+      <add  key="CACHE_INVALIDATION_TOKEN" value="202412170142868"/>
+      <add  key="CORS_ALLOW_ORIGIN" value=""/>
+      <add  key="LOG_OUTPUT" value="RollingFile"/>
+      <add  key="MaxFileUploadSize" value="528000000"/>
+      <add  key="SessionTimeout" value="20"/>
+   </appSettings>
+   <languages >
+      <Spanish  code="spa" time_fmt="24" decimal_point="," thousand_sep="." date_fmt="DMY" culture="es-ES" rtl="false"/>
+   </languages>
+   <log4net  configSource="log.config"/>
+</configuration>

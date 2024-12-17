@@ -1,0 +1,2 @@
+function e(e){const n="[ \\t\\f]*",t="[ \\t\\f]+",a=n+"[:=]"+n,s=t,i="("+a+"|"+s+")",r="([^\\\\:= \\t\\f\\n]|\\\\.)+",c={end:i,relevance:0,starts:{className:"string",end:/$/,relevance:0,contains:[{begin:"\\\\\\\\"},{begin:"\\\\\\n"}]}};return{name:".properties",disableAutodetect:!0,case_insensitive:!0,illegal:/\S/,contains:[e.COMMENT("^\\s*[!#]","$"),{returnBegin:!0,variants:[{begin:r+a},{begin:r+s}],contains:[{className:"attr",begin:r,endsParent:!0}],starts:c},{className:"attr",begin:r+n+"$"}]}}export{e as default};
+//# sourceMappingURL=p-6ccdc080.js.map

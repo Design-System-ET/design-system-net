@@ -1,0 +1,7 @@
+<ch-step-list id="ch-step{{gxTpr_id}}{{id}}">
+	{{#StepItems}}
+	<ch-step-list-item class="{{gxTpr_Class}}{{Class}}{{^Class}}ch-step{{/Class}}" >
+		{{gxTpr_text}}{{text}}
+	</ch-step-list-item>
+	{{/StepItems}}
+</ch-step-list>

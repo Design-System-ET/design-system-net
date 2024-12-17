@@ -1,0 +1,2 @@
+function a(a){return{name:"LDIF",contains:[{className:"attribute",match:"^dn(?=:)",relevance:10},{className:"attribute",match:"^\\w+(?=:)"},{className:"literal",match:"^-"},a.HASH_COMMENT_MODE]}}export{a as default};
+//# sourceMappingURL=p-8dc85cbd.js.map

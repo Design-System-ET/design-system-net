@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Avatars/Profile</title>
+    <g id="Avatars/Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Avatars/Profile" transform="translate(1.000000, 1.000000)">
+            <circle id="Background" fill-opacity="0.2" fill="#5A5EDC" cx="11" cy="11" r="11"></circle>
+            <g id="Profile" transform="translate(1.571429, 1.571429)" fill="#696EF2">
+                <path d="M9.11428571,9.9 C11.11,9.9 15.0857143,10.89 15.0857143,12.8857143 L15.0857143,15.0857143 L3.14285714,15.0857143 L3.14285714,12.8464286 C3.14285714,10.8507143 7.11857143,9.9 9.11428571,9.9 Z M9.11428571,3.14285714 C10.7632502,3.14285714 12.1,4.47960696 12.1,6.12857143 C12.1,7.7775359 10.7632502,9.11428571 9.11428571,9.11428571 C7.46532125,9.11428571 6.12857143,7.7775359 6.12857143,6.12857143 C6.12857143,4.47960696 7.46532125,3.14285714 9.11428571,3.14285714 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

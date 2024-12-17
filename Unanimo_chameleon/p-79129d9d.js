@@ -1,0 +1,2 @@
+const e=new CSSStyleSheet({disabled:true});function t(t){t.push(e)}function n(t){const n=new CSSStyleSheet({disabled:true});n.replace(t);for(let t=0;t<n.cssRules.length;t++){e.insertRule(n.cssRules.item(t).cssText)}}function s(){e.disabled=false}export{n as a,t as b,s as e};
+//# sourceMappingURL=p-79129d9d.js.map

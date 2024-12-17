@@ -1,0 +1,51 @@
+{
+	"Name": "WWP_IconButton",
+	"Target": "",
+	"IsControlType": false,
+	"Template": "<button {{OnClickEvent}} class=\"{{Class}}\" title=\"{{TooltipText}}\"> 	<i class=\"{{BeforeIconClass}}\"></i>	{{Caption}}	<i class=\"{{AfterIconClass}}\"></i></button>", 
+	"Events": [
+		{
+			"Name": "Event",
+			"On": "click",
+			"Parameters": ""
+		} 
+	],
+	"Properties": [
+		{
+			"Id": "TooltipText",
+			"Name": "TooltipText",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "BeforeIconClass",
+			"Name": "BeforeIconClass",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "AfterIconClass",
+			"Name": "AfterIconClass",
+			"Type": "string",
+			"Default": ""
+		} 
+	],
+	"Methods": {
+		"Public": [
+		],
+		"Private": [
+		]
+	},
+	"Scripts": {
+		"AfterShow": [
+		],
+		"BeforeShow": [
+		]
+	},
+	"Dependencies": [
+	],
+	"Imports": [
+	],
+	"Styles": [
+	]
+}

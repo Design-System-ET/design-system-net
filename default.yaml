@@ -1,0 +1,781 @@
+openapi: 3.0.0
+info:
+  title: "Design System"
+  version: "20241217031017"
+servers:
+  - url: http://localhost/DesignSystemNETMySQL/rest
+paths:
+  /CategoriasWWGetFilterData:
+    post:
+      tags:
+        - CategoriasWWGetFilterData
+      operationId: "CategoriasWWGetFilterData"
+      summary: "Categorias WWGet Filter Data"
+      security: 
+        - oAuthGXGAM: []
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CategoriasWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CategoriasWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /ConfiguracionEmpresaWWGetFilterData:
+    post:
+      tags:
+        - ConfiguracionEmpresaWWGetFilterData
+      operationId: "ConfiguracionEmpresaWWGetFilterData"
+      summary: "Configuracion Empresa WWGet Filter Data"
+      security: 
+        - oAuthGXGAM: []
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ConfiguracionEmpresaWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ConfiguracionEmpresaWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /General/Services/DirectionsServiceRequest:
+    post:
+      tags:
+        - General.Services
+      operationId: "General.Services.DirectionsServiceRequest"
+      summary: "Directions Service Request"
+      security: 
+        - oAuthGXGAM: []
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/General.Services.DirectionsServiceRequestInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/General.Services.DirectionsServiceRequestOutput"
+        404:
+          description: "Not found"
+  /General/Services/GxAfterEventReplicator:
+    post:
+      tags:
+        - General.Services
+      operationId: "General.Services.GxAfterEventReplicator"
+      summary: "Gx After Event Replicator"
+      security: 
+        - oAuthGXGAM: []
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/General.Services.GxAfterEventReplicatorInput"
+      responses:
+        200:
+          description: "Successful operation"
+        404:
+          description: "Not found"
+  /General/Services/GxBeforeEventReplicator:
+    post:
+      tags:
+        - General.Services
+      operationId: "General.Services.GxBeforeEventReplicator"
+      summary: "Gx Before Event Replicator"
+      security: 
+        - oAuthGXGAM: []
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/General.Services.GxBeforeEventReplicatorInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/General.Services.GxBeforeEventReplicatorOutput"
+        404:
+          description: "Not found"
+  /General/Services/GxOnPendingEventFailed:
+    post:
+      tags:
+        - General.Services
+      operationId: "General.Services.GxOnPendingEventFailed"
+      summary: "Gx On Pending Event Failed"
+      security: 
+        - oAuthGXGAM: []
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/General.Services.GxOnPendingEventFailedInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/General.Services.GxOnPendingEventFailedOutput"
+        404:
+          description: "Not found"
+  /General/Services/NotificationsRegistrationHandler:
+    post:
+      tags:
+        - General.Services
+      operationId: "General.Services.NotificationsRegistrationHandler"
+      summary: "Notifications Registration Handler"
+      security: 
+        - oAuthGXGAM: []
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/General.Services.NotificationsRegistrationHandlerInput"
+      responses:
+        200:
+          description: "Successful operation"
+        404:
+          description: "Not found"
+  /NewBlogLoadDVCombo:
+    post:
+      tags:
+        - NewBlogLoadDVCombo
+      operationId: "NewBlogLoadDVCombo"
+      summary: "New Blog Load DVCombo"
+      security: 
+        - oAuthGXGAM: []
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/NewBlogLoadDVComboInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/NewBlogLoadDVComboOutput"
+        404:
+          description: "Not found"
+  /NewBlogWWGetFilterData:
+    post:
+      tags:
+        - NewBlogWWGetFilterData
+      operationId: "NewBlogWWGetFilterData"
+      summary: "New Blog WWGet Filter Data"
+      security: 
+        - oAuthGXGAM: []
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/NewBlogWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/NewBlogWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /NewProductosLoadDVCombo:
+    post:
+      tags:
+        - NewProductosLoadDVCombo
+      operationId: "NewProductosLoadDVCombo"
+      summary: "New Productos Load DVCombo"
+      security: 
+        - oAuthGXGAM: []
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/NewProductosLoadDVComboInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/NewProductosLoadDVComboOutput"
+        404:
+          description: "Not found"
+  /NewProductosWWGetFilterData:
+    post:
+      tags:
+        - NewProductosWWGetFilterData
+      operationId: "NewProductosWWGetFilterData"
+      summary: "New Productos WWGet Filter Data"
+      security: 
+        - oAuthGXGAM: []
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/NewProductosWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/NewProductosWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /WorkWithPlus/WWP_ParameterWWGetFilterData:
+    post:
+      tags:
+        - WorkWithPlus
+      operationId: "WorkWithPlus.WWP_ParameterWWGetFilterData"
+      summary: "WWPParameter WWGet Filter Data"
+      security: 
+        - oAuthGXGAM: []
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WorkWithPlus.WWP_ParameterWWGetFilterDataInput"
+      responses:
+        200:
+          description: "Successful operation"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WorkWithPlus.WWP_ParameterWWGetFilterDataOutput"
+        404:
+          description: "Not found"
+  /oauth/access_token:
+    post:
+      tags:
+        - oauth
+      operationId: "oauth.access_token"
+      summary: "GeneXus GAM Services"
+      responses:
+        200:
+          description: "Successful operation"
+        404:
+          description: "Not found"
+  /oauth/logout:
+    post:
+      tags:
+        - oauth
+      operationId: "oauth.logout"
+      summary: "GeneXus GAM Services"
+      responses:
+        200:
+          description: "Successful operation"
+        404:
+          description: "Not found"
+  /oauth/userinfo:
+    get:
+      tags:
+        - oauth
+      operationId: "oauth.userinfo"
+      summary: "GeneXus GAM Services"
+      responses:
+        200:
+          description: "Successful operation"
+        404:
+          description: "Not found"
+  /gx_valid_service:
+    post:
+      tags:
+        - GXValidService
+      operationId: "gx_valid_service"
+      summary: "GeneXus GAM Services"
+      responses:
+        200:
+          description: "Successful operation"
+        404:
+          description: "Not found"
+  /oauth/gam/signin:
+    post:
+      tags:
+        - oauth.gam
+      operationId: "oauth.gam.signin"
+      summary: "GeneXus GAM Services"
+      responses:
+        200:
+          description: "Successful operation"
+        404:
+          description: "Not found"
+  /oauth/gam/callback:
+    get:
+      tags:
+        - oauth.gam
+      operationId: "oauth.gam.callback"
+      summary: "GeneXus GAM Services"
+      responses:
+        200:
+          description: "Successful operation"
+        404:
+          description: "Not found"
+  /oauth/gam/access_token:
+    post:
+      tags:
+        - oauth.gam
+      operationId: "oauth.gam.access_token"
+      summary: "GeneXus GAM Services"
+      responses:
+        200:
+          description: "Successful operation"
+        404:
+          description: "Not found"
+  /oauth/gam/userinfo:
+    post:
+      tags:
+        - oauth.gam
+      operationId: "oauth.gam.userinfo"
+      summary: "GeneXus GAM Services"
+      responses:
+        200:
+          description: "Successful operation"
+        404:
+          description: "Not found"
+  /oauth/gam/signout:
+    post:
+      tags:
+        - oauth.gam
+      operationId: "oauth.gam.signout"
+      summary: "GeneXus GAM Services"
+      responses:
+        200:
+          description: "Successful operation"
+        404:
+          description: "Not found"
+  /oauth/RequestTokenService:
+    post:
+      tags:
+        - oauth
+      operationId: "oauth.RequestTokenService"
+      summary: "GeneXus GAM Services"
+      responses:
+        200:
+          description: "Successful operation"
+        404:
+          description: "Not found"
+  /oauth/QueryAccessToken:
+    post:
+      tags:
+        - oauth
+      operationId: "oauth.QueryAccessToken"
+      summary: "GeneXus GAM Services"
+      responses:
+        200:
+          description: "Successful operation"
+        404:
+          description: "Not found"
+  /saml/gam/signout:
+    post:
+      tags:
+        - saml.gam
+      operationId: "saml.gam.signout"
+      summary: "GeneXus GAM Services"
+      responses:
+        200:
+          description: "Successful operation"
+        404:
+          description: "Not found"
+  /saml/gam/signin:
+    post:
+      tags:
+        - saml.gam
+      operationId: "saml.gam.signin"
+      summary: "GeneXus GAM Services"
+      responses:
+        200:
+          description: "Successful operation"
+        404:
+          description: "Not found"
+components:
+  securitySchemes:
+    oAuthGXGAM:
+      type: oauth2
+      description: GAM OAuth 2
+      flows:
+        password:          
+          tokenUrl: http://localhost/DesignSystemNETMySQL/oauth/gam/v2.0/access_token
+          scopes: 
+            fullcontrol: Full access
+  schemas:
+    CategoriasWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    ConfiguracionEmpresaWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    General.Services.DirectionsServiceRequestOutput:
+      properties:
+        Routes:
+          description: "Route"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Route"
+        errorMessages:
+          description: "Messages"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Messages_Message"
+    General.Services.GxBeforeEventReplicatorOutput:
+      properties:
+        GxPendingEvents:
+          description: "Synchronization Event List"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.SD.Synchronization.SynchronizationEventList_SynchronizationEventListItem"
+        EventResults:
+          description: "Synchronization Event Result List"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.SD.Synchronization.SynchronizationEventResultList_SynchronizationEventResultListItem"
+    General.Services.GxOnPendingEventFailedOutput:
+      properties:
+        Continue:
+          type: "boolean"
+    NewBlogLoadDVComboOutput:
+      properties:
+        SelectedValue:
+          type: "string"
+        SelectedText:
+          type: "string"
+        Combo_DataJson:
+          type: "string"
+    NewBlogWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    NewProductosLoadDVComboOutput:
+      properties:
+        SelectedValue:
+          type: "string"
+        SelectedText:
+          type: "string"
+        Combo_DataJson:
+          type: "string"
+    NewProductosWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    WorkWithPlus.WWP_ParameterWWGetFilterDataOutput:
+      properties:
+        OptionsJson:
+          type: "string"
+        OptionsDescJson:
+          type: "string"
+        OptionIndexesJson:
+          type: "string"
+    CategoriasWWGetFilterDataInput:  
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    ConfiguracionEmpresaWWGetFilterDataInput:  
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    General.Services.DirectionsServiceRequestInput:  
+      properties:
+        DirectionsServiceProvider:
+          type: "string"
+        DirectionsRequestParameters:
+          description: "Directions Request Parameters"
+          $ref: "#/components/schemas/GeneXus.Common.DirectionsRequestParameters"
+    General.Services.GxAfterEventReplicatorInput:  
+      properties:
+        EventResults:
+          description: "Synchronization Event Result List"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.SD.Synchronization.SynchronizationEventResultList_SynchronizationEventResultListItem"
+        GxSynchroInfo:
+          description: "Synchronization Info"
+          $ref: "#/components/schemas/GeneXus.SD.Synchronization.SynchronizationInfo"
+    General.Services.GxBeforeEventReplicatorInput:  
+      properties:
+        GxPendingEvents:
+          description: "Synchronization Event List"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.SD.Synchronization.SynchronizationEventList_SynchronizationEventListItem"
+        GxSyncroInfo:
+          description: "Synchronization Info"
+          $ref: "#/components/schemas/GeneXus.SD.Synchronization.SynchronizationInfo"
+        EventResults:
+          description: "Synchronization Event Result List"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.SD.Synchronization.SynchronizationEventResultList_SynchronizationEventResultListItem"
+    General.Services.GxOnPendingEventFailedInput:  
+      properties:
+        PendingEvent:
+          description: "Synchronization Event List"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.SD.Synchronization.SynchronizationEventList_SynchronizationEventListItem"
+        BCName:
+          type: "string"
+        BCJson:
+          type: "string"
+        EventResult:
+          description: "Synchronization Event Result List"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.SD.Synchronization.SynchronizationEventResultList_SynchronizationEventResultListItem"
+        GxSyncroInfo:
+          description: "Synchronization Info"
+          $ref: "#/components/schemas/GeneXus.SD.Synchronization.SynchronizationInfo"
+    General.Services.NotificationsRegistrationHandlerInput:  
+      properties:
+        DeviceType:
+          type: "integer"
+          format: "int32"
+        DeviceId:
+          type: "string"
+        DeviceToken:
+          type: "string"
+        DeviceName:
+          type: "string"
+    NewBlogLoadDVComboInput:  
+      properties:
+        ComboName:
+          type: "string"
+        TrnMode:
+          type: "string"
+        IsDynamicCall:
+          type: "boolean"
+        NewBlogId:
+          type: "integer"
+          format: "int32"
+        SearchTxtParms:
+          type: "string"
+    NewBlogWWGetFilterDataInput:  
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    NewProductosLoadDVComboInput:  
+      properties:
+        ComboName:
+          type: "string"
+        TrnMode:
+          type: "string"
+        IsDynamicCall:
+          type: "boolean"
+        NewProductosId:
+          type: "integer"
+          format: "int32"
+        SearchTxtParms:
+          type: "string"
+    NewProductosWWGetFilterDataInput:  
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    WorkWithPlus.WWP_ParameterWWGetFilterDataInput:  
+      properties:
+        DDOName:
+          type: "string"
+        SearchTxtParms:
+          type: "string"
+        SearchTxtTo:
+          type: "string"
+    GeneXus.Common.DirectionsRequestParameters:
+      properties:
+        sourceLocation:
+          description: "Source Location"
+          type: "string"
+        destinationLocation:
+          description: "Destination Location"
+          type: "string"
+        waypoints:
+          description: "Intermediate waypoints"
+          type: array
+          items:
+            type: "string"
+        optimizeWaypoints:
+          description: "optimize Waypoints"
+          type: "boolean"
+        transportType:
+          description: "transport Type"
+          type: "string"
+        requestAlternateRoutes:
+          description: "request Alternate Routes"
+          type: "boolean"
+        additionalParameters:
+          description: "Configuration Property"
+          type: array
+          items:
+            $ref: "#/components/schemas/GeneXus.Common.Notifications.ConfigurationProperty"
+    GeneXus.Common.Messages_Message:
+      properties:
+        Id:
+          description: "Id"
+          type: "string"
+        Type:
+          description: "Type"
+          type: "integer"
+          format: "int32"
+        Description:
+          description: "Description"
+          type: "string"
+    GeneXus.Common.Notifications.ConfigurationProperty:
+      properties:
+        PropertyName:
+          description: "Property Name"
+          type: "string"
+        PropertyValue:
+          description: "Property Value"
+          type: "string"
+    GeneXus.Common.Route:
+      properties:
+        name:
+          description: "The expected travel time in seconds"
+          type: "string"
+        advisoryNotices:
+          description: "A collection of advisory notice strings for the route"
+          type: array
+          items:
+            type: "string"
+        distance:
+          description: "The route distance in meters"
+          type: "number"
+          format: "double"
+        expectedTravelTime:
+          description: "The expected travel time in seconds"
+          type: "number"
+          format: "double"
+        transportType:
+          description: "The overall route transport type"
+          type: "string"
+        geoline:
+          description: "The route geometry"
+          type: "string"
+    GeneXus.SD.Synchronization.SynchronizationEventList_SynchronizationEventListItem:
+      properties:
+        EventId:
+          description: "Pending Event Id"
+          type: "string"
+          format: "uuid"
+        EventTimestamp:
+          description: "Pending Event Timestamp"
+          type: "string"
+          format: "date-time"
+        EventBC:
+          description: "Pending Event BC"
+          type: "string"
+        EventAction:
+          description: "Pending Event Action"
+          type: "integer"
+          format: "int32"
+        EventData:
+          description: "Pending Event Data"
+          type: "string"
+        EventStatus:
+          description: "Pending Event Status"
+          type: "integer"
+          format: "int32"
+        EventErrors:
+          description: "Pending Event Extras"
+          type: "string"
+    GeneXus.SD.Synchronization.SynchronizationEventResultList_SynchronizationEventResultListItem:
+      properties:
+        EventId:
+          description: "Pending Event Id"
+          type: "string"
+          format: "uuid"
+        EventTimestamp:
+          description: "Pending Event Timestamp"
+          type: "string"
+          format: "date-time"
+        EventStatus:
+          description: "Pending Event Status"
+          type: "integer"
+          format: "int32"
+        EventErrors:
+          description: "Pending Event Errors"
+          type: "string"
+        Mappings:
+          type: array
+          items:
+            description: MappingsItem
+            $ref: "#/components/schemas/GeneXus.SD.Synchronization.SynchronizationEventResultList.Mappings_MappingsItem"
+    GeneXus.SD.Synchronization.SynchronizationEventResultList.Mappings_MappingsItem:
+      properties:
+        Table:
+          description: "Table"
+          type: "string"
+        Updates:
+          description: "Updates"
+          type: "string"
+        Conditions:
+          description: "Conditions"
+          type: "string"
+      x-gx-level: "SynchronizationEventResultList"
+    GeneXus.SD.Synchronization.SynchronizationInfo:
+      properties:
+        GxAppVersion:
+          description: "Application Version"
+          type: "string"
+        Synchronizer:
+          description: "Synchronizer"
+          type: "string"

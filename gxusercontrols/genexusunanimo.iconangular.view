@@ -1,0 +1,2 @@
+<ch-icon src="{{gxTpr_source}}{{source}}" style="--icon-size:{{gxTpr_size}}{{size}}; --icon-color:{{gxTpr_color}}{{color}}" {{#autoColor}}auto-color{{/autoColor}}  data-event="Click" >
+</ch-icon>

@@ -1,0 +1,74 @@
+{
+	"Name": "GeneXusUnanimo.Treeview",
+	"Target": "",
+	"IsControlType": false,
+	"Template": "<ch-tree id=\"ch-treeview\" toggle-checkboxes=\"{{ToggleCheckboxes}}\">	{{#TreeviewItems}}    <ch-tree-item id=\"{{id}}\" class=\"ch-treeview-item\" {{^SingleSelection}}checkbox{{/SingleSelection}} {{#isOpen}}opened{{/isOpen}} left-icon=\"{{icon}}\">      {{text}}	  {{#hasSubItems}}      <ch-tree {{^SingleSelection}}checkbox{{/SingleSelection}} slot=\"tree\">	  	{{#TreeviewSubItems}}        <ch-tree-item id=\"{{id}}\" class=\"ch-treeview-item\" {{^SingleSelection}}checkbox{{/SingleSelection}} {{#isOpen}}opened{{/isOpen}} left-icon=\"{{icon}}\">          {{text}}		  {{#hasSubItems}}          <ch-tree {{^SingleSelection}}checkbox{{/SingleSelection}} slot=\"tree\">		  	{{#TreeviewSubSubItems}}            <ch-tree-item id=\"{{id}}\" {{^SingleSelection}}checkbox{{/SingleSelection}} class=\"ch-treeview-item\" left-icon=\"{{icon}}\">              {{text}}            </ch-tree-item>			{{/TreeviewSubSubItems}}          </ch-tree>		  {{/hasSubItems}}        </ch-tree-item>		{{/TreeviewSubItems}}      </ch-tree>	  {{/hasSubItems}}    </ch-tree-item>	{{/TreeviewItems}}</ch-tree>", 
+	"Events": [
+		{
+			"Name": "ItemClick",
+			"On": "itemclick",
+			"Parameters": ""
+		} 
+	],
+	"Properties": [
+		{
+			"Id": "ToggleCheckboxes",
+			"Name": "ToggleCheckboxes",
+			"Type": "boolean",
+			"Default": ""
+		} ,
+		{
+			"Id": "SingleSelection",
+			"Name": "SingleSelection",
+			"Type": "boolean",
+			"Default": "false"
+		} ,
+		{
+			"Id": "TreeviewItems",
+			"Name": "TreeviewItems",
+			"Type": "sdt",
+			"Default": ""
+		} ,
+		{
+			"Id": "TreeviewItemsCurrentIndex",
+			"Name": "TreeviewItemsCurrentIndex",
+			"Type": "numeric",
+			"Default": ""
+		} ,
+		{
+			"Id": "SelectedItemId",
+			"Name": "SelectedItemId",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "SelectedItemTarget",
+			"Name": "SelectedItemTarget",
+			"Type": "string",
+			"Default": ""
+		} 
+	],
+	"Methods": {
+		"Public": [
+		],
+		"Private": [
+		]
+	},
+	"Scripts": {
+		"AfterShow": [
+			{
+				"Name": "initTree",
+				"Source": "		const UC = this;		const tree = document.getElementById(\"ch-treeview\");				tree.addEventListener(\"liItemClicked\", function(e){			/*get the item\'s target*/			for (let i = 0; i < UC.TreeviewItems.length; i++) {				const item = UC.TreeviewItems[i];				if (item.id === e.target.id){						console.log(\"item id: \" + item.id);					UC.SelectedItemId = item.id;					UC.ItemClick();				}				if (item.hasSubItems) {					for (let j = 0; j < item.TreeviewSubItems.length; j++) {						const subItem = item.TreeviewSubItems[j];						if (subItem.id === e.target.id){							console.log(\"item id: \" + subItem.id);							UC.SelectedItemId = subItem.id;							UC.ItemClick();						}						if (subItem.hasSubItems) {									for (let k = 0; k < subItem.TreeviewSubSubItems.length; k++) {								const subSubItem = subItem.TreeviewSubSubItems[k];								if (subSubItem.id === e.target.id){									console.log(\"item id: \" + subSubItem.id);									UC.SelectedItemId = subSubItem.id;									UC.ItemClick();								}							}													}					}				}			}		});			tree.addEventListener(\"toggleIconClicked\", function(e){		});	",
+				"AngularLocation": ""
+			} 
+		],
+		"BeforeShow": [
+		]
+	},
+	"Dependencies": [
+	],
+	"Imports": [
+	],
+	"Styles": [
+	]
+}

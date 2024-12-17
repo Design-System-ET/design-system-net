@@ -1,0 +1,921 @@
+@import "GeneXusUnanimo.UnanimoWeb.css";
+@import "GeneXusReporting.DashboardViewerWeb_Tokens.css";
+
+
+@layer GeneXusReporting.DashboardViewerWeb {
+/* [gx-css-import ignore - start] */
+ 
+/* [gx-css-import ignore - end] */
+/* [gx-css-user-controls - start] */
+/* [gx-css-user-controls - end] */
+.gx-db 
+{
+	font-family : var(--fonts_primary-regular);
+	font-size : var(--fontsizes_s);
+}
+.gx-db .material-icons 
+{
+	color : var(--colors_primary);
+}
+.gx-db-widget .gx-db-filter-value.checkbox-inline 
+{
+	color : var(--colors_on-background);
+}
+.gx-db-widget 
+{
+	padding : var(--spacing_inset-s);
+	width : 100%;
+}
+.panel-collapse collapse in 
+{
+	display : block;
+}
+.panel-collapse collapse 
+{
+	display : none;
+}
+.gx-db-title 
+{
+	font-family : var(--fonts_primary-bold);
+	font-size : var(--fontsizes_xl);
+	letter-spacing : 0.25px;
+	line-height : 32px;
+	color : var(--colors_surface-negative);
+}
+.gx-db-title > div 
+{
+	font-family : var(--fonts_primary-bold);
+	font-size : var(--fontsizes_xl);
+	color : var(--colors_on-background);
+	letter-spacing : 0.25px;
+	line-height : 32px;
+	text-align : start !important;
+	padding-left : var(--spacing_inline-l);
+	padding-bottom : var(--spacing_stack-xl);
+}
+.gx-db-widget-frame > div:nth-child(2) 
+{
+	border-top : var(--borders_extra-small) solid var(--colors_gray01);
+}
+.gx-db-widget-frame-title 
+{
+	height : 48px;
+	border-bottom-width : 0px;
+	padding-top : var(--spacing_inset-s)!important;
+	padding-inline-start : var(--spacing_inset-m)!important;
+}
+.gx-db-widget-frame-title div:first-child 
+{
+	line-height : 30px;
+	color : var(--colors_on-background);
+	font-family : var(--fonts_primary-bold);
+	font-size : var(--fontsizes_s);
+	font-weight : bold;
+	height : 20px;
+	letter-spacing : 0.38px;
+}
+.gx-db-widget-frame-collapse-image:after 
+{
+	width : 20px;
+	background-image : var(--GX-Image_GeneXusReporting_asc)!important;
+	background-repeat : no-repeat;
+	background-position : -6px -1px;
+	margin-right : var(--spacing_inline-m);
+	margin-top : var(--spacing_inline-m);
+	color : transparent;
+}
+.gx-db-widget-frame-collapse-image.collapsed:after 
+{
+	background-image : var(--GX-Image_GeneXusReporting_desc)!important;
+	background-position : -1px -1px;
+	width : 20px;
+	color : transparent;
+	cursor : pointer;
+	margin-inline-end : var(--spacing_inline-l);
+	margin-top : var(--spacing_inline-m);
+	margin-inline-start : var(--spacing_inline-xs)!important;
+}
+.panel 
+{
+	background-color : var(--colors_elevation-01);
+	border-radius : var(--radius_xl);
+	box-shadow : var(--shadows_xxxs);
+	border : var(--borders_extra-small) solid var(--borders_gxqv-border);
+}
+.panel-heading 
+{
+	box-shadow : unset;
+	padding-top : var(--spacing_stack-m);
+	border-radius : var(--radius_xl);
+}
+.panel-default>.panel-heading 
+{
+	background-color : var(--colors_elevation-01);
+	box-shadow : unset;
+}
+.panel-collapse, .panel-body 
+{
+	padding : var(--spacing_inset-m);
+}
+.gx-db-widget input[type=checkbox] + i 
+{
+	color : var(--colors_primary);
+}
+.gx-db-textblock 
+{
+	color : var(--colors_on-background);
+}
+.gx-db-filter-value.form-control 
+{
+	width : 100%;
+	padding : 6px 12px;
+	min-height : 34px;
+	font-size : var(--fontsizes_s);
+	border : var(--borders_extra-small) solid var(--colors_gray01);
+	border-radius : var(--radius_l);
+	box-shadow : inset var(--shadows_xxxs);
+	font-family : var(--fonts_primary-regular);
+	background-color : var(--colors_elevation-01);
+	color : var(--colors_on-background);
+}
+.gx-db-filter-value.form-control.gx-db-date-filter, .gx-db-filter-value.form-control.gx-db-datetime-filter 
+{
+	background-image : var(--GX-Image_GeneXusReporting_arrow_double);
+	background-position : right;
+	background-repeat : no-repeat;
+	background-size : var(--spacing_line-height-s);
+	text-align : left;
+	padding-left : var(--spacing_inline-l);
+}
+.gx-db-filter-value.form-control.gx-db-date-filter 
+{
+	width : 14ch;
+	max-width : 100%;
+}
+.gx-db-filter-value.form-control.gx-db-date-filter.gx-db-range-filter 
+{
+	width : 25ch;
+	max-width : 100%;
+}
+.gx-db-filter-value.form-control.gx-db-datetime-filter 
+{
+	width : 24ch;
+	max-width : 100%;
+}
+.gx-db-filter-value.form-control.gx-db-datetime-filter.gx-db-range-filter 
+{
+	width : 45ch;
+	max-width : 100%;
+}
+.gx-db-filters-table.gx-db-horizontal-filters .gx-db-filter-value.form-control 
+{
+	max-width : 25vw;
+}
+input.gx-db-filter-value.form-control.gx-db-value-filter.gx-db-numeric-filter 
+{
+	text-align : right;
+}
+.gx-db-filter-value.form-control:focus 
+{
+	border : var(--borders_small) solid var(--colors_secondary);
+	box-shadow : var(--shadows_xxxs);
+}
+.gx-db-filter-value.form-control:active 
+{
+	border : var(--borders_small) solid var(--colors_secondary);
+}
+.gx-db-filter-value.form-control:disabled 
+{
+	border : var(--borders_extra-small) solid var(--colors_gray03);
+	color : var(--colors_gray03);
+	background-color : var(--colors_gray01);
+}
+.gx-db-filter-value.form-control:error 
+{
+	border : var(--borders_extra-small) solid var(--colors_error-dark);
+}
+.gx-db-filter-value .form-control > option 
+{
+	background : var(--colors_on-background);
+	height : 20px;
+	border-radius : var(--radius_xl);
+	box-shadow : inset var(--shadows_xxs);
+	font-family : var(--fonts_primary-regular);
+}
+.gx-db-filter-caption 
+{
+	padding-block-start : 4px;
+	color : var(--colors_on-background);
+	font-family : var(--fonts_primary-semibold);
+	font-size : var(--fontsizes_s);
+}
+.gx-db-widget select 
+{
+	appearance : none;
+	font-size : var(--fontsizes_s);
+	background-image : var(--GX-Image_GeneXusReporting_arrow_double);
+	background-position : right;
+	background-repeat : no-repeat;
+	background-size : var(--spacing_line-height-s);
+	text-align : left;
+	padding-left : 12px !important;
+	padding-right : 20px;
+	height : 32px !important;
+	text-align : left;
+	border : var(--borders_extra-small) solid var(--colors_gray01);
+	border-radius : var(--radius_l);
+	box-shadow : inset var(--shadows_xxxs);
+	font-family : var(--fonts_primary-regular);
+	background-color : var(--colors_elevation-01);
+	color : var(--colors_on-background);
+	opacity : 1 !important;
+}
+.gx-db-widget select > option 
+{
+	color : var(--colors_surface-negative);
+	font-family : var(--fonts_primary-regular);
+	font-size : var(--fontsizes_s);
+	height : 15px;
+	letter-spacing : var(--spacing_letter-spacing-xs);
+	line-height : 16px;
+	background : var(--colors_elevation-01);
+	border-radius : var(--radius_xl);
+	box-shadow : var(--shadows_xxs);
+	padding-top : var(--spacing_stack-m);
+	padding-bottom : var(--spacing_stack-m);
+}
+.gx-db-filters-table.gx-db-horizontal-filters .gx-db-widget select 
+{
+	max-width : 25vw;
+}
+select.bs-select-hidden, .bootstrap-select > select.bs-select-hidden, select.selectpicker 
+{
+	display : block !important;
+}
+.gx-db-widget .bootstrap-select 
+{
+	vertical-align : middle;
+	position : relative;
+}
+.gx-db-widget .bootstrap-select ul 
+{
+	border-radius : 0px;
+}
+.gx-db-filters-table.gx-db-horizontal-filters .bootstrap-select 
+{
+	max-width : 25vw;
+}
+.calendar-table th 
+{
+	border : 0px solid !important;
+	color : var(--colors_primary)!important;
+}
+.daterangepicker 
+{
+	border-radius : var(--radius_l);
+	border : var(--borders_extra-small) solid var(--colors_gray01);
+	padding : var(--spacing_inset-xs);
+	margin-top : var(--spacing_stack-xs);
+	display : none;
+	font-family : var(--fonts_primary-regular);
+	font-size : var(--fontsizes_s);
+	background-color : var(--colors_elevation-02);
+}
+.daterangepicker.dropup 
+{
+	margin-top : -5px;
+}
+.daterangepicker td.active, .daterangepicker td.active:hover 
+{
+	background : var(--colors_primary-hover-20);
+	border-radius : 0px;
+	border : var(--borders_extra-small) solid var(--colors_primary);
+	color : var(--colors_on-alert);
+}
+.in-range available 
+{
+	background : var(--colors_primary-hover-20);
+	border-radius : 0px;
+	border : var(--borders_extra-small) solid var(--colors_primary);
+	color : var(--colors_on-alert);
+}
+.next available .prev available 
+{
+	border : 0px solid;
+}
+.daterangepicker .calendar-table 
+{
+	border : 0px solid !important;
+}
+.daterangepicker .calendar-table td 
+{
+	border : var(--borders_extra-small) solid var(--colors_gray01);
+}
+.daterangepicker .calendar-table table 
+{
+	margin : 0;
+	border-radius : 0px;
+	border-spacing : 2px;
+	border-collapse : separate;
+	background-color : var(--colors_elevation-02);
+}
+.daterangepicker td.off, .daterangepicker td.off.in-range, .daterangepicker td.off.start-date, .daterangepicker td.off.end-date 
+{
+	color : var(--colors_secondary-disabled);
+}
+.daterangepicker td.start-date.end-date 
+{
+	background : var(--colors_primary-hover-20);
+	border-radius : 0px;
+	border : var(--borders_extra-small) solid var(--colors_primary) !important;
+	color : var(--colors_on-background);
+}
+.active.start-date.available 
+{
+	background : var(--colors_primary-hover-20);
+	border-radius : 0px;
+	border : var(--borders_extra-small) solid var(--colors_primary) !important;
+	color : var(--colors_on-background);
+}
+.daterangepicker select.monthselect, .daterangepicker select.yearselect 
+{
+	text-align : center;
+	color : var(--colors_on-background);
+	font-family : var(--fonts_primary-bold);
+	font-size : var(--fontsizes_s);
+	font-weight : bold;
+	background-color : var(--colors_elevation-02);
+}
+.daterangepicker > select.monthselect 
+{
+	border : 0px solid;
+	appearance : none;
+}
+.daterangepicker > select.yearselect 
+{
+	border : 0px solid;
+	appearance : none;
+	text-align : left;
+}
+.active start-date active end-date available 
+{
+	background : var(--colors_primary-hover-20);
+	border-radius : 0px;
+	border : var(--borders_extra-small) solid var(--colors_primary);
+	color : var(--colors_on-alert);
+}
+.available 
+{
+	border-radius : 0px;
+	border : var(--borders_extra-small) solid var(--colors_gray02);
+}
+.daterangepicker select.hourselect, .daterangepicker select.minuteselect, .daterangepicker select.secondselect, .daterangepicker select.ampmselect 
+{
+	font-family : unset;
+	border-radius : var(--radius_l);
+	border : var(--borders_extra-small) solid var(--colors_gray01);
+	height : 27px;
+	width : 48px;
+	background : var(--colors_elevation-02);
+	color : var(--colors_on-background);
+}
+.daterangepicker .drp-buttons .btn 
+{
+	font-family : unset;
+	margin : 0px auto;
+	padding : var(--spacing_inset-xs);
+	margin-left : var(--spacing_inline-l);
+	outline : 0;
+	border-radius : var(--radius_l);
+	border : var(--borders_extra-small) solid var(--colors_primary);
+	height : 27px;
+	width : 48px;
+	background : var(--colors_elevation-02);
+	color : var(--colors_primary);
+}
+.daterangepicker.drp-buttons.btn:hover 
+{
+	margin : 0px auto;
+	padding : var(--spacing_inset-xs);
+	margin-left : var(--spacing_inline-l);
+	outline : 0;
+	border-radius : var(--radius_l);
+	border : var(--borders_extra-small) solid var(--colors_primary);
+	height : 27px;
+	width : 48px;
+	background : var(--colors_primary);
+	color : var(--colors_on-primary);
+}
+.daterangepicker.drp-buttons.btn:active 
+{
+	margin : 0px auto;
+	padding : var(--spacing_inset-xs);
+	margin-left : var(--spacing_inline-l);
+	outline : 0;
+	border-radius : var(--radius_l);
+	border : var(--borders_extra-small) solid var(--colors_primary);
+	height : 27px;
+	width : 48px;
+	background : var(--colors_primary);
+	color : var(--colors_on-primary);
+}
+.daterangepicker .calendar-time 
+{
+	margin : var(--spacing_inset-xs) auto;
+}
+.table-condensed > thead > tr 
+{
+	color : var(--colors_primary);
+}
+.drp-calendar.left .drp-calendar.single 
+{
+	display : block;
+	background : var(--colors_on-background);
+	border-radius : 0px;
+	box-shadow : var(--shadows_xs);
+	height : 195px;
+	width : 200px;
+	padding-left : var(--spacing_inline-xs);
+	padding-top : var(--spacing_stack-xs);
+	padding-bottom : var(--spacing_stack-xs);
+	padding-right : var(--spacing_inline-xs);
+}
+.daterangepicker .drp-calendar.left.single 
+{
+	padding : 3px;
+}
+.daterangepicker .drp-calendar.right 
+{
+	padding : 3px 3px 3px 7px;
+}
+.daterangepicker .drp-calendar.left 
+{
+	padding : 3px 7px 3px 3px;
+}
+.daterangepicker td.available:hover, .daterangepicker th.available:hover 
+{
+	background : var(--colors_primary-hover-20);
+	border-radius : 0px;
+	border : var(--borders_extra-small) solid var(--colors_primary) !important;
+	color : var(--colors_on-background);
+}
+.daterangepicker .drp-calendar.left .calendar-table 
+{
+	padding-right : 0px;
+}
+.daterangepicker .calendar-table th, .daterangepicker .calendar-table td 
+{
+	min-width : 24px;
+	width : 28px;
+	height : 26px;
+	line-height : 16px;
+	font-size : var(--fontsizes_xs);
+	border-radius : 0px;
+	color : var(--colors_on-background);
+	background-color : var(--colors_elevation-02);
+}
+.off.ends.in-range.available 
+{
+	border : var(--borders_extra-small) solid var(--colors_gray02);
+}
+.daterangepicker td.in-range 
+{
+	background : var(--colors_primary-hover-20);
+	border-radius : 0px;
+	border : var(--borders_extra-small) solid var(--colors_primary);
+}
+.daterangepicker select.monthselect 
+{
+	border : 0px solid;
+	appearance : none;
+}
+.daterangepicker select.yearselect 
+{
+	border : 0px solid;
+	appearance : none;
+	text-align : left;
+}
+.table-condensed > thead > tr > td 
+{
+	color : var(--colors_primary);
+}
+.daterangepicker.ltr.show-calendar.opensleft > .drp-buttons > .drp-selected 
+{
+	color : var(--colors_on-background);
+}
+.daterangepicker .calendar-table .next span, .daterangepicker .calendar-table .prev span 
+{
+	border-color : var(--colors_on-background);
+}
+.noUi-connect .noUi-draggable 
+{
+	height : 2px;
+}
+.noUi-tooltip .gx-db-filter-value 
+{
+	padding-bottom : var(--spacing_stack-m);
+	color : var(--colors_primary);
+	font-size : var(--fontsizes_s);
+	font-weight : bold;
+}
+.noUi-target.noUi-ltr.noUi-horizontal 
+{
+	height : 2px;
+	border : 0px;
+}
+.noUi-horizontal .noUi-handle 
+{
+	left : -10px;
+	border-radius : 32px;
+	background : var(--colors_elevation-03);
+	border-color : var(--colors_elevation-03);
+	box-shadow : var(--shadows_xxs);
+	height : 12px;
+	width : 12px;
+	margin-left : var(--spacing_inline-m);
+}
+.noUi-handle:before 
+{
+	display : none;
+	left : 7px;
+}
+.noUi-handle:after 
+{
+	display : none;
+	left : 10px;
+}
+.noUi-horizontal .noUi-tooltip 
+{
+	bottom : 215%;
+	height : 5px;
+	padding-bottom : var(--spacing_stack-m);
+	color : var(--colors_primary);
+	font-size : var(--fontsizes_s);
+	font-weight : bold;
+}
+.noUi-connect 
+{
+	background-color : var(--colors_primary);
+}
+.noUi-base 
+{
+	height : 2px;
+	background-color : var(--colors_gray02);
+}
+.noUi-target 
+{
+	top : 20px;
+}
+.noUi-handle 
+{
+	margin-left : var(--spacing_inline-m);
+	cursor : pointer;
+	box-shadow : var(--shadows_xxs);
+}
+.noUi-horizontal 
+{
+	height : 2px;
+}
+.noUi-tooltip 
+{
+	border : none;
+	background : none;
+	padding : 0px;
+	bottom : -50%;
+}
+.noUi-handle-lower 
+{
+	width : 8px;
+	height : 8px;
+	margin-left : var(--spacing_inline-m);
+}
+.gx-db-filters-table.gx-db-horizontal-filters .noUi-horizontal, .gx-db-filters-table.gx-db-horizontal-filters .noUi-base 
+{
+	max-width : 25vw;
+}
+.gx-db-filter-value.btn.btn-default 
+{
+	overflow : hidden;
+	text-overflow : ellipsis;
+	height : 32px;
+	min-width : 60px;
+	font-size : var(--fontsizes_s);
+	font-weight : 600;
+	letter-spacing : var(--spacing_letter-spacing-xs);
+	text-align : center;
+	text-transform : uppercase;
+	border : var(--borders_extra-small) solid var(--colors_primary);
+	color : var(--colors_primary);
+	font-family : var(--fonts_primary-semibold);
+	background-color : var(--colors_elevation-02);
+}
+.btn-group-vertical>.btn-group:first-child>.btn 
+{
+	border-top-right-radius : var(--radius_m);
+	border-top-left-radius : var(--radius_m);
+	border-bottom-right-radius : 0px;
+	border-bottom-left-radius : 0px;
+}
+.btn-group-vertical>.btn-group:last-child>.btn 
+{
+	border-top-right-radius : 0px;
+	border-top-left-radius : 0px;
+	border-bottom-right-radius : var(--radius_m);
+	border-bottom-left-radius : var(--radius_m);
+}
+.btn-group.btn-group-justified>.btn-group:first-child>.btn 
+{
+	border-top-right-radius : 0px;
+	border-top-left-radius : var(--radius_m);
+	border-bottom-right-radius : 0px;
+	border-bottom-left-radius : var(--radius_m);
+}
+.btn-group.btn-group-justified>.btn-group:last-child>.btn 
+{
+	border-top-right-radius : var(--radius_m);
+	border-top-left-radius : 0px;
+	border-bottom-right-radius : var(--radius_m);
+	border-bottom-left-radius : 0px;
+}
+.btn-group-vertical>.btn, .btn-group-vertical>.btn-group, .btn-group-vertical>.btn-group>.btn 
+{
+	display : block;
+	float : none;
+	width : 100%;
+	min-height : 38px;
+}
+.gx-db-filters-table.gx-db-horizontal-filters .btn-group-vertical>.btn-group 
+{
+	max-width : 25vw;
+}
+.cancelBtn.btn.btn-sm.btn-default:hover 
+{
+	background-color : var(--colors_primary);
+	color : var(--colors_on-primary);
+	border : var(--borders_extra-small) solid var(--colors_primary);
+}
+.applyBtn.btn.btn-sm.btn-primary:hover 
+{
+	background-color : var(--colors_primary);
+	color : var(--colors_surface);
+	border : var(--borders_extra-small) solid var(--colors_primary);
+}
+.cancelBtn.btn.btn-sm.btn-default:focus 
+{
+	background-color : var(--colors_primary);
+	color : var(--colors_surface);
+	border : var(--borders_extra-small) solid var(--colors_primary);
+}
+.applyBtn.btn.btn-sm.btn-primary:focus 
+{
+	background-color : var(--colors_primary);
+	color : var(--colors_on-primary);
+	border : var(--borders_extra-small) solid var(--colors_primary);
+}
+.gx-db-filter-value.btn.btn-default.active 
+{
+	background-color : var(--colors_primary);
+	color : var(--colors_on-primary);
+}
+.gx-db-widget button 
+{
+	font-size : var(--fontsizes_m);
+}
+.gx-db-filter-value.btn.btn-default:hover 
+{
+	background : var(--colors_primary);
+	color : var(--colors_on-primary);
+}
+.btn-group-justified>.btn, .btn-group-justified>.btn-group 
+{
+	width : unset;
+}
+.btn-group-vertical>.btn+.btn, .btn-group-vertical>.btn+.btn-group, .btn-group-vertical>.btn-group+.btn, .btn-group-vertical>.btn-group+.btn-group 
+{
+	margin-top : -2px;
+}
+.gx-db-widget .btn, .gx-db-widget .checkbox-inline, .gx-db-widget .checkbox label 
+{
+	cursor : pointer;
+}
+.gx-db-widget .open>.dropdown-menu 
+{
+	display : block;
+}
+.gx-db-widget .dropdown-menu 
+{
+	display : none;
+	z-index : 1000;
+}
+.gx-db-widget .dropup .dropdown-menu 
+{
+	bottom : 100%;
+	margin-bottom : 2px;
+}
+.btn.dropdown-toggle.gx-db-filter-value 
+{
+	border : var(--borders_extra-small) solid var(--colors_gray01);
+	border-radius : var(--radius_l)!important;
+	text-transform : capitalize;
+	color : var(--colors_on-background);
+	font-family : var(--fonts_primary-regular);
+	font-size : var(--fontsizes_s);
+	font-weight : normal;
+	padding-left : var(--spacing_inline-xl);
+	padding-right : var(--spacing_inline-xl);
+	background-color : var(--colors_elevation-01);
+	background-image : var(--GX-Image_GeneXusReporting_arrow_double);
+	background-position : right;
+	background-repeat : no-repeat;
+	background-size : var(--spacing_line-height-s);
+	height : 34px;
+	line-height : 16px;
+}
+btn.dropdown-toggle.gx-db-filter-value.bs-placeholder 
+{
+	height : 34px;
+	font-size : var(--fontsizes_s);
+	border : var(--borders_extra-small) solid var(--colors_gray01);
+	border-radius : var(--radius_l);
+	font-family : var(--fonts_primary-regular);
+	line-height : 14px;
+}
+.gx-db-widget .dropdown.bootstrap-select.show-tick.form-control.bs3 
+{
+	padding-top : 0px;
+	border : 0px solid;
+}
+.dropdown-menu.inner > .no-results 
+{
+	background-color : var(--colors_elevation-02);
+	color : var(--colors_on-background);
+}
+.bs-searchbox > input 
+{
+	font-family : var(--fonts_primary-regular);
+	text-indent : var(--spacing_inline-xl);
+	height : 35px;
+	border-color : var(--colors_on-alert);
+	margin-left : 2px !important;
+	margin-top : 8px !important;
+	margin-bottom : var(--spacing_stack-xs);
+	border-radius : 4px;
+	background-color : var(--colors_elevation-01);
+	color : var(--colors_on-background);
+}
+.bs-actionsbox.btn-group.button 
+{
+	text-transform : uppercase;
+	height : 40px;
+	color : var(--colors_primary);
+	border-color : var(--colors_primary);
+	border-radius : var(--radius_m);
+	font-family : var(--fonts_primary-semibold);
+	font-size : var(--fontsizes_s);
+	background-color : var(--colors_elevation-02);
+	padding-left : var(--spacing_inline-xl);
+	padding-right : var(--spacing_inline-xl);
+}
+.dropdown-menu.open > .bs-searchbox 
+{
+	padding-left : var(--spacing_inline-xl);
+	padding-right : var(--spacing_inline-xl);
+}
+.dropdown-menu.open > .bs-actionsbox 
+{
+	padding-left : var(--spacing_inline-xl);
+	padding-right : var(--spacing_inline-xl);
+}
+.bs-caret > .caret 
+{
+	display : none;
+}
+.dropdown-menu.inner > li > .gx-db-filter-value 
+{
+	margin-top : 0px;
+	margin-bottom : 0px;
+	padding-left : var(--spacing_inline-xl);
+	padding-right : var(--spacing_inline-xl);
+	color : var(--colors_on-background);
+}
+.dropdown-menu.inner, .dropdown-menu.open 
+{
+	background : var(--colors_elevation-02);
+}
+.dropdown-menu.open > .bs-searchbox > .form-control 
+{
+	appearance : none;
+	background-position : left;
+	background-repeat : no-repeat;
+	background-image : var(--GX-Image_GeneXusReporting_search);
+	padding-left : 7px;
+}
+.actions-btn.bs-select-all.btn.btn-default 
+{
+	border-bottom-left-radius : var(--spacing_inline-m);
+	border-top-left-radius : var(--spacing_inline-m);
+	border : var(--borders_extra-small) solid var(--colors_primary);
+	background-color : var(--colors_elevation-02);
+	font-size : var(--fontsizes_s);
+	text-transform : uppercase;
+	color : var(--colors_primary);
+	font-family : var(--fonts_primary-semibold);
+	min-height : 32px;
+	margin-left : var(--spacing_inline-xs);
+}
+.actions-btn.bs-deselect-all.btn.btn-default 
+{
+	border-bottom-right-radius : var(--spacing_inline-m);
+	border-top-right-radius : var(--spacing_inline-m);
+	border : var(--borders_extra-small) solid var(--colors_primary);
+	background-color : var(--colors_elevation-02);
+	font-size : var(--fontsizes_s);
+	text-transform : uppercase;
+	color : var(--colors_primary);
+	font-family : var(--fonts_primary-semibold);
+	min-height : 32px;
+}
+.actions-btn.bs-deselect-all.btn.btn-default:hover, .actions-btn.bs-select-all.btn.btn-default:hover 
+{
+	background : var(--colors_primary);
+	color : var(--colors_on-primary);
+}
+.gx-db-filters-table.gx-db-horizontal-filters .gx-db-switch-filter 
+{
+	max-width : 25vw;
+}
+.gx-db-widget .bootstrap-switch 
+{
+	overflow : visible !important;
+	width : 42px !important;
+	float : none !important;
+}
+.gx-db-widget .bootstrap-switch-container 
+{
+	position : relative;
+	height : 10px;
+}
+.gx-db-widget .bootstrap-switch-label 
+{
+	position : relative;
+	top : -6px;
+	left : -1px;
+	background : var(--colors_elevation-01);
+}
+.gx-db-widget .bootstrap-switch.bootstrap-switch-focused 
+{
+	box-shadow : unset;
+	-webkit-box-shadow : unset;
+}
+.gx-db-widget .bootstrap-switch-on .bootstrap-switch-label 
+{
+	background : var(--colors_primary-active);
+}
+.gx-db-widget .bootstrap-switch-on 
+{
+	background-color : var(--colors_primary);
+	border-color : var(--colors_primary);
+}
+.gx-db-widget .gx-db-widget .bootstrap-switch-off 
+{
+	background-color : var(--colors_gray03);
+	border-color : var(--colors_gray03);
+}
+.gx-db-widget .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default,.gx-db-widget .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default,.gx-db-widget .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary,.gx-db-widget .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary 
+{
+	background-color : transparent;
+}
+.gx-db-object-map .gx-qv-tooltip-text 
+{
+	letter-spacing : 0.38px !important;
+	line-height : 13px !important;
+	font-family : var(--fonts_primary-regular);
+	font-size : var(--fontsizes_s);
+	color : var(--colors_on-primary);
+}
+.gx-db-object-map .gx-qv-tooltip-box 
+{
+	height : 30px !important;
+	border-radius : 2px !important;
+	opacity : 0.9 !important;
+	background-color : var(--colors_gray04)!important;
+	border-color : var(--colors_gray04);
+}
+.gx-db-object-map.qv-map 
+{
+	background-color : var(--colors_elevation-01);
+}
+.gx-db-object-map .gx-qv-title 
+{
+	color : var(--colors_on-background);
+	font-family : var(--fonts_primary-bold);
+	font-size : var(--fontsizes_s);
+}
+.gx-db-object-map .gx-qv-legend-text 
+{
+	color : var(--colors_on-background);
+	font-family : var(--fonts_primary-regular);
+	font-size : var(--fontsizes_s);
+}
+
+}

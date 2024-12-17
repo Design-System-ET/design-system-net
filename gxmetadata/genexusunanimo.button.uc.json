@@ -1,0 +1,74 @@
+{
+	"Name": "GeneXusUnanimo.Button",
+	"Target": "",
+	"IsControlType": false,
+	"Template": "<button class=\"{{Class}} button-icon\" type=\"button\" {{^Enabled}}disabled{{/Enabled}} {{OnClickEvent}}>	<ch-icon src=\"{{Icon}}\" style=\"--icon-size:{{IconSize}}; --icon-color:{{IconColor}}; {{^Enabled}}--icon-color:var(--colors_on-disabled);{{/Enabled}} float:left\">	</ch-icon>	{{Caption}}</button>", 
+	"Events": [
+		{
+			"Name": "Event",
+			"On": "click",
+			"Parameters": ""
+		} 
+	],
+	"Properties": [
+		{
+			"Id": "Enabled",
+			"Name": "Enabled",
+			"Type": "boolean",
+			"Default": "true"
+		} ,
+		{
+			"Id": "Icon",
+			"Name": "Icon",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "IconSize",
+			"Name": "IconSize",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "IconColor",
+			"Name": "IconColor",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "Variant",
+			"Name": "Variant",
+			"Type": "enum",
+			"Default": "Text + icon"
+		} ,
+		{
+			"Id": "Style",
+			"Name": "Style",
+			"Type": "enum",
+			"Default": "Normal"
+		} 
+	],
+	"Methods": {
+		"Public": [
+		],
+		"Private": [
+		]
+	},
+	"Scripts": {
+		"AfterShow": [
+		],
+		"BeforeShow": [
+			{
+				"Name": "Init",
+				"Source": "  	const UC = this;	switch(UC.Variant) {		case \"Text + icon\":		if (UC.Class.includes(\"icon-only\")) {			UC.Class = UC.Class.replace(\' icon-only\', \'\');		}		break;		case \"Icon only\":		if (!UC.Class.includes(\"icon-only\")) {			UC.Class += \" icon-only\";		}		break;	}	if (UC.Style === \"Rounded\") {		if (!UC.Class.includes(\"Rounded\")) {			UC.Class += \" Rounded\";		}	}  ",
+				"AngularLocation": ""
+			} 
+		]
+	},
+	"Dependencies": [
+	],
+	"Imports": [
+	],
+	"Styles": [
+	]
+}

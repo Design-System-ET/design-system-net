@@ -1,0 +1,116 @@
+{
+	"Name": "GeneXusUnanimo.Sidebar",
+	"Target": "",
+	"IsControlType": false,
+	"Template": "<ch-sidebar-menu     menu-title=\"{{Title}}\"     id=\"ch-sidebar-menu\"     class=\"{{Class}}\"     distance-to-top=\"{{DistanceToTop}}\"     collapsible=\"{{Collapsible}}\"     active-item-id=\"{{ActiveItemId}}\" >    <ch-sidebar-menu-list>	  {{#SidebarItems}}      <ch-sidebar-menu-list-item id=\"{{id}}\" item-icon-src=\"{{icon}}\" {{#IconAutoColor}}auto-color{{/IconAutoColor}}>        {{title}}		{{#hasSubItems}}        <ch-sidebar-menu-list slot=\"list\">		  {{#SidebarSubItems}}            <ch-sidebar-menu-list-item id=\"{{id}}\">              {{title}}		  			  {{#hasSubItems}}				<ch-sidebar-menu-list slot=\"list\">				{{#SidebarSubSubItems}}					<ch-sidebar-menu-list-item id=\"{{id}}\">					{{title}}					</ch-sidebar-menu-list-item>				{{/SidebarSubSubItems}}				</ch-sidebar-menu-list>			  {{/hasSubItems}}            </ch-sidebar-menu-list-item>		  {{/SidebarSubItems}}		</ch-sidebar-menu-list>		{{/hasSubItems}}      </ch-sidebar-menu-list-item>	  {{/SidebarItems}}    </ch-sidebar-menu-list>    <div slot=\"footer\">{{FooterText}}</div></ch-sidebar-menu>", 
+	"Events": [
+		{
+			"Name": "ItemClick",
+			"On": "itemclick",
+			"Parameters": ""
+		} ,
+		{
+			"Name": "GetState",
+			"On": "getstate",
+			"Parameters": ""
+		} 
+	],
+	"Properties": [
+		{
+			"Id": "Title",
+			"Name": "Title",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "Class",
+			"Name": "Class",
+			"Type": "string",
+			"Default": "ch-sidebar"
+		} ,
+		{
+			"Id": "FooterText",
+			"Name": "FooterText",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "DistanceToTop",
+			"Name": "DistanceToTop",
+			"Type": "numeric",
+			"Default": ""
+		} ,
+		{
+			"Id": "Collapsible",
+			"Name": "Collapsible",
+			"Type": "boolean",
+			"Default": "True"
+		} ,
+		{
+			"Id": "SidebarItems",
+			"Name": "SidebarItems",
+			"Type": "sdt",
+			"Default": ""
+		} ,
+		{
+			"Id": "SidebarItemsCurrentIndex",
+			"Name": "SidebarItemsCurrentIndex",
+			"Type": "numeric",
+			"Default": ""
+		} ,
+		{
+			"Id": "ActiveItemId",
+			"Name": "ActiveItemId",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "SelectedItemTarget",
+			"Name": "SelectedItemTarget",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "isCollapsed",
+			"Name": "isCollapsed",
+			"Type": "boolean",
+			"Default": ""
+		} ,
+		{
+			"Id": "IconAutoColor",
+			"Name": "IconAutoColor",
+			"Type": "boolean",
+			"Default": "false"
+		} 
+	],
+	"Methods": {
+		"Public": [
+			{
+				"Name": "GetActiveItem",
+				"Source": "		/*get active item from storage*/		const UC = this;		let activeItem = sessionStorage.getItem(\"active-item\");		UC.SidebarItems.activeItem = activeItem;	",
+				"Return": "",
+				"Parameters": [
+				]
+			} 
+		],
+		"Private": [
+		]
+	},
+	"Scripts": {
+		"AfterShow": [
+			{
+				"Name": "initSidebar",
+				"Source": "		const UC = this;		const sidebar = document.getElementById(\"ch-sidebar-menu\"); 				sidebar.addEventListener(\"collapseBtnClicked\", function(e){			UC.isCollapsed = e.detail.isCollapsed;			if (UC.GetState){				UC.GetState();			}		});				sidebar.addEventListener(\"itemClickedEvent\", function(e){			/*get the item\'s target*/			for (let i = 0; i < UC.SidebarItems.length; i++) {				const item = UC.SidebarItems[i];				if (item.id === e.detail[\"item-id\"]){					if (item.target !== \"\") {						UC.SelectedItemTarget = item.target;						if (UC.ItemClick){							UC.ItemClick();						}						break;					}				}				if (item.hasSubItems) {					for (let j = 0; j < item.SidebarSubItems.length; j++) {						const subItem = item.SidebarSubItems[j];						if (subItem.id === e.detail[\"item-id\"]){							if (subItem.target !== \"\") {								UC.SelectedItemTarget = subItem.target;								if (UC.ItemClick){									UC.ItemClick();								}								break;							}						}						if (subItem.hasSubItems) {									for (let k = 0; k < subItem.SidebarSubSubItems.length; k++) {								const subSubItem = subItem.SidebarSubSubItems[k];								if (subSubItem.id === e.detail[\"item-id\"]){									if (subSubItem.target !== \"\") {										UC.SelectedItemTarget = subSubItem.target;										if (UC.ItemClick){											UC.ItemClick();										}										break;									}								}							}													}					}				}			}		});			const toggleSidebarBtn = document.getElementsByClassName(\"sidebar__toggle-ico\")[0];		if (toggleSidebarBtn) {			toggleSidebarBtn.addEventListener(\"click\", function(e){				const menu = sidebar.shadowRoot.lastChild;				if (!menu.classList.contains(\"visible-xs\")){					menu.classList.add(\"visible-xs\");					menu.classList.remove(\"hidden-xs\");					}else{					menu.classList.remove(\"visible-xs\");					menu.classList.add(\"hidden-xs\");				}			})		}	",
+				"AngularLocation": ""
+			} 
+		],
+		"BeforeShow": [
+		]
+	},
+	"Dependencies": [
+	],
+	"Imports": [
+	],
+	"Styles": [
+	]
+}

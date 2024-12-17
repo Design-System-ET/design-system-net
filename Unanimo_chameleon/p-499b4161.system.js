@@ -1,0 +1,2 @@
+System.register([],(function(t){"use strict";return{execute:function(){t("default",e);function e(t){return{name:"LDIF",contains:[{className:"attribute",match:"^dn(?=:)",relevance:10},{className:"attribute",match:"^\\w+(?=:)"},{className:"literal",match:"^-"},t.HASH_COMMENT_MODE]}}}}}));
+//# sourceMappingURL=p-499b4161.system.js.map

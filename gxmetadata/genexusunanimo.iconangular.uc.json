@@ -1,0 +1,57 @@
+{
+	"Name": "GeneXusUnanimo.IconAngular",
+	"Target": "ANGULAR",
+	"IsControlType": false,
+	"Template": "<ch-icon src=\"{{source}}\" style=\"--icon-size:{{size}}; --icon-color:{{color}}\" {{#autoColor}}auto-color{{/autoColor}} {{Click}}></ch-icon>", 
+	"Events": [
+		{
+			"Name": "Click",
+			"On": "click",
+			"Parameters": ""
+		} 
+	],
+	"Properties": [
+		{
+			"Id": "source",
+			"Name": "source",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "size",
+			"Name": "size",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "color",
+			"Name": "color",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "autoColor",
+			"Name": "autoColor",
+			"Type": "boolean",
+			"Default": "false"
+		} 
+	],
+	"Methods": {
+		"Public": [
+		],
+		"Private": [
+		]
+	},
+	"Scripts": {
+		"AfterShow": [
+		],
+		"BeforeShow": [
+		]
+	},
+	"Dependencies": [
+	],
+	"Imports": [
+	],
+	"Styles": [
+	]
+}

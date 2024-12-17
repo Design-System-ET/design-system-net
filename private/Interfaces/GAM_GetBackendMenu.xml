@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CallableObject guid="82c5c1bc-0555-42eb-aa9f-6e259deb0e31" name="GAM_GetBackendMenu" description="GAM_Get Backend Menu" namespace="GeneXus.Security.Backend">
+  <Signature name="par">
+    <Parameter name="GAMMenuOptionList" collection="true" />
+    <Parameter name="ReturnValue" accessor="out">
+      <Field name="SidebarItems" description="Sidebar Items" collection="true">
+        <Fields>
+          <Field name="id" description="id">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>VarChar</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>100</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="title" description="title">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>VarChar</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>100</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="icon" description="icon">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>VarChar</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>1000</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="target" description="target">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>VarChar</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>1000</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="hasSubItems" description="has Sub Items">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>Boolean</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="SidebarSubItems" description="Sidebar Sub Items" collection="true">
+            <Fields>
+              <Field name="id" description="id">
+                <Properties>
+                  <Property>
+                    <Name>Type</Name>
+                    <Value>VarChar</Value>
+                  </Property>
+                  <Property>
+                    <Name>Length</Name>
+                    <Value>100</Value>
+                  </Property>
+                </Properties>
+              </Field>
+              <Field name="title" description="title">
+                <Properties>
+                  <Property>
+                    <Name>Type</Name>
+                    <Value>VarChar</Value>
+                  </Property>
+                  <Property>
+                    <Name>Length</Name>
+                    <Value>100</Value>
+                  </Property>
+                </Properties>
+              </Field>
+              <Field name="target" description="target">
+                <Properties>
+                  <Property>
+                    <Name>Type</Name>
+                    <Value>VarChar</Value>
+                  </Property>
+                  <Property>
+                    <Name>Length</Name>
+                    <Value>1000</Value>
+                  </Property>
+                </Properties>
+              </Field>
+              <Field name="hasSubItems" description="has Sub Items">
+                <Properties>
+                  <Property>
+                    <Name>Type</Name>
+                    <Value>Boolean</Value>
+                  </Property>
+                </Properties>
+              </Field>
+              <Field name="SidebarSubSubItems" description="Sidebar Sub Sub Items" collection="true">
+                <Fields>
+                  <Field name="id" description="id">
+                    <Properties>
+                      <Property>
+                        <Name>Type</Name>
+                        <Value>VarChar</Value>
+                      </Property>
+                      <Property>
+                        <Name>Length</Name>
+                        <Value>100</Value>
+                      </Property>
+                    </Properties>
+                  </Field>
+                  <Field name="title" description="title">
+                    <Properties>
+                      <Property>
+                        <Name>Type</Name>
+                        <Value>VarChar</Value>
+                      </Property>
+                      <Property>
+                        <Name>Length</Name>
+                        <Value>100</Value>
+                      </Property>
+                    </Properties>
+                  </Field>
+                  <Field name="target" description="target">
+                    <Properties>
+                      <Property>
+                        <Name>Type</Name>
+                        <Value>VarChar</Value>
+                      </Property>
+                      <Property>
+                        <Name>Length</Name>
+                        <Value>1000</Value>
+                      </Property>
+                    </Properties>
+                  </Field>
+                </Fields>
+              </Field>
+            </Fields>
+          </Field>
+          <Field name="activeItem" description="active Item">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>VarChar</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>100</Value>
+              </Property>
+            </Properties>
+          </Field>
+        </Fields>
+      </Field>
+    </Parameter>
+  </Signature>
+</CallableObject>

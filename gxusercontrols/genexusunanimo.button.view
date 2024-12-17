@@ -1,0 +1,5 @@
+<button class="{{gxTpr_Class}}{{Class}} button-icon" type="button" {{^Enabled}}disabled{{/Enabled}}  data-event="Event" >
+	<ch-icon src="{{gxTpr_Icon}}{{Icon}}" style="--icon-size:{{gxTpr_IconSize}}{{IconSize}}; --icon-color:{{gxTpr_IconColor}}{{IconColor}}; {{^Enabled}}--icon-color:var(--colors_on-disabled);{{/Enabled}} float:left">
+	</ch-icon>
+	{{gxTpr_Caption}}{{Caption}}
+</button>

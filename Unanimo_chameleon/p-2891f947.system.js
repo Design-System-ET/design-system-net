@@ -1,0 +1,2 @@
+System.register([],(function(n){"use strict";return{execute:function(){n("default",e);function e(n){return{name:"VBScript in HTML",subLanguage:"xml",contains:[{begin:"<%",end:"%>",subLanguage:"vbscript"}]}}}}}));
+//# sourceMappingURL=p-2891f947.system.js.map

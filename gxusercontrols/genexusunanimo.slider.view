@@ -1,0 +1,4 @@
+<div class="slider-container">
+    <input type="range" min="{{gxTpr_MinValue}}{{MinValue}}{{^MinValue}}0{{/MinValue}}" max="{{gxTpr_MaxValue}}{{MaxValue}}{{^MaxValue}}100{{/MaxValue}}" step="{{gxTpr_Step}}{{Step}}{{^Step}}1{{/Step}}" class="slider" tabindex="0" {{^Enabled}}disabled{{/Enabled}} data-gx-binding="value">
+	<output class="slider-value">
+</div> 

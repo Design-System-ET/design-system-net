@@ -1,0 +1,15 @@
+@layer GeneXusUnanimo.UnanimoMobile{
+[gx-data-color-scheme="light"]
+{
+	--colors_accent : #f3f6fd;
+	--colors_text-color : #3d4854;
+
+}
+
+[gx-data-color-scheme="dark"]
+{
+	--colors_accent : #242426;
+	--colors_text-color : #ffffff;
+
+}
+}

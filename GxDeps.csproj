@@ -1,0 +1,73 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="$(MSBuildThisFileDirectory)\..\build\CloudServices.targets" Condition="Exists('$(MSBuildThisFileDirectory)\..\build\CloudServices.targets')"/>
+  <Import Project="$(MSBuildThisFileDirectory)\..\build\DataSources.targets" Condition="Exists('$(MSBuildThisFileDirectory)\..\build\DataSources.targets')"/>
+  <PropertyGroup>
+    <EnableDefaultCompileItems>False</EnableDefaultCompileItems>
+    <OutputPath>.\..\build\GxDeps\bin</OutputPath>
+    <OutDir>$(OutputPath)</OutDir>
+    <IntermediateOutputPath>.\..\build\GxDeps\obj</IntermediateOutputPath>
+    <Configuration>Release</Configuration>
+    <Prefer32Bit>false</Prefer32Bit>
+    <TreatSpecificWarningsAsErrors />
+    <WarningsNotAsErrors>CS8032;$(WarningsNotAsErrors)</WarningsNotAsErrors>
+    <NoWarn>NU1701;NETSDK1182</NoWarn>
+    <OfficeSupport>true</OfficeSupport>
+    <PDFSupport>true</PDFSupport>
+    <MailSupport>true</MailSupport>
+    <MysqlSupport>true</MysqlSupport>
+    <PostgresqlSupport>true</PostgresqlSupport>
+    <CryptographySupport>true</CryptographySupport>
+    <SearchSupport>true</SearchSupport>
+    <OS>Windows</OS>
+    <GenInit>true</GenInit>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(OfficeSupport)'=='true'">
+    <PackageReference Include="GeneXus.Excel.Core" Version="$(GenStdVersion)" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(PDFSupport)'=='true'">
+    <PackageReference Include="GeneXus.PdfReportsCS.Core" Version="$(GenStdVersion)" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(PDFSupport)'=='true' AND '$(PdfLibrary)'=='ITEXT8'">
+  <PackageReference Include="itext7" Version="8.0.0" />
+  <PackageReference Include="itext7.font-asian" Version="8.0.0" />
+  <PackageReference Include="itext7.pdfhtml" Version="5.0.0" />
+  <PackageReference Include="itext7.bouncy-castle-adapter" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(PDFSupport)'=='true' AND '$(PdfLibrary)'!='ITEXT8'">
+  <PackageReference Include="iTextSharp-LGPL" Version="4.1.6" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(PDFSupport)'=='true' AND '$(PdfLibrary)'=='PDFPIG'">
+     <PackageReference Include="PdfPig" Version="0.1.8" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(LogProvider)'=='AZUREAPPLICATIONINSIGHTS'">
+   <PackageReference Include="Microsoft.Extensions.Logging.ApplicationInsights" Version="2.22.0" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(SearchSupport)'=='true'">
+    <PackageReference Include="GeneXus.Search.Core" Version="$(GenStdVersion)" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Db2Support)'=='true' AND '$(OS)'=='Windows'">
+    <PackageReference Include="Net5.IBM.Data.Db2" Version="5.0.0.300" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Db2Support)'=='true' AND '$(OS)'=='Linux'">
+    <PackageReference Include="Net5.IBM.Data.Db2-lnx" Version="5.0.0.300" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(OracleSupport)'=='true'">
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="2.19.200" />
+  </ItemGroup> 
+  <ItemGroup Condition="'$(MailSupport)'=='true'">
+    <PackageReference Include="GeneXus.Mail.Core" Version="$(GenStdVersion)" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="GeneXus.Classes.Core" Version="$(GenStdVersion)" />
+    <PackageReference Include="GeneXus.Classes.Web.Core" Version="$(GenStdVersion)" />
+    <PackageReference Include="GeneXus.Maps.Core" Version="$(GenStdVersion)" />
+    <PackageReference Include="GeneXus.NetCoreStartup" Version="$(GenStdVersion)" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(GenInit)'=='true'">
+    <PackageReference Include="GeneXus.Reorganization.Core" Version="$(GenStdVersion)" />
+    <PackageReference Include="GeneXus.DataInitialization.Core" Version="$(GenStdVersion)" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="**/*.cs" />
+  </ItemGroup>
+</Project>

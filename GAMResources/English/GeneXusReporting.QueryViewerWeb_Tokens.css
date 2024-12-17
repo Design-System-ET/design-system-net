@@ -1,0 +1,60 @@
+@layer GeneXusReporting.QueryViewerWeb{
+:root
+{
+	--colors_gxqv-color-main : var(--colors_primary);
+
+}
+
+:root:is([gx-data-color-scheme="light"],:not([gx-data-color-scheme]))
+{
+	--colors_gxqv-color-01 : #182f53;
+	--colors_gxqv-color-02 : #a7e9e1;
+	--colors_gxqv-color-03 : #f57a4d;
+	--colors_gxqv-color-04 : #fbbc58;
+	--colors_gxqv-color-05 : #9c3725;
+	--colors_gxqv-color-06 : #2ed3c6;
+	--colors_gxqv-color-07 : #aa6890;
+	--colors_gxqv-color-08 : #c53b3d;
+	--colors_gxqv-color-09 : #8d89a3;
+	--colors_gxqv-color-10 : #095d6a;
+
+}
+
+[gx-data-color-scheme="dark"]
+{
+	--colors_gxqv-color-01 : #345a8c;
+	--colors_gxqv-color-02 : #dcf6f4;
+	--colors_gxqv-color-03 : #f8af96;
+	--colors_gxqv-color-04 : #fde2b6;
+	--colors_gxqv-color-05 : #da553b;
+	--colors_gxqv-color-06 : #96e4dc;
+	--colors_gxqv-color-07 : #c490af;
+	--colors_gxqv-color-08 : #d8777b;
+	--colors_gxqv-color-09 : #b9b7c8;
+	--colors_gxqv-color-10 : #2eb7de;
+
+}
+:root:is([gx-data-color-scheme="light"],:not([gx-data-color-scheme]))
+{
+	--GX-Image_GeneXusReporting_desc : url(../GeneXusReporting.QueryViewerWeb/color-scheme_light/GeneXusReporting.desc.png);
+	--GX-Image_GeneXusReporting_asc : url(../GeneXusReporting.QueryViewerWeb/color-scheme_light/GeneXusReporting.asc.png);
+	--GX-Image_GeneXusReporting_arrow_double : url(../GeneXusReporting.QueryViewerWeb/color-scheme_light/GeneXusReporting.arrow_double.png);
+	--GX-Image_GeneXusReporting_search : url(../GeneXusReporting.QueryViewerWeb/color-scheme_light/GeneXusReporting.search.png);
+}
+
+[gx-data-color-scheme="dark"]
+{
+	--GX-Image_GeneXusReporting_desc : url(../GeneXusReporting.QueryViewerWeb/color-scheme_dark/GeneXusReporting.desc.png);
+	--GX-Image_GeneXusReporting_asc : url(../GeneXusReporting.QueryViewerWeb/color-scheme_dark/GeneXusReporting.asc.png);
+	--GX-Image_GeneXusReporting_arrow_double : url(../GeneXusReporting.QueryViewerWeb/color-scheme_dark/GeneXusReporting.arrow_double.png);
+	--GX-Image_GeneXusReporting_search : url(../GeneXusReporting.QueryViewerWeb/color-scheme_dark/GeneXusReporting.search.png);
+}
+.GX_Image_GeneXusReporting_desc_Class{content: var(--GX-Image_GeneXusReporting_desc);}
+.GX_Image_GeneXusReporting_desc_Class{content: var(--GX-Image_GeneXusReporting_desc);}
+.GX_Image_GeneXusReporting_asc_Class{content: var(--GX-Image_GeneXusReporting_asc);}
+.GX_Image_GeneXusReporting_asc_Class{content: var(--GX-Image_GeneXusReporting_asc);}
+.GX_Image_GeneXusReporting_arrow_double_Class{content: var(--GX-Image_GeneXusReporting_arrow_double);}
+.GX_Image_GeneXusReporting_arrow_double_Class{content: var(--GX-Image_GeneXusReporting_arrow_double);}
+.GX_Image_GeneXusReporting_search_Class{content: var(--GX-Image_GeneXusReporting_search);}
+.GX_Image_GeneXusReporting_search_Class{content: var(--GX-Image_GeneXusReporting_search);}
+}

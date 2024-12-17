@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "DesignSystem.Programs.workwithplus.wwp_parameterwwgetfilterdata,workwithplus.wwp_parameterwwgetfilterdata" %>

@@ -1,0 +1,2 @@
+function e(e){const a={className:"attr",begin:/"(\\.|[^\\"\r\n])*"(?=\s*:)/,relevance:1.01},l={match:/[{}[\],:]/,className:"punctuation",relevance:0},n=["true","false","null"],t={scope:"literal",beginKeywords:n.join(" ")};return{name:"JSON",keywords:{literal:n},contains:[a,l,e.QUOTE_STRING_MODE,t,e.C_NUMBER_MODE,e.C_LINE_COMMENT_MODE,e.C_BLOCK_COMMENT_MODE],illegal:"\\S"}}export{e as default};
+//# sourceMappingURL=p-e96de2c5.js.map

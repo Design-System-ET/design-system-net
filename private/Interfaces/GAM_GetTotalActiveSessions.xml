@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CallableObject guid="7552019f-1ee2-4e33-bcb7-f0e3dd93c507" name="GAM_GetTotalActiveSessions" description="GAM_Get Total Active Sessions" namespace="GeneXus.Security.Backend">
+  <Signature name="parm">
+    <Parameter name="ReturnValue" accessor="out">
+      <Field name="GAM_GetTotalActiveSessionsSDT" description="GAM_Get Total Active Sessions SDT">
+        <Fields>
+          <Field name="ActiveSessions" description="Active Sessions">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>Numeric</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>10</Value>
+              </Property>
+              <Property>
+                <Name>Picture</Name>
+                <Value>ZZZZZZZZZ9</Value>
+              </Property>
+            </Properties>
+          </Field>
+        </Fields>
+      </Field>
+    </Parameter>
+  </Signature>
+</CallableObject>

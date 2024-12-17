@@ -1,0 +1,70 @@
+warn: Microsoft.AspNetCore.DataProtection.Repositories.EphemeralXmlRepository[50]
+      Using an in-memory repository. Keys will not be persisted to storage.
+warn: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[59]
+      Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+warn: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[16]
+      The WebRootPath was not found: C:\PROYECTOS\KBs\Design System\NETMySQL002\web\wwwroot. Static files may be unavailable.
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[58]
+      Creating key {1255a4b6-053f-490a-a02b-390375b80d3d} with creation date 2024-12-17 02:23:33Z, activation date 2024-12-17 02:23:33Z, and expiration date 2025-03-17 02:23:33Z.
+warn: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[35]
+      No XML encryptor configured. Key {1255a4b6-053f-490a-a02b-390375b80d3d} may be persisted to storage in unencrypted form.
+Hosting environment: Production
+Content root path: C:\PROYECTOS\KBs\Design System\NETMySQL002\web
+Now listening on: http://127.0.0.1:14728
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/dslogin.aspx - - -
+warn: Microsoft.AspNetCore.Session.SessionMiddleware[7]
+      Error unprotecting the session cookie.
+      System.Security.Cryptography.CryptographicException: The key {1c8358e8-e981-4fcb-a260-e12205e4bad8} was not found in the key ring. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+         at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+         at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+         at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+info: Microsoft.AspNetCore.Session.DistributedSession[3]
+      Session started; Key:75ce99ca-5581-7e19-c5e5-fbe6d1877bf2, Id:785ba590-57a4-d70a-fbe6-0ce4c0292d99
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/dslogin.aspx - 200 - text/html 3324.2503ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/messages.spa.js?2024121623105094 - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/gxcfg.js?2024121623105094 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /gxcfg.js was not modified
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /messages.spa.js was not modified
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/gxcfg.js?2024121623105094 - 304 - text/javascript 9.2136ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/messages.spa.js?2024121623105094 - 304 - text/javascript 9.1858ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/DesignSystemNETMySQL/dslogin.aspx?c01d04b1610243d2a2af23e7952e8b18b57b5a74730e28cf7aed5a60a50e27e1,gx-no-cache=1734402219110 - application/json 231
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/DesignSystemNETMySQL/dslogin.aspx?c01d04b1610243d2a2af23e7952e8b18b57b5a74730e28cf7aed5a60a50e27e1,gx-no-cache=1734402219110 - 200 - application/json 647.7735ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/dslogin.aspx - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/dslogin.aspx - 200 - text/html 1364.2255ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/dslogin.aspx - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/dslogin.aspx - 200 - text/html 1552.8812ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/dslogin.aspx - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/dslogin.aspx - 200 - text/html 1845.6080ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/gxcfg.js?2024121623105094 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /gxcfg.js was not modified
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/gxcfg.js?2024121623105094 - 304 - text/javascript 1.1237ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/messages.spa.js?2024121623105094 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /messages.spa.js was not modified
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/messages.spa.js?2024121623105094 - 304 - text/javascript 1.9723ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://127.0.0.1:14728/DESIGNSYSTEMNETMYSQL/iisintegration - - 0
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://127.0.0.1:14728/DESIGNSYSTEMNETMYSQL/iisintegration - 202 0 - 1.4400ms

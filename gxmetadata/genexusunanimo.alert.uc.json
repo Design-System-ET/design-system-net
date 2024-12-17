@@ -1,0 +1,80 @@
+{
+	"Name": "GeneXusUnanimo.Alert",
+	"Target": "",
+	"IsControlType": false,
+	"Template": "<div id=\"alert{{id}}\" class=\"alert alert-{{Type:info|warning|success|error}}\" aria-live=\"assertive\"> 	<div class=\"inline-left-xxxl inline-right-xxl\" style=\"flex-grow: 1\">		<div class=\"row\"> <span class=\"alert-title\">{{Title}}</span> </div>		<div class=\"row\"> <span class=\"alert-message\">{{Message}}</span> </div>	</div>	<div class=\"inline-left-xl inline-right-xl\" style=\"flex-grow: 0\">		<button type=\"button\" class=\"alert-close\" data-dismiss=\"alert\" aria-label=\"Close\" id=\"alert{{id}}close\" {{Close}}><span aria-hidden=\"true\">&times;</span></button>	</div>	{{#ShowMultiple}}	<div class=\"alert-badge\">		<span class=\"alert-badge-text\">{{Count}}</span>	</div>	{{/ShowMultiple}}</div>", 
+	"Events": [
+		{
+			"Name": "Close",
+			"On": "click",
+			"Parameters": ""
+		} 
+	],
+	"Properties": [
+		{
+			"Id": "id",
+			"Name": "id",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "Type",
+			"Name": "Type",
+			"Type": "enum",
+			"Default": "info"
+		} ,
+		{
+			"Id": "Title",
+			"Name": "Title",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "Message",
+			"Name": "Message",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "Position",
+			"Name": "Position",
+			"Type": "enum",
+			"Default": "User defined"
+		} ,
+		{
+			"Id": "ShowMultiple",
+			"Name": "ShowMultiple",
+			"Type": "boolean",
+			"Default": "false"
+		} ,
+		{
+			"Id": "Count",
+			"Name": "Count",
+			"Type": "numeric",
+			"Default": ""
+		} 
+	],
+	"Methods": {
+		"Public": [
+		],
+		"Private": [
+		]
+	},
+	"Scripts": {
+		"AfterShow": [
+			{
+				"Name": "Init",
+				"Source": "  	const UC = this;	const elId = \"alert\" + UC.id;	const el = document.getElementById(elId);			if (UC.Position === \"Fixed to bottom\") {		if (!el.classList.contains(\"alert-fixed\")) {			el.classList.add(\"alert-fixed\");		}	}	if (UC.ShowMultiple === true) {		if (!el.classList.contains(\"alert-multiple\")) {			el.classList.add(\"alert-multiple\");		}	}  ",
+				"AngularLocation": ""
+			} 
+		],
+		"BeforeShow": [
+		]
+	},
+	"Dependencies": [
+	],
+	"Imports": [
+	],
+	"Styles": [
+	]
+}

@@ -1,0 +1,16 @@
+CREATE TABLE `ConfiguracionEmpresa` (`ConfiguracionEmpresaId` smallint NOT NULL AUTO_INCREMENT, `ConfiguracionEmpresaTelefono` national char(20) NOT NULL , `ConfiguracionEmpresaCostoPlanB` NUMERIC(11,2) NOT NULL , `ConfiguracionEmpresaCuotaPlanB` NUMERIC(11,2) NOT NULL , `ConfiguracionEmpresaCostoPlanS` NUMERIC(11,2) NOT NULL , `ConfiguracionEmpresaCuotaPlanS` NUMERIC(11,2) NOT NULL , `ConfiguracionEmpresaCostoPlanN` NUMERIC(11,2) NOT NULL , `ConfiguracionEmpresaCuotaPlanN` NUMERIC(11,2) NOT NULL , `ConfiguracionEmpresaCostoLandi` NUMERIC(11,2) NOT NULL , `ConfiguracionEmpresaCuotaLandi` NUMERIC(11,2) NOT NULL , PRIMARY KEY(`ConfiguracionEmpresaId`))  ENGINE=InnoDB;
+
+CREATE TABLE `NewProductos` (`NewProductosId` smallint NOT NULL AUTO_INCREMENT, `NewProductosImagen` LONGBLOB NOT NULL , `NewProductosImagen_GXI` varchar(2048) , `NewProductosNombre` national varchar(200) NOT NULL , `NewProductosDescripcionCorta` national varchar(200) NOT NULL , `NewProductosDescripcion` MEDIUMTEXT CHARACTER SET utf8 NOT NULL , `NewProductosNumeroDescargas` smallint NOT NULL , `NewProductosLinkDescargaDemo` national varchar(1000) NOT NULL , `NewProductosComprar` national varchar(1000) NOT NULL , `NewProductosNumeroVentas` smallint NOT NULL , `CategoriasId` smallint NOT NULL , `NewProductosVisitas` smallint NOT NULL , PRIMARY KEY(`NewProductosId`))  ENGINE=InnoDB;
+CREATE INDEX `INEWPRODUCTOS1` ON `NewProductos` (`CategoriasId` );
+
+CREATE TABLE `Categorias` (`CategoriasId` smallint NOT NULL AUTO_INCREMENT, `CategoriasCategoria` national char(100) NOT NULL , PRIMARY KEY(`CategoriasId`))  ENGINE=InnoDB;
+
+CREATE TABLE `NewBlog` (`NewBlogId` smallint NOT NULL AUTO_INCREMENT, `NewBlogImagen` LONGBLOB NOT NULL , `NewBlogImagen_GXI` varchar(2048) , `NewBlogTitulo` national varchar(200) NOT NULL , `NewBlogSubTitulo` national varchar(200) NOT NULL , `NewBlogDescripcion` MEDIUMTEXT CHARACTER SET utf8 NOT NULL , `NewBlogVisitas` smallint NOT NULL , `NewBlogDestacado` BOOL NOT NULL , `CategoriasId` smallint NOT NULL , `NewBlogBorrador` BOOL NOT NULL , `NewBlogDescripcionCorta` national varchar(500) NOT NULL , PRIMARY KEY(`NewBlogId`))  ENGINE=InnoDB;
+CREATE INDEX `INEWBLOG1` ON `NewBlog` (`CategoriasId` );
+
+CREATE TABLE `WWP_Parameter` (`WWPParameterKey` national varchar(200) NOT NULL , `WWPParameterCategory` national varchar(200) NOT NULL , `WWPParameterDescription` national varchar(200) NOT NULL , `WWPParameterValue` MEDIUMTEXT CHARACTER SET utf8 NOT NULL , `WWPParameterDisableDelete` BOOL NOT NULL , PRIMARY KEY(`WWPParameterKey`))  ENGINE=InnoDB;
+
+ALTER TABLE `NewBlog` ADD CONSTRAINT `INEWBLOG1` FOREIGN KEY (`CategoriasId`) REFERENCES `Categorias` (`CategoriasId`);
+
+ALTER TABLE `NewProductos` ADD CONSTRAINT `INEWPRODUCTOS1` FOREIGN KEY (`CategoriasId`) REFERENCES `Categorias` (`CategoriasId`);
+

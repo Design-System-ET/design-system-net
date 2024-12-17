@@ -1,0 +1,13 @@
+﻿@import "GeneXusUnanimo.UnanimoWeb.css";
+@import "GeneXusReporting.QueryViewerWeb.css";
+@import "GeneXusReporting.DashboardViewerWeb.css";
+@import "GAMDesignSystem_Tokens.css";
+/* [gx-style-customization - start] *//* [gx-style-customization - end] */
+
+@layer GAMDesignSystem {
+/* [gx-css-import ignore - start] */
+ 
+/* [gx-css-import ignore - end] */
+/* [gx-css-user-controls - start] */
+/* [gx-css-user-controls - end] */
+}

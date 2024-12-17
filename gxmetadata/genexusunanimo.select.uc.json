@@ -1,0 +1,104 @@
+{
+	"Name": "GeneXusUnanimo.Select",
+	"Target": "",
+	"IsControlType": false,
+	"Template": "<ch-select id=\"ch-select-{{Name}}\" name=\"{{Name}}\" class=\"{{Class}}\" icon-src=\"{{Icon}}\" {{#IconAutoColor}}auto-color{{/IconAutoColor}} width=\"{{Width}}\" height=\"{{Height}}\" option-height=\"{{OptionHeight}}\">	{{#SelectItems}}	<ch-select-option value=\"{{value}}\" {{#selected}}selected{{/selected}} {{#disabled}}disabled{{/disabled}} left-icon-src=\"{{leftIcon}}\" 	right-icon-src=\"{{rightIcon}}\" {{#IconAutoColor}}auto-color{{/IconAutoColor}}> 		{{text}} 	</ch-select-option>	{{/SelectItems}}</ch-select>", 
+	"Events": [
+		{
+			"Name": "ItemClick",
+			"On": "itemclick",
+			"Parameters": ""
+		} 
+	],
+	"Properties": [
+		{
+			"Id": "Name",
+			"Name": "Name",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "Class",
+			"Name": "Class",
+			"Type": "string",
+			"Default": "ch-select"
+		} ,
+		{
+			"Id": "Width",
+			"Name": "Width",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "Height",
+			"Name": "Height",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "OptionHeight",
+			"Name": "OptionHeight",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "Icon",
+			"Name": "Icon",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "ArrowIcon",
+			"Name": "ArrowIcon",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "IconAutoColor",
+			"Name": "IconAutoColor",
+			"Type": "boolean",
+			"Default": "false"
+		} ,
+		{
+			"Id": "SelectedItem",
+			"Name": "SelectedItem",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "SelectItems",
+			"Name": "SelectItems",
+			"Type": "sdt",
+			"Default": ""
+		} ,
+		{
+			"Id": "SelectItemsCurrentIndex",
+			"Name": "SelectItemsCurrentIndex",
+			"Type": "numeric",
+			"Default": ""
+		} 
+	],
+	"Methods": {
+		"Public": [
+		],
+		"Private": [
+		]
+	},
+	"Scripts": {
+		"AfterShow": [
+			{
+				"Name": "initItemClick",
+				"Source": "		const UC = this;		const elId = \"ch-select-\" + UC.Name;		const el = document.getElementById(elId);		el.addEventListener(\"itemClicked\", function(e){			/*get the selected option value*/			for (let i = 0; i < UC.SelectItems.length; i++) {				const option = UC.SelectItems[i];				if (option.value ===  e.detail[\"option-value\"].trim()){					UC.SelectedItem = option.value;					if (UC.ItemClick){						UC.ItemClick();					}					break;				}			}		});	",
+				"AngularLocation": ""
+			} 
+		],
+		"BeforeShow": [
+		]
+	},
+	"Dependencies": [
+	],
+	"Imports": [
+	],
+	"Styles": [
+	]
+}

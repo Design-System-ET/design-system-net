@@ -1,0 +1,35 @@
+<ch-sidebar-menu 
+    menu-title="{{gxTpr_Title}}{{Title}}" 
+    id="ch-sidebar-menu" 
+    class="{{gxTpr_Class}}{{Class}}{{^Class}}ch-sidebar{{/Class}}" 
+    distance-to-top="{{gxTpr_DistanceToTop}}{{DistanceToTop}}" 
+    collapsible="{{gxTpr_Collapsible}}{{Collapsible}}{{^Collapsible}}True{{/Collapsible}}" 
+    active-item-id="{{gxTpr_ActiveItemId}}{{ActiveItemId}}" >
+    <ch-sidebar-menu-list>
+	  {{#SidebarItems}}
+      <ch-sidebar-menu-list-item id="{{gxTpr_id}}{{id}}" item-icon-src="{{gxTpr_icon}}{{icon}}" {{#IconAutoColor}}auto-color{{/IconAutoColor}}>
+        {{gxTpr_title}}{{title}}
+		{{#hasSubItems}}
+        <ch-sidebar-menu-list slot="list">
+		  {{#SidebarSubItems}}
+            <ch-sidebar-menu-list-item id="{{gxTpr_id}}{{id}}">
+              {{gxTpr_title}}{{title}}		  
+			  {{#hasSubItems}}
+				<ch-sidebar-menu-list slot="list">
+				{{#SidebarSubSubItems}}
+					<ch-sidebar-menu-list-item id="{{gxTpr_id}}{{id}}">
+					{{gxTpr_title}}{{title}}
+					</ch-sidebar-menu-list-item>
+				{{/SidebarSubSubItems}}
+				</ch-sidebar-menu-list>
+			  {{/hasSubItems}}
+            </ch-sidebar-menu-list-item>
+		  {{/SidebarSubItems}}
+		</ch-sidebar-menu-list>
+		{{/hasSubItems}}
+      </ch-sidebar-menu-list-item>
+	  {{/SidebarItems}}
+    </ch-sidebar-menu-list>
+    <div slot="footer">{{gxTpr_FooterText}}{{FooterText}}</div>
+</ch-sidebar-menu>
+

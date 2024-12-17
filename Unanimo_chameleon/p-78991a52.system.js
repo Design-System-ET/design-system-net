@@ -1,0 +1,2 @@
+System.register([],(function(n){"use strict";return{execute:function(){n("default",e);function e(n){return{name:"Backus–Naur Form",contains:[{className:"attribute",begin:/</,end:/>/},{begin:/::=/,end:/$/,contains:[{begin:/</,end:/>/},n.C_LINE_COMMENT_MODE,n.C_BLOCK_COMMENT_MODE,n.APOS_STRING_MODE,n.QUOTE_STRING_MODE]}]}}}}}));
+//# sourceMappingURL=p-78991a52.system.js.map

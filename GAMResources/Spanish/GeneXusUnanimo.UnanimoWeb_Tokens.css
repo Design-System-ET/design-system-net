@@ -1,0 +1,24 @@
+@layer GeneXusUnanimo.UnanimoWeb{
+:root:is([gx-data-color-scheme="light"],:not([gx-data-color-scheme]))
+{
+	--colors_surface-transp : #ffffff7f;
+	--opacity_mask-opacity : var(--opacity_s);
+
+}
+
+[gx-data-color-scheme="dark"]
+{
+	--colors_surface-transp : #1212127f;
+	--opacity_mask-opacity : var(--opacity_l);
+
+}
+
+:root
+{
+	--spacing_line-height-xs : 1.14em;
+	--spacing_line-height-s : 1.3em;
+	--spacing_line-height-m : 1.4em;
+	--spacing_line-height-l : 1.5em;
+
+}
+}

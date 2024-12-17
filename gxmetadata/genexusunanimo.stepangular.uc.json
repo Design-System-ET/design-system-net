@@ -1,0 +1,51 @@
+{
+	"Name": "GeneXusUnanimo.StepAngular",
+	"Target": "ANGULAR",
+	"IsControlType": false,
+	"Template": "{{=<% %>=}}<ch-step-list>	<ch-step-list-item *ngFor=\"let stepItem of StepItems\" class=\"{{Class}}\" (click)=\"SelectedItem=stepItem.id; ItemClick();\">		{{stepItem.text}}	</ch-step-list-item></ch-step-list>", 
+	"Events": [
+		{
+			"Name": "ItemClick",
+			"On": "itemclick",
+			"Parameters": ""
+		} 
+	],
+	"Properties": [
+		{
+			"Id": "Class",
+			"Name": "Class",
+			"Type": "string",
+			"Default": "ch-step"
+		} ,
+		{
+			"Id": "StepItems",
+			"Name": "StepItems",
+			"Type": "sdt",
+			"Default": ""
+		} ,
+		{
+			"Id": "SelectedItem",
+			"Name": "SelectedItem",
+			"Type": "string",
+			"Default": ""
+		} 
+	],
+	"Methods": {
+		"Public": [
+		],
+		"Private": [
+		]
+	},
+	"Scripts": {
+		"AfterShow": [
+		],
+		"BeforeShow": [
+		]
+	},
+	"Dependencies": [
+	],
+	"Imports": [
+	],
+	"Styles": [
+	]
+}

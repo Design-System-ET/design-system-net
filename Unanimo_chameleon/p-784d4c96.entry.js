@@ -1,0 +1,2 @@
+import{r as s,g as t}from"./p-7af91c05.js";import{a as o,e}from"./p-79129d9d.js";const i=":host{display:none}";const n=i;const a=class{constructor(t){s(this,t);this.href=undefined}get el(){return t(this)}componentDidLoad(){if(this.href){fetch(this.href).then((s=>{if(s.ok){s.text().then((s=>{o(s);e()}))}}))}else{o(this.el.innerText);e()}}};a.style=n;export{a as ch_style};
+//# sourceMappingURL=p-784d4c96.entry.js.map

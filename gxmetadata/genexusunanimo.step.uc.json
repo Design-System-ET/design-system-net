@@ -1,0 +1,68 @@
+{
+	"Name": "GeneXusUnanimo.Step",
+	"Target": "",
+	"IsControlType": false,
+	"Template": "<ch-step-list id=\"ch-step{{id}}\">	{{#StepItems}}	<ch-step-list-item class=\"{{Class}}\" >		{{text}}	</ch-step-list-item>	{{/StepItems}}</ch-step-list>", 
+	"Events": [
+		{
+			"Name": "ItemClick",
+			"On": "itemclick",
+			"Parameters": ""
+		} 
+	],
+	"Properties": [
+		{
+			"Id": "id",
+			"Name": "id",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "Class",
+			"Name": "Class",
+			"Type": "string",
+			"Default": "ch-step"
+		} ,
+		{
+			"Id": "SelectedItem",
+			"Name": "SelectedItem",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "StepItems",
+			"Name": "StepItems",
+			"Type": "sdt",
+			"Default": ""
+		} ,
+		{
+			"Id": "StepItemsCurrentIndex",
+			"Name": "StepItemsCurrentIndex",
+			"Type": "numeric",
+			"Default": ""
+		} 
+	],
+	"Methods": {
+		"Public": [
+		],
+		"Private": [
+		]
+	},
+	"Scripts": {
+		"AfterShow": [
+			{
+				"Name": "initItemClick",
+				"Source": "		const UC = this;		const elId = \"ch-step\" + UC.id;		const el = document.getElementById(elId);		el.addEventListener(\"itemClicked\", function(e){			/*get the selected item*/			for (let i = 0; i < UC.StepItems.length; i++) {				const item = UC.StepItems[i];				if (item.text === e.detail[\"item-clicked\"]){					UC.SelectedItem = item.text;					if (UC.ItemClick){						UC.ItemClick();					}					break;				}			}		});	",
+				"AngularLocation": ""
+			} 
+		],
+		"BeforeShow": [
+		]
+	},
+	"Dependencies": [
+	],
+	"Imports": [
+	],
+	"Styles": [
+	]
+}

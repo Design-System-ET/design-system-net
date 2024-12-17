@@ -1,0 +1,64 @@
+@layer AnyStylesImagesTokens {
+:root
+{
+	--GX-Image_menuarrow : url(../menuarrow.gif);
+	--GX-Image_ActionDelete : url(../ActionDelete.gif);
+	--GX-Image_ActionDisplay : url(../ActionDisplay.gif);
+	--GX-Image_ActionInsert : url(../ActionInsert.gif);
+	--GX-Image_ActionUpdate : url(../ActionUpdate.gif);
+	--GX-Image_calendar : url(../calendar.gif);
+	--GX-Image_UndeleteRow : url(../UndeleteRow.gif);
+	--GX-Image_GAM_GAMButtonFacebook : url(../GAM.GAMButtonFacebook.png);
+	--GX-Image_GAM_GAMButtonTwitterSmall : url(../GAM.GAMButtonTwitterSmall.png);
+	--GX-Image_GAM_GAMButtonFacebookSmall : url(../GAM.GAMButtonFacebookSmall.png);
+	--GX-Image_GAM_GAMButtonTwitter : url(../GAM.GAMButtonTwitter.png);
+	--GX-Image_GAM_GAMButtonGoogle : url(../GAM.GAMButtonGoogle.png);
+	--GX-Image_GAM_GAMButtonGoogleSmall : url(../GAM.GAMButtonGoogleSmall.png);
+	--GX-Image_asc : url(../asc.gif);
+	--GX-Image_resize : url(../resize.gif);
+	--GX-Image_GAM_GAMButtonGAMRemoteSmall : url(../GAM.GAMButtonGAMRemoteSmall.png);
+	--GX-Image_GAM_GAMButtonGAMRemote : url(../GAM.GAMButtonGAMRemote.png);
+	--GX-Image_WarningIcon : url(../WarningIcon.png);
+	--GX-Image_ActionDeleteEnabled : url(../ActionDeleteEnabled.png);
+	--GX-Image_Group : url(../Group.png);
+	--GX-Image_GAM_gam_logo : url(../GAM.gam_logo.svg);
+	--GX-Image_GAM_users : url(../GAM.users.svg);
+	--GX-Image_GAM_roles : url(../GAM.roles.svg);
+	--GX-Image_GAM_applications : url(../GAM.applications.svg);
+	--GX-Image_GAM_securitypolicies : url(../GAM.securitypolicies.svg);
+	--GX-Image_GAM_repository : url(../GAM.repository.svg);
+	--GX-Image_GAM_settings : url(../GAM.settings.svg);
+	--GX-Image_GAM_statistics : url(../GAM.statistics.svg);
+	--GX-Image_GAM_sign_out : url(../GAM.sign_out.svg);
+}
+
+.GX_Image_menuarrow_Class{content: var(--GX-Image_menuarrow);}
+.GX_Image_ActionDelete_Class{content: var(--GX-Image_ActionDelete);}
+.GX_Image_ActionDisplay_Class{content: var(--GX-Image_ActionDisplay);}
+.GX_Image_ActionInsert_Class{content: var(--GX-Image_ActionInsert);}
+.GX_Image_ActionUpdate_Class{content: var(--GX-Image_ActionUpdate);}
+.GX_Image_calendar_Class{content: var(--GX-Image_calendar);}
+.GX_Image_UndeleteRow_Class{content: var(--GX-Image_UndeleteRow);}
+.GX_Image_GAM_GAMButtonFacebook_Class{content: var(--GX-Image_GAM_GAMButtonFacebook);}
+.GX_Image_GAM_GAMButtonTwitterSmall_Class{content: var(--GX-Image_GAM_GAMButtonTwitterSmall);}
+.GX_Image_GAM_GAMButtonFacebookSmall_Class{content: var(--GX-Image_GAM_GAMButtonFacebookSmall);}
+.GX_Image_GAM_GAMButtonTwitter_Class{content: var(--GX-Image_GAM_GAMButtonTwitter);}
+.GX_Image_GAM_GAMButtonGoogle_Class{content: var(--GX-Image_GAM_GAMButtonGoogle);}
+.GX_Image_GAM_GAMButtonGoogleSmall_Class{content: var(--GX-Image_GAM_GAMButtonGoogleSmall);}
+.GX_Image_asc_Class{content: var(--GX-Image_asc);}
+.GX_Image_resize_Class{content: var(--GX-Image_resize);}
+.GX_Image_GAM_GAMButtonGAMRemoteSmall_Class{content: var(--GX-Image_GAM_GAMButtonGAMRemoteSmall);}
+.GX_Image_GAM_GAMButtonGAMRemote_Class{content: var(--GX-Image_GAM_GAMButtonGAMRemote);}
+.GX_Image_WarningIcon_Class{content: var(--GX-Image_WarningIcon);}
+.GX_Image_ActionDeleteEnabled_Class{content: var(--GX-Image_ActionDeleteEnabled);}
+.GX_Image_Group_Class{content: var(--GX-Image_Group);}
+.GX_Image_GAM_gam_logo_Class{content: var(--GX-Image_GAM_gam_logo);}
+.GX_Image_GAM_users_Class{content: var(--GX-Image_GAM_users);}
+.GX_Image_GAM_roles_Class{content: var(--GX-Image_GAM_roles);}
+.GX_Image_GAM_applications_Class{content: var(--GX-Image_GAM_applications);}
+.GX_Image_GAM_securitypolicies_Class{content: var(--GX-Image_GAM_securitypolicies);}
+.GX_Image_GAM_repository_Class{content: var(--GX-Image_GAM_repository);}
+.GX_Image_GAM_settings_Class{content: var(--GX-Image_GAM_settings);}
+.GX_Image_GAM_statistics_Class{content: var(--GX-Image_GAM_statistics);}
+.GX_Image_GAM_sign_out_Class{content: var(--GX-Image_GAM_sign_out);}
+}

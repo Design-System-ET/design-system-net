@@ -1,0 +1,310 @@
+warn: Microsoft.AspNetCore.DataProtection.Repositories.EphemeralXmlRepository[50]
+      Using an in-memory repository. Keys will not be persisted to storage.
+warn: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[59]
+      Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+warn: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[16]
+      The WebRootPath was not found: C:\PROYECTOS\KBs\Design System\NETMySQL002\web\wwwroot. Static files may be unavailable.
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[58]
+      Creating key {e63e43be-8373-4cf8-968e-17ca8a95a5bf} with creation date 2024-12-17 03:15:00Z, activation date 2024-12-17 03:15:00Z, and expiration date 2025-03-17 03:15:00Z.
+warn: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[35]
+      No XML encryptor configured. Key {e63e43be-8373-4cf8-968e-17ca8a95a5bf} may be persisted to storage in unencrypted form.
+Hosting environment: Production
+Content root path: C:\PROYECTOS\KBs\Design System\NETMySQL002\web
+Now listening on: http://127.0.0.1:11779
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/home.aspx - - -
+warn: Microsoft.AspNetCore.Session.SessionMiddleware[7]
+      Error unprotecting the session cookie.
+      System.Security.Cryptography.CryptographicException: The key {50968123-d344-4495-9c3c-03dae3bdee51} was not found in the key ring. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+         at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+         at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+         at Microsoft.AspNetCore.Session.CookieProtection.Unprotect(IDataProtector protector, String protectedText, ILogger logger)
+info: Microsoft.AspNetCore.Session.DistributedSession[3]
+      Session started; Key:0ac2b7de-4671-9a99-834e-1c282ae9fd5b, Id:cc8fb2bf-59c4-fccf-09d8-162958334c0a
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/home.aspx - 200 - text/html 9845.8100ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/DVMessage/DVMessage.css?202412170142868 - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/bootstrap/css/bootstrap.min.css?202412170142868 - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Shared/daterangepicker/daterangepicker.css?202412170142868 - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Bootstrap/Shared/DVelopBootstrap.css?202412170142868 - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/DVHorizontalMenu/DVHorizontalMenu.css?202412170142868 - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Bootstrap/Shared/fontawesome_vlatest/css/all.min.css?202412170142868 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/Shared/daterangepicker/daterangepicker.css'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\Shared\daterangepicker\daterangepicker.css'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/DVMessage/DVMessage.css'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\DVMessage\DVMessage.css'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/DVHorizontalMenu/DVHorizontalMenu.css'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\DVHorizontalMenu\DVHorizontalMenu.css'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/Bootstrap/Shared/DVelopBootstrap.css'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\Bootstrap\Shared\DVelopBootstrap.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Bootstrap/Shared/DVelopBootstrap.css?202412170142868 - 200 - text/css 41.4023ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/DVMessage/DVMessage.css?202412170142868 - 200 - text/css 48.8876ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/DVHorizontalMenu/DVHorizontalMenu.css?202412170142868 - 200 - text/css 40.8949ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Shared/daterangepicker/daterangepicker.css?202412170142868 - 200 - text/css 43.7455ms
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/bootstrap/css/bootstrap.min.css'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\bootstrap\css\bootstrap.min.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/bootstrap/css/bootstrap.min.css?202412170142868 - 200 - text/css 52.9831ms
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/Bootstrap/Shared/fontawesome_vlatest/css/all.min.css'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\Bootstrap\Shared\fontawesome_vlatest\css\all.min.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Bootstrap/Shared/fontawesome_vlatest/css/all.min.css?202412170142868 - 200 - text/css 27.3954ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/calendar-system.css?202412170142868 - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/Resources/Spanish/WorkWithPlusDS.css?202412170142868 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/calendar-system.css'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\calendar-system.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/bootstrap/js/bootstrap.min.js?202412170142868 - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/calendar-system.css?202412170142868 - 200 - text/css 2.8293ms
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Spanish/WorkWithPlusDS.css'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\Resources\Spanish\WorkWithPlusDS.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/Resources/Spanish/WorkWithPlusDS.css?202412170142868 - 200 - text/css 3.6404ms
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/bootstrap/js/bootstrap.min.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\bootstrap\js\bootstrap.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/bootstrap/js/bootstrap.min.js?202412170142868 - 200 39680 text/javascript 6.9432ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/gxgral.js?1318140 - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/gxcfg.js?202412170142868 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/gxcfg.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\gxcfg.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/gxcfg.js?202412170142868 - 200 667 text/javascript 1.5394ms
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /gxgral.js was not modified
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/gxgral.js?1318140 - 304 - text/javascript 5.2064ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/Resources/Spanish/WorkWithPlusDS_Tokens.css - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/Resources/Spanish/WWPBaseObjects.WorkWithPlusBaseDS.css - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Spanish/WorkWithPlusDS_Tokens.css'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\Resources\Spanish\WorkWithPlusDS_Tokens.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/Resources/Spanish/WorkWithPlusDS_Tokens.css - 200 - text/css 12.3679ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/home.js?202412162348725 - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/messages.spa.js?202412170142868 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/home.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\home.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/home.js?202412162348725 - 200 13695 text/javascript 1.7359ms
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/messages.spa.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\messages.spa.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/messages.spa.js?202412170142868 - 200 194481 text/javascript 23.2054ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/calendar.js?1318140 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /calendar.js was not modified
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/calendar.js?1318140 - 304 - text/javascript 1.5100ms
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Spanish/WWPBaseObjects.WorkWithPlusBaseDS.css'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\Resources\Spanish\WWPBaseObjects.WorkWithPlusBaseDS.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/Resources/Spanish/WWPBaseObjects.WorkWithPlusBaseDS.css - 200 - text/css 50.6017ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/calendar-setup.js?1318140 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /calendar-setup.js was not modified
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/calendar-setup.js?1318140 - 304 - text/javascript 2.0001ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/calendar-es.js?1318140 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /calendar-es.js was not modified
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/calendar-es.js?1318140 - 304 - text/javascript 0.8787ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/Resources/Spanish/AnyStyles.ImagesTokens.css - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/Resources/Spanish/WWPBaseObjects.WorkWithPlusBaseDS_Tokens.css - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Spanish/WWPBaseObjects.WorkWithPlusBaseDS_Tokens.css'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\Resources\Spanish\WWPBaseObjects.WorkWithPlusBaseDS_Tokens.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/Resources/Spanish/WWPBaseObjects.WorkWithPlusBaseDS_Tokens.css - 200 - text/css 3.2811ms
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Spanish/AnyStyles.ImagesTokens.css'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\Resources\Spanish\AnyStyles.ImagesTokens.css'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/Resources/Spanish/AnyStyles.ImagesTokens.css - 200 - text/css 5.4987ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Bootstrap/Shared/slimmenu/jquery.slimmenu.min.js?202412170142868 - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Bootstrap/Shared/DVelopBootstrap.js?202412170142868 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/Bootstrap/Shared/slimmenu/jquery.slimmenu.min.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\Bootstrap\Shared\slimmenu\jquery.slimmenu.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Bootstrap/Shared/slimmenu/jquery.slimmenu.min.js?202412170142868 - 200 3442 text/javascript 1.5770ms
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/Bootstrap/Shared/DVelopBootstrap.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\Bootstrap\Shared\DVelopBootstrap.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Bootstrap/Shared/DVelopBootstrap.js?202412170142868 - 200 162722 text/javascript 13.5435ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Shared/WorkWithPlusCommon.js?202412170142868 - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/DVHorizontalMenu/DVHorizontalMenuRender.js?202412170142868 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/DVHorizontalMenu/DVHorizontalMenuRender.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\DVHorizontalMenu\DVHorizontalMenuRender.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/DVHorizontalMenu/DVHorizontalMenuRender.js?202412170142868 - 200 11357 text/javascript 1.6195ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Bootstrap/DropDownOptions/BootstrapDropDownOptionsRender.js?202412170142868 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/Shared/WorkWithPlusCommon.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\Shared\WorkWithPlusCommon.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Shared/WorkWithPlusCommon.js?202412170142868 - 200 38383 text/javascript 2.9312ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/DVMessage/pnotify.custom.js?202412170142868 - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/DVMessage/DVMessageRender.js?202412170142868 - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Bootstrap/Tooltip/BootstrapTooltipRender.js?202412170142868 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/Bootstrap/DropDownOptions/BootstrapDropDownOptionsRender.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\Bootstrap\DropDownOptions\BootstrapDropDownOptionsRender.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Bootstrap/DropDownOptions/BootstrapDropDownOptionsRender.js?202412170142868 - 200 29342 text/javascript 5.5596ms
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/Bootstrap/Tooltip/BootstrapTooltipRender.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\Bootstrap\Tooltip\BootstrapTooltipRender.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Bootstrap/Tooltip/BootstrapTooltipRender.js?202412170142868 - 200 5930 text/javascript 1.7694ms
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/DVMessage/DVMessageRender.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\DVMessage\DVMessageRender.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/DVMessage/DVMessageRender.js?202412170142868 - 200 14492 text/javascript 2.0996ms
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/DVMessage/pnotify.custom.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\DVMessage\pnotify.custom.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/DVMessage/pnotify.custom.js?202412170142868 - 200 80823 text/javascript 6.8640ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Mask/jquery.mask.js?202412170142868 - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/WorkWithPlusUtilities/BootstrapSelect.js?202412170142868 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/Mask/jquery.mask.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\Mask\jquery.mask.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Mask/jquery.mask.js?202412170142868 - 200 23979 text/javascript 6.0403ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/WorkWithPlusUtilities/WorkWithPlusUtilitiesRender.js?202412170142868 - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Shared/daterangepicker/locales.js?202412170142868 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/Shared/daterangepicker/locales.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\Shared\daterangepicker\locales.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Shared/daterangepicker/locales.js?202412170142868 - 200 6282 text/javascript 5.6358ms
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/WorkWithPlusUtilities/BootstrapSelect.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\WorkWithPlusUtilities\BootstrapSelect.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/WorkWithPlusUtilities/BootstrapSelect.js?202412170142868 - 200 52902 text/javascript 21.7961ms
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/WorkWithPlusUtilities/WorkWithPlusUtilitiesRender.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\WorkWithPlusUtilities\WorkWithPlusUtilitiesRender.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/WorkWithPlusUtilities/WorkWithPlusUtilitiesRender.js?202412170142868 - 200 47662 text/javascript 7.4183ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Shared/daterangepicker/wwp-daterangepicker.js?202412170142868 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/Shared/daterangepicker/wwp-daterangepicker.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\Shared\daterangepicker\wwp-daterangepicker.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Shared/daterangepicker/wwp-daterangepicker.js?202412170142868 - 200 10821 text/javascript 3.5772ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Shared/daterangepicker/moment.min.js?202412170142868 - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Shared/daterangepicker/daterangepicker.min.js?202412170142868 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/Shared/daterangepicker/moment.min.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\Shared\daterangepicker\moment.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Shared/daterangepicker/moment.min.js?202412170142868 - 200 59101 text/javascript 8.2689ms
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/Shared/daterangepicker/daterangepicker.min.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\Shared\daterangepicker\daterangepicker.min.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Shared/daterangepicker/daterangepicker.min.js?202412170142868 - 200 62418 text/javascript 9.2148ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/DatePicker/DatePickerRender.js?202412170142868 - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Popover/WWPPopoverRender.js?202412170142868 - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/wwpbaseobjects/workwithplusmasterpage.js?20241217053970 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/wwpbaseobjects/workwithplusmasterpage.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\wwpbaseobjects\workwithplusmasterpage.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/wwpbaseobjects/workwithplusmasterpage.js?20241217053970 - 200 26628 text/javascript 3.2589ms
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/Popover/WWPPopoverRender.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\Popover\WWPPopoverRender.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/Popover/WWPPopoverRender.js?202412170142868 - 200 16392 text/javascript 3.7127ms
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DVelop/DatePicker/DatePickerRender.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\DVelop\DatePicker\DatePickerRender.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/DVelop/DatePicker/DatePickerRender.js?202412170142868 - 200 3134 text/javascript 4.2368ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/DesignSystemNETMySQL/home.aspx?c01d04b1610243d2a2af23e7952e8b18b80e98f42ed1bf0f7977f8d2f4bf344c,gx-no-cache=1734405311451 - application/json 2497
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/DesignSystemNETMySQL/home.aspx?c01d04b1610243d2a2af23e7952e8b18b80e98f42ed1bf0f7977f8d2f4bf344c,gx-no-cache=1734405311451 - 200 - application/json 68.7445ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/DesignSystemNETMySQL/home.aspx?c01d04b1610243d2a2af23e7952e8b18b80e98f42ed1bf0f7977f8d2f4bf344c,gx-no-cache=1734405313377 - application/json 239
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/DesignSystemNETMySQL/home.aspx?c01d04b1610243d2a2af23e7952e8b18b80e98f42ed1bf0f7977f8d2f4bf344c,gx-no-cache=1734405313377 - 200 - application/json 1713.6577ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/UserControls/WWP_IconButtonRender.js?202412170142868 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/UserControls/WWP_IconButtonRender.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\UserControls\WWP_IconButtonRender.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/UserControls/WWP_IconButtonRender.js?202412170142868 - 200 1728 text/javascript 0.7780ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/wwpbaseobjects/wwp_masterpagetopactionswc.js?2024121623355449 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/wwpbaseobjects/wwp_masterpagetopactionswc.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\wwpbaseobjects\wwp_masterpagetopactionswc.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/wwpbaseobjects/wwp_masterpagetopactionswc.js?2024121623355449 - 200 8217 text/javascript 1.3808ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/DesignSystemNETMySQL/home.aspx?c01d04b1610243d2a2af23e7952e8b18b80e98f42ed1bf0f7977f8d2f4bf344c,gx-no-cache=1734405316365 - application/json 177
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/DesignSystemNETMySQL/home.aspx?c01d04b1610243d2a2af23e7952e8b18b80e98f42ed1bf0f7977f8d2f4bf344c,gx-no-cache=1734405316365 - 200 - application/json 4.3369ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/dslogin.aspx - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/dslogin.aspx - 200 - text/html 4930.2583ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/dslogin.js?2024121623463339 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/dslogin.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\dslogin.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/dslogin.js?2024121623463339 - 200 23503 text/javascript 2.5981ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/wwpbaseobjects/workwithplusmasterpageempty.js?202412162348435 - - -
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/wwpbaseobjects/workwithplusmasterpageempty.js'. Physical path: 'C:\PROYECTOS\KBs\Design System\NETMySQL002\web\wwpbaseobjects\workwithplusmasterpageempty.js'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/wwpbaseobjects/workwithplusmasterpageempty.js?202412162348435 - 200 10810 text/javascript 1.0275ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/DesignSystemNETMySQL/dslogin.aspx?c01d04b1610243d2a2af23e7952e8b18b80e98f42ed1bf0f7977f8d2f4bf344c,gx-no-cache=1734405325092 - application/json 258
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/DesignSystemNETMySQL/dslogin.aspx?c01d04b1610243d2a2af23e7952e8b18b80e98f42ed1bf0f7977f8d2f4bf344c,gx-no-cache=1734405325092 - 200 - application/json 5435.0189ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/home.aspx - - -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost/DesignSystemNETMySQL/home.aspx - 200 - text/html 3271.4107ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost/DesignSystemNETMySQL/home.aspx?c01d04b1610243d2a2af23e7952e8b18b80e98f42ed1bf0f7977f8d2f4bf344c,gx-no-cache=1734405334145 - application/json 2497
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost/DesignSystemNETMySQL/home.aspx?c01d04b1610243d2a2af23e7952e8b18b80e98f42ed1bf0f7977f8d2f4bf344c,gx-no-cache=1734405334145 - 200 - application/json 3.9235ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://127.0.0.1:11779/DESIGNSYSTEMNETMYSQL/iisintegration - - 0
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://127.0.0.1:11779/DESIGNSYSTEMNETMYSQL/iisintegration - 202 0 - 0.8767ms

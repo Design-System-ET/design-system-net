@@ -1,0 +1,2 @@
+function a(a){return{name:"Node REPL",contains:[{className:"meta.prompt",starts:{end:/ |$/,starts:{end:"$",subLanguage:"javascript"}},variants:[{begin:/^>(?=[ ]|$)/},{begin:/^\.\.\.(?=[ ]|$)/}]}]}}export{a as default};
+//# sourceMappingURL=p-c4e8126a.js.map

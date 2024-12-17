@@ -1,0 +1,50 @@
+{
+	"Name": "GeneXusUnanimo.Switch",
+	"Target": "",
+	"IsControlType": true,
+	"Template": "<div class=\"switch-container\" tabindex=\"0\">    <input type=\"checkbox\" role=\"switch\" {{DataElement}} {{^Enabled}}disabled{{/Enabled}} />    <label></label></div>", 
+	"Events": [
+		{
+			"Name": "ControlValueChanged",
+			"On": "controlvaluechanged",
+			"Parameters": ""
+		} 
+	],
+	"Properties": [
+		{
+			"Id": "Enabled",
+			"Name": "Enabled",
+			"Type": "boolean",
+			"Default": "True"
+		} ,
+		{
+			"Id": "AttID",
+			"Name": "Attribute",
+			"Type": "boolean",
+			"Default": ""
+		} 
+	],
+	"Methods": {
+		"Public": [
+		],
+		"Private": [
+		]
+	},
+	"Scripts": {
+		"AfterShow": [
+			{
+				"Name": "init",
+				"Source": "  	const UC = this;	const containerEl = document.getElementById(UC.ContainerName);	var el = containerEl.getElementsByTagName(\"input\")[0];	var label = containerEl.getElementsByTagName(\"label\")[0];	el.setAttribute(\"id\", \"switch\" + UC.ControlId);	el.setAttribute(\"aria-checked\", el.checked)	label.setAttribute(\"for\", \"switch\" + UC.ControlId);	label.innerHTML = \"switch\" + UC.ControlId;		const controlValueChanged = function(){		if (UC.ControlValueChanged){			el.setAttribute(\"aria-checked\", UC.getAttribute())			UC.ControlValueChanged()		}	}		el.addEventListener(\"change\", controlValueChanged);	containerEl.addEventListener(\"keydown\", function(ev){		if (ev.code == \"Space\" || ev.code == \"Enter\") {			el.checked = !el.checked			UC.setAttribute(el.checked)			controlValueChanged();		}	})  ",
+				"AngularLocation": ""
+			} 
+		],
+		"BeforeShow": [
+		]
+	},
+	"Dependencies": [
+	],
+	"Imports": [
+	],
+	"Styles": [
+	]
+}

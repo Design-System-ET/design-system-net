@@ -1,0 +1,416 @@
+@layer AnyStylesImagesTokens {
+:root
+{
+	--GX-Image_SelectRow : url(../SelectRow.png);
+	--GX-Image_GAM_GAMButtonFacebook : url(../GAM.GAMButtonFacebook.png);
+	--GX-Image_GAM_GAMButtonTwitterSmall : url(../GAM.GAMButtonTwitterSmall.png);
+	--GX-Image_GAM_GAMButtonTwitter : url(../GAM.GAMButtonTwitter.png);
+	--GX-Image_GAM_GAMButtonGoogle : url(../GAM.GAMButtonGoogle.png);
+	--GX-Image_GAM_GAMButtonGoogleSmall : url(../GAM.GAMButtonGoogleSmall.png);
+	--GX-Image_GAM_GAMButtonGAMRemoteSmall : url(../GAM.GAMButtonGAMRemoteSmall.png);
+	--GX-Image_GAM_GAMButtonGAMRemote : url(../GAM.GAMButtonGAMRemote.png);
+	--GX-Image_ActionNewDynamicFilter : url(../ActionNewDynamicFilter.png);
+	--GX-Image_ActionRemoveDynamicFilter : url(../ActionRemoveDynamicFilter.png);
+	--GX-Image_Avatar : url(../Avatar.png);
+	--GX-Image_Logo : url(../Logo.png);
+	--GX-Image_LogoLogin : url(../LogoLogin.png);
+	--GX-Image_LoginImageDark : url(../LoginImageDark.jpg);
+	--GX-Image_Favicon : url(../Favicon.png);
+	--GX-Image_ChineseIcon : url(../ChineseIcon.png);
+	--GX-Image_EnglishIcon : url(../EnglishIcon.png);
+	--GX-Image_GermanIcon : url(../GermanIcon.png);
+	--GX-Image_ItalianIcon : url(../ItalianIcon.png);
+	--GX-Image_JapaneseIcon : url(../JapaneseIcon.png);
+	--GX-Image_PortugueseIcon : url(../PortugueseIcon.png);
+	--GX-Image_SpanishIcon : url(../SpanishIcon.png);
+	--GX-Image_ArabicIcon : url(../ArabicIcon.png);
+	--GX-Image_StepSelectedUnSelected : url(../StepSelectedUnSelected.png);
+	--GX-Image_StepUnSelectedSelected : url(../StepUnSelectedSelected.png);
+	--GX-Image_WizardCompleted : url(../WizardCompleted.png);
+	--GX-Image_DVelopComboCollapse : url(../DVelopComboCollapse.png);
+	--GX-Image_DVelopComboExpand : url(../DVelopComboExpand.png);
+	--GX-Image_PromptMultipleSelection : url(../PromptMultipleSelection.png);
+	--GX-Image_BackgroundImage : url(../BackgroundImage.png);
+	--GX-Image_LoadingResults : url(../LoadingResults.gif);
+	--GX-Image_PanelCardGray_Expand : url(../PanelCardGray_Expand.png);
+	--GX-Image_AttHelpIcon : url(../AttHelpIcon.png);
+	--GX-Image_ErrorIcon : url(../ErrorIcon.png);
+	--GX-Image_WarningIcon : url(../WarningIcon.png);
+	--GX-Image_ActionDisplay : url(../ActionDisplay.png);
+	--GX-Image_Geolocation : url(../Geolocation.png);
+	--GX-Image_PageFirst : url(../PageFirst.png);
+	--GX-Image_PageLast : url(../PageLast.png);
+	--GX-Image_PageNext : url(../PageNext.png);
+	--GX-Image_PagePrevious : url(../PagePrevious.png);
+	--GX-Image_BtnDeleteImage : url(../BtnDeleteImage.png);
+	--GX-Image_BtnDisplayImage : url(../BtnDisplayImage.png);
+	--GX-Image_BtnUpdateImage : url(../BtnUpdateImage.png);
+	--GX-Image_ActionExport : url(../ActionExport.png);
+	--GX-Image_MultimediaClear : url(../MultimediaClear.png);
+	--GX-Image_MultimediaEdit : url(../MultimediaEdit.png);
+	--GX-Image_PlaceHolderVideo : url(../PlaceHolderVideo.png);
+	--GX-Image_PlaceHolderImage : url(../PlaceHolderImage.png);
+	--GX-Image_PlaceHolderAudio : url(../PlaceHolderAudio.png);
+	--GX-Image_VideoDownload : url(../VideoDownload.png);
+	--GX-Image_ActionDelete : url(../ActionDelete.png);
+	--GX-Image_WizardStepChecked : url(../WizardStepChecked.png);
+	--GX-Image_ActionCancel : url(../ActionCancel.png);
+	--GX-Image_HomeModulesBackground1 : url(../HomeModulesBackground1.jpg);
+	--GX-Image_HomeModulesBackground2 : url(../HomeModulesBackground2.jpg);
+	--GX-Image_HomeModulesBackground3 : url(../HomeModulesBackground3.jpg);
+	--GX-Image_HomeModulesBackground4 : url(../HomeModulesBackground4.jpg);
+	--GX-Image_HomeModulesBackground5 : url(../HomeModulesBackground5.jpg);
+	--GX-Image_HomeModulesBackground6 : url(../HomeModulesBackground6.jpg);
+	--GX-Image_ActionUpdate : url(../ActionUpdate.png);
+	--GX-Image_DDODefault : url(../DDODefault.png);
+	--GX-Image_DDOFiltered : url(../DDOFiltered.png);
+	--GX-Image_DDOFilteredSortedASC : url(../DDOFilteredSortedASC.png);
+	--GX-Image_DDOFilteredSortedDSC : url(../DDOFilteredSortedDSC.png);
+	--GX-Image_DDOMultiselOption : url(../DDOMultiselOption.png);
+	--GX-Image_DDOMultiselSelOption : url(../DDOMultiselSelOption.png);
+	--GX-Image_DDOOptionApplyFilter : url(../DDOOptionApplyFilter.png);
+	--GX-Image_DDOOptionCleanFilters : url(../DDOOptionCleanFilters.png);
+	--GX-Image_DDOOptionFilteringData : url(../DDOOptionFilteringData.gif);
+	--GX-Image_DDOOptionSortASC : url(../DDOOptionSortASC.png);
+	--GX-Image_DDOOptionSortDSC : url(../DDOOptionSortDSC.png);
+	--GX-Image_DDOSelectedOption : url(../DDOSelectedOption.png);
+	--GX-Image_DDOSortedASC : url(../DDOSortedASC.png);
+	--GX-Image_DDOSortedDSC : url(../DDOSortedDSC.png);
+	--GX-Image_ActionBack : url(../ActionBack.png);
+	--GX-Image_ActionSave : url(../ActionSave.png);
+	--GX-Image_ActionExportReport : url(../ActionExportReport.png);
+	--GX-Image_MoveDown : url(../MoveDown.png);
+	--GX-Image_MoveUp : url(../MoveUp.png);
+	--GX-Image_ActionFiltersSave : url(../ActionFiltersSave.png);
+	--GX-Image_ActionFiltersClean : url(../ActionFiltersClean.png);
+	--GX-Image_ActionManageFilters : url(../ActionManageFilters.png);
+	--GX-Image_ActionManage : url(../ActionManage.png);
+	--GX-Image_ClosePrompt : url(../ClosePrompt.png);
+	--GX-Image_calendar : url(../calendar.png);
+	--GX-Image_DeleteRow : url(../DeleteRow.gif);
+	--GX-Image_prompt : url(../prompt.png);
+	--GX-Image_UndeleteRow : url(../UndeleteRow.gif);
+	--GX-Image_RequiredTriangle : url(../RequiredTriangle.gif);
+	--GX-Image_ActionCopyRecord : url(../ActionCopyRecord.jpg);
+	--GX-Image_AssociationItemsLeft : url(../AssociationItemsLeft.png);
+	--GX-Image_AssociationItemsRight : url(../AssociationItemsRight.png);
+	--GX-Image_AssociationRight : url(../AssociationRight.png);
+	--GX-Image_AssociationLeft : url(../AssociationLeft.png);
+	--GX-Image_HomeBannerImageSample : url(../HomeBannerImageSample.png);
+	--GX-Image_ActionAdd : url(../ActionAdd.png);
+	--GX-Image_ActionCSV : url(../ActionCSV.png);
+	--GX-Image_MoreInfoContact : url(../MoreInfoContact.png);
+	--GX-Image_LogoHeader : url(../LogoHeader.jpg);
+	--GX-Image_Separator : url(../Separator.jpg);
+	--GX-Image_MainNumbers_Icon1 : url(../MainNumbers_Icon1.png);
+	--GX-Image_MainNumbers_Icon2 : url(../MainNumbers_Icon2.png);
+	--GX-Image_MainNumbers_Icon3 : url(../MainNumbers_Icon3.png);
+	--GX-Image_LandingPurusServices : url(../LandingPurusServices.jpg);
+	--GX-Image_LandindPurusFeaturesLeft : url(../LandindPurusFeaturesLeft.png);
+	--GX-Image_LandingPurusFeaturesCenter : url(../LandingPurusFeaturesCenter.png);
+	--GX-Image_LandingPurusFeaturesRight : url(../LandingPurusFeaturesRight.png);
+	--GX-Image_LandingPurusStudioSAP : url(../LandingPurusStudioSAP.png);
+	--GX-Image_LandingPurusStudioCloud : url(../LandingPurusStudioCloud.png);
+	--GX-Image_LandingPurusStudioBPM : url(../LandingPurusStudioBPM.png);
+	--GX-Image_LandingPurusStudioBI : url(../LandingPurusStudioBI.png);
+	--GX-Image_LandingPurusStudioWeb : url(../LandingPurusStudioWeb.png);
+	--GX-Image_LandingPurusStudioUXUI : url(../LandingPurusStudioUXUI.png);
+	--GX-Image_LandingPurusStudioMobile : url(../LandingPurusStudioMobile.png);
+	--GX-Image_LandingPurusTestimonialsBackground : url(../LandingPurusTestimonialsBackground.jpg);
+	--GX-Image_LandindPurusContactBackground : url(../LandindPurusContactBackground.jpg);
+	--GX-Image_LandingPurusCustomersBackground : url(../LandingPurusCustomersBackground.jpg);
+	--GX-Image_GeneXusAlliance : url(../GeneXusAlliance.png);
+	--GX-Image_GeneXusCloud : url(../GeneXusCloud.png);
+	--GX-Image_GeneXusGXFlow : url(../GeneXusGXFlow.png);
+	--GX-Image_GeneXusGXPortal : url(../GeneXusGXPortal.png);
+	--GX-Image_GeneXusGXQuery : url(../GeneXusGXQuery.png);
+	--GX-Image_GeneXusLogo : url(../GeneXusLogo.png);
+	--GX-Image_GeneXusServer : url(../GeneXusServer.png);
+	--GX-Image_GeneXusforSAP : url(../GeneXusforSAP.png);
+	--GX-Image_GXAccessManager : url(../GXAccessManager.png);
+	--GX-Image_GXBPM : url(../GXBPM.png);
+	--GX-Image_GXTest : url(../GXTest.png);
+	--GX-Image_GXTraining : url(../GXTraining.png);
+	--GX-Image_Logo_WorkWithPlus_Audit : url(../Logo_WorkWithPlus_Audit.png);
+	--GX-Image_Logo_WorkWithPlus_BI : url(../Logo_WorkWithPlus_BI.png);
+	--GX-Image_Logo_WorkWithPlus_SD : url(../Logo_WorkWithPlus_SD.png);
+	--GX-Image_Logo_WorkWithPlus_Suite : url(../Logo_WorkWithPlus_Suite.png);
+	--GX-Image_Logo_WorkWithPlus_VideoCall : url(../Logo_WorkWithPlus_VideoCall.png);
+	--GX-Image_Logo_WorkWithPlus_Web : url(../Logo_WorkWithPlus_Web.png);
+	--GX-Image_NotAuthorizedImage : url(../NotAuthorizedImage.png);
+	--GX-Image_GAMActionMenu : url(../GAMActionMenu.png);
+	--GX-Image_contacto : url(../contacto.png);
+	--GX-Image_c : url(../c.png);
+	--GX-Image_css : url(../css.png);
+	--GX-Image_genexus : url(../genexus.png);
+	--GX-Image_html : url(../html.png);
+	--GX-Image_java : url(../java.png);
+	--GX-Image_javascript : url(../javascript.png);
+	--GX-Image_python : url(../python.png);
+	--GX-Image_springboot : url(../springboot.png);
+	--GX-Image_android : url(../android.png);
+	--GX-Image_slogan_head : url(../slogan_head.png);
+	--GX-Image_wwpweb : url(../wwpweb.png);
+	--GX-Image_wwpsd : url(../wwpsd.png);
+	--GX-Image_basedatos : url(../basedatos.png);
+	--GX-Image_Logo_Small : url(../Logo_Small.png);
+	--GX-Image_Gente_Trabajando : url(../Gente_Trabajando.jpg);
+	--GX-Image_EnfoqueCliente : url(../EnfoqueCliente.png);
+	--GX-Image_TecnologiaServicio : url(../TecnologiaServicio.png);
+	--GX-Image_Compromiso : url(../Compromiso.png);
+	--GX-Image_ImgProductos : url(../ImgProductos.png);
+	--GX-Image_LogoModerno : url(../LogoModerno.png);
+	--GX-Image_bg_header : url(images/bg_header.gif);
+	--GX-Image_bg_recents : url(images/bg_recents.gif);
+	--GX-Image_fondoBoton : url(images/fondoBoton.gif);
+	--GX-Image_boton_fondoblanco_150 : url(images/boton-fondoblanco-150.gif);
+	--GX-Image_selectedTab : url(images/selectedTab.gif);
+	--GX-Image_unSelectedTab : url(images/unSelectedTab.gif);
+	--GX-Image_menuarrow : url(menuarrow.gif);
+	--GX-Image_LandindPurusContactBackgroundBanner : url(../LandindPurusContactBackgroundBanner.jpg);
+	--GX-Image_WWPBaseObjects_sitios : url(../WWPBaseObjects.sitios.png);
+	--GX-Image_WWPBaseObjects_InfoContact : url(../WWPBaseObjects.InfoContact.png);
+	--GX-Image_WWPBaseObjects_ImgSitioWeb : url(../WWPBaseObjects.ImgSitioWeb.png);
+	--GX-Image_WWPBaseObjects_BackSitio : url(../WWPBaseObjects.BackSitio.png);
+	--GX-Image_Ecommerce : url(../Ecommerce.jpeg);
+	--GX-Image_WWPBaseObjects_ImgBlog : url(../WWPBaseObjects.ImgBlog.jpeg);
+	--GX-Image_WWPBaseObjects_Noticias : url(../WWPBaseObjects.Noticias.jpg);
+	--GX-Image_WWPBaseObjects_Coporativas : url(../WWPBaseObjects.Coporativas.jpeg);
+	--GX-Image_WWPBaseObjects_Portafolio : url(../WWPBaseObjects.Portafolio.jpeg);
+	--GX-Image_WWPBaseObjects_Background_Blur : url(../WWPBaseObjects.Background_Blur.jpg);
+	--GX-Image_WWPBaseObjects_BackgroundAzul : url(../WWPBaseObjects.BackgroundAzul.jpg);
+	--GX-Image_DegradoAzul : url(../DegradoAzul.jpg);
+	--GX-Image_Lineas : url(../Lineas.png);
+	--GX-Image_Lineas_Dobles : url(../Lineas_Dobles.png);
+	--GX-Image_LandingPage : url(../LandingPage.jpg);
+	--GX-Image_landign : url(../landign.png);
+	--GX-Image_landingPageLeads : url(../landingPageLeads.png);
+	--GX-Image_landingPageVentas : url(../landingPageVentas.png);
+	--GX-Image_landingPageEventos : url(../landingPageEventos.png);
+	--GX-Image_WWPBaseObjects_CrearLanding : url(../WWPBaseObjects.CrearLanding.png);
+	--GX-Image_LandinP : url(../LandinP.jpg);
+	--GX-Image_ApiServiceBack : url(../ApiServiceBack.jpg);
+	--GX-Image_GestionAPI : url(../GestionAPI.jpg);
+	--GX-Image_queAPI : url(../queAPI.png);
+	--GX-Image_apiBanner : url(../apiBanner.jpg);
+	--GX-Image_ApiFunction : url(../ApiFunction.png);
+	--GX-Image_codigoJava : url(../codigoJava.jpg);
+	--GX-Image_appMobileBackground : url(../appMobileBackground.jpg);
+	--GX-Image_appDesglose : url(../appDesglose.png);
+	--GX-Image_Movil : url(../Movil.png);
+	--GX-Image_appNegocio : url(../appNegocio.png);
+	--GX-Image_appVentas : url(../appVentas.png);
+	--GX-Image_appBlog : url(../appBlog.png);
+	--GX-Image_appNativa : url(../appNativa.png);
+	--GX-Image_appHibrida : url(../appHibrida.png);
+	--GX-Image_appPwa : url(../appPwa.png);
+	--GX-Image_appMobileBack : url(../appMobileBack.jpg);
+	--GX-Image_Desarrollo : url(../Desarrollo.png);
+}
+
+.GX_Image_SelectRow_Class{content: var(--GX-Image_SelectRow);}
+.GX_Image_GAM_GAMButtonFacebook_Class{content: var(--GX-Image_GAM_GAMButtonFacebook);}
+.GX_Image_GAM_GAMButtonTwitterSmall_Class{content: var(--GX-Image_GAM_GAMButtonTwitterSmall);}
+.GX_Image_GAM_GAMButtonTwitter_Class{content: var(--GX-Image_GAM_GAMButtonTwitter);}
+.GX_Image_GAM_GAMButtonGoogle_Class{content: var(--GX-Image_GAM_GAMButtonGoogle);}
+.GX_Image_GAM_GAMButtonGoogleSmall_Class{content: var(--GX-Image_GAM_GAMButtonGoogleSmall);}
+.GX_Image_GAM_GAMButtonGAMRemoteSmall_Class{content: var(--GX-Image_GAM_GAMButtonGAMRemoteSmall);}
+.GX_Image_GAM_GAMButtonGAMRemote_Class{content: var(--GX-Image_GAM_GAMButtonGAMRemote);}
+.GX_Image_ActionNewDynamicFilter_Class{content: var(--GX-Image_ActionNewDynamicFilter);}
+.GX_Image_ActionRemoveDynamicFilter_Class{content: var(--GX-Image_ActionRemoveDynamicFilter);}
+.GX_Image_Avatar_Class{content: var(--GX-Image_Avatar);}
+.GX_Image_Logo_Class{content: var(--GX-Image_Logo);}
+.GX_Image_LogoLogin_Class{content: var(--GX-Image_LogoLogin);}
+.GX_Image_LoginImageDark_Class{content: var(--GX-Image_LoginImageDark);}
+.GX_Image_Favicon_Class{content: var(--GX-Image_Favicon);}
+.GX_Image_ChineseIcon_Class{content: var(--GX-Image_ChineseIcon);}
+.GX_Image_EnglishIcon_Class{content: var(--GX-Image_EnglishIcon);}
+.GX_Image_GermanIcon_Class{content: var(--GX-Image_GermanIcon);}
+.GX_Image_ItalianIcon_Class{content: var(--GX-Image_ItalianIcon);}
+.GX_Image_JapaneseIcon_Class{content: var(--GX-Image_JapaneseIcon);}
+.GX_Image_PortugueseIcon_Class{content: var(--GX-Image_PortugueseIcon);}
+.GX_Image_SpanishIcon_Class{content: var(--GX-Image_SpanishIcon);}
+.GX_Image_ArabicIcon_Class{content: var(--GX-Image_ArabicIcon);}
+.GX_Image_StepSelectedUnSelected_Class{content: var(--GX-Image_StepSelectedUnSelected);}
+.GX_Image_StepUnSelectedSelected_Class{content: var(--GX-Image_StepUnSelectedSelected);}
+.GX_Image_WizardCompleted_Class{content: var(--GX-Image_WizardCompleted);}
+.GX_Image_DVelopComboCollapse_Class{content: var(--GX-Image_DVelopComboCollapse);}
+.GX_Image_DVelopComboExpand_Class{content: var(--GX-Image_DVelopComboExpand);}
+.GX_Image_PromptMultipleSelection_Class{content: var(--GX-Image_PromptMultipleSelection);}
+.GX_Image_BackgroundImage_Class{content: var(--GX-Image_BackgroundImage);}
+.GX_Image_LoadingResults_Class{content: var(--GX-Image_LoadingResults);}
+.GX_Image_PanelCardGray_Expand_Class{content: var(--GX-Image_PanelCardGray_Expand);}
+.GX_Image_AttHelpIcon_Class{content: var(--GX-Image_AttHelpIcon);}
+.GX_Image_ErrorIcon_Class{content: var(--GX-Image_ErrorIcon);}
+.GX_Image_WarningIcon_Class{content: var(--GX-Image_WarningIcon);}
+.GX_Image_ActionDisplay_Class{content: var(--GX-Image_ActionDisplay);}
+.GX_Image_Geolocation_Class{content: var(--GX-Image_Geolocation);}
+.GX_Image_PageFirst_Class{content: var(--GX-Image_PageFirst);}
+.GX_Image_PageLast_Class{content: var(--GX-Image_PageLast);}
+.GX_Image_PageNext_Class{content: var(--GX-Image_PageNext);}
+.GX_Image_PagePrevious_Class{content: var(--GX-Image_PagePrevious);}
+.GX_Image_BtnDeleteImage_Class{content: var(--GX-Image_BtnDeleteImage);}
+.GX_Image_BtnDisplayImage_Class{content: var(--GX-Image_BtnDisplayImage);}
+.GX_Image_BtnUpdateImage_Class{content: var(--GX-Image_BtnUpdateImage);}
+.GX_Image_ActionExport_Class{content: var(--GX-Image_ActionExport);}
+.GX_Image_MultimediaClear_Class{content: var(--GX-Image_MultimediaClear);}
+.GX_Image_MultimediaEdit_Class{content: var(--GX-Image_MultimediaEdit);}
+.GX_Image_PlaceHolderVideo_Class{content: var(--GX-Image_PlaceHolderVideo);}
+.GX_Image_PlaceHolderImage_Class{content: var(--GX-Image_PlaceHolderImage);}
+.GX_Image_PlaceHolderAudio_Class{content: var(--GX-Image_PlaceHolderAudio);}
+.GX_Image_VideoDownload_Class{content: var(--GX-Image_VideoDownload);}
+.GX_Image_ActionDelete_Class{content: var(--GX-Image_ActionDelete);}
+.GX_Image_WizardStepChecked_Class{content: var(--GX-Image_WizardStepChecked);}
+.GX_Image_ActionCancel_Class{content: var(--GX-Image_ActionCancel);}
+.GX_Image_HomeModulesBackground1_Class{content: var(--GX-Image_HomeModulesBackground1);}
+.GX_Image_HomeModulesBackground2_Class{content: var(--GX-Image_HomeModulesBackground2);}
+.GX_Image_HomeModulesBackground3_Class{content: var(--GX-Image_HomeModulesBackground3);}
+.GX_Image_HomeModulesBackground4_Class{content: var(--GX-Image_HomeModulesBackground4);}
+.GX_Image_HomeModulesBackground5_Class{content: var(--GX-Image_HomeModulesBackground5);}
+.GX_Image_HomeModulesBackground6_Class{content: var(--GX-Image_HomeModulesBackground6);}
+.GX_Image_ActionUpdate_Class{content: var(--GX-Image_ActionUpdate);}
+.GX_Image_DDODefault_Class{content: var(--GX-Image_DDODefault);}
+.GX_Image_DDOFiltered_Class{content: var(--GX-Image_DDOFiltered);}
+.GX_Image_DDOFilteredSortedASC_Class{content: var(--GX-Image_DDOFilteredSortedASC);}
+.GX_Image_DDOFilteredSortedDSC_Class{content: var(--GX-Image_DDOFilteredSortedDSC);}
+.GX_Image_DDOMultiselOption_Class{content: var(--GX-Image_DDOMultiselOption);}
+.GX_Image_DDOMultiselSelOption_Class{content: var(--GX-Image_DDOMultiselSelOption);}
+.GX_Image_DDOOptionApplyFilter_Class{content: var(--GX-Image_DDOOptionApplyFilter);}
+.GX_Image_DDOOptionCleanFilters_Class{content: var(--GX-Image_DDOOptionCleanFilters);}
+.GX_Image_DDOOptionFilteringData_Class{content: var(--GX-Image_DDOOptionFilteringData);}
+.GX_Image_DDOOptionSortASC_Class{content: var(--GX-Image_DDOOptionSortASC);}
+.GX_Image_DDOOptionSortDSC_Class{content: var(--GX-Image_DDOOptionSortDSC);}
+.GX_Image_DDOSelectedOption_Class{content: var(--GX-Image_DDOSelectedOption);}
+.GX_Image_DDOSortedASC_Class{content: var(--GX-Image_DDOSortedASC);}
+.GX_Image_DDOSortedDSC_Class{content: var(--GX-Image_DDOSortedDSC);}
+.GX_Image_ActionBack_Class{content: var(--GX-Image_ActionBack);}
+.GX_Image_ActionSave_Class{content: var(--GX-Image_ActionSave);}
+.GX_Image_ActionExportReport_Class{content: var(--GX-Image_ActionExportReport);}
+.GX_Image_MoveDown_Class{content: var(--GX-Image_MoveDown);}
+.GX_Image_MoveUp_Class{content: var(--GX-Image_MoveUp);}
+.GX_Image_ActionFiltersSave_Class{content: var(--GX-Image_ActionFiltersSave);}
+.GX_Image_ActionFiltersClean_Class{content: var(--GX-Image_ActionFiltersClean);}
+.GX_Image_ActionManageFilters_Class{content: var(--GX-Image_ActionManageFilters);}
+.GX_Image_ActionManage_Class{content: var(--GX-Image_ActionManage);}
+.GX_Image_ClosePrompt_Class{content: var(--GX-Image_ClosePrompt);}
+.GX_Image_calendar_Class{content: var(--GX-Image_calendar);}
+.GX_Image_DeleteRow_Class{content: var(--GX-Image_DeleteRow);}
+.GX_Image_prompt_Class{content: var(--GX-Image_prompt);}
+.GX_Image_UndeleteRow_Class{content: var(--GX-Image_UndeleteRow);}
+.GX_Image_RequiredTriangle_Class{content: var(--GX-Image_RequiredTriangle);}
+.GX_Image_ActionCopyRecord_Class{content: var(--GX-Image_ActionCopyRecord);}
+.GX_Image_AssociationItemsLeft_Class{content: var(--GX-Image_AssociationItemsLeft);}
+.GX_Image_AssociationItemsRight_Class{content: var(--GX-Image_AssociationItemsRight);}
+.GX_Image_AssociationRight_Class{content: var(--GX-Image_AssociationRight);}
+.GX_Image_AssociationLeft_Class{content: var(--GX-Image_AssociationLeft);}
+.GX_Image_HomeBannerImageSample_Class{content: var(--GX-Image_HomeBannerImageSample);}
+.GX_Image_ActionAdd_Class{content: var(--GX-Image_ActionAdd);}
+.GX_Image_ActionCSV_Class{content: var(--GX-Image_ActionCSV);}
+.GX_Image_MoreInfoContact_Class{content: var(--GX-Image_MoreInfoContact);}
+.GX_Image_LogoHeader_Class{content: var(--GX-Image_LogoHeader);}
+.GX_Image_Separator_Class{content: var(--GX-Image_Separator);}
+.GX_Image_MainNumbers_Icon1_Class{content: var(--GX-Image_MainNumbers_Icon1);}
+.GX_Image_MainNumbers_Icon2_Class{content: var(--GX-Image_MainNumbers_Icon2);}
+.GX_Image_MainNumbers_Icon3_Class{content: var(--GX-Image_MainNumbers_Icon3);}
+.GX_Image_LandingPurusServices_Class{content: var(--GX-Image_LandingPurusServices);}
+.GX_Image_LandindPurusFeaturesLeft_Class{content: var(--GX-Image_LandindPurusFeaturesLeft);}
+.GX_Image_LandingPurusFeaturesCenter_Class{content: var(--GX-Image_LandingPurusFeaturesCenter);}
+.GX_Image_LandingPurusFeaturesRight_Class{content: var(--GX-Image_LandingPurusFeaturesRight);}
+.GX_Image_LandingPurusStudioSAP_Class{content: var(--GX-Image_LandingPurusStudioSAP);}
+.GX_Image_LandingPurusStudioCloud_Class{content: var(--GX-Image_LandingPurusStudioCloud);}
+.GX_Image_LandingPurusStudioBPM_Class{content: var(--GX-Image_LandingPurusStudioBPM);}
+.GX_Image_LandingPurusStudioBI_Class{content: var(--GX-Image_LandingPurusStudioBI);}
+.GX_Image_LandingPurusStudioWeb_Class{content: var(--GX-Image_LandingPurusStudioWeb);}
+.GX_Image_LandingPurusStudioUXUI_Class{content: var(--GX-Image_LandingPurusStudioUXUI);}
+.GX_Image_LandingPurusStudioMobile_Class{content: var(--GX-Image_LandingPurusStudioMobile);}
+.GX_Image_LandingPurusTestimonialsBackground_Class{content: var(--GX-Image_LandingPurusTestimonialsBackground);}
+.GX_Image_LandindPurusContactBackground_Class{content: var(--GX-Image_LandindPurusContactBackground);}
+.GX_Image_LandingPurusCustomersBackground_Class{content: var(--GX-Image_LandingPurusCustomersBackground);}
+.GX_Image_GeneXusAlliance_Class{content: var(--GX-Image_GeneXusAlliance);}
+.GX_Image_GeneXusCloud_Class{content: var(--GX-Image_GeneXusCloud);}
+.GX_Image_GeneXusGXFlow_Class{content: var(--GX-Image_GeneXusGXFlow);}
+.GX_Image_GeneXusGXPortal_Class{content: var(--GX-Image_GeneXusGXPortal);}
+.GX_Image_GeneXusGXQuery_Class{content: var(--GX-Image_GeneXusGXQuery);}
+.GX_Image_GeneXusLogo_Class{content: var(--GX-Image_GeneXusLogo);}
+.GX_Image_GeneXusServer_Class{content: var(--GX-Image_GeneXusServer);}
+.GX_Image_GeneXusforSAP_Class{content: var(--GX-Image_GeneXusforSAP);}
+.GX_Image_GXAccessManager_Class{content: var(--GX-Image_GXAccessManager);}
+.GX_Image_GXBPM_Class{content: var(--GX-Image_GXBPM);}
+.GX_Image_GXTest_Class{content: var(--GX-Image_GXTest);}
+.GX_Image_GXTraining_Class{content: var(--GX-Image_GXTraining);}
+.GX_Image_Logo_WorkWithPlus_Audit_Class{content: var(--GX-Image_Logo_WorkWithPlus_Audit);}
+.GX_Image_Logo_WorkWithPlus_BI_Class{content: var(--GX-Image_Logo_WorkWithPlus_BI);}
+.GX_Image_Logo_WorkWithPlus_SD_Class{content: var(--GX-Image_Logo_WorkWithPlus_SD);}
+.GX_Image_Logo_WorkWithPlus_Suite_Class{content: var(--GX-Image_Logo_WorkWithPlus_Suite);}
+.GX_Image_Logo_WorkWithPlus_VideoCall_Class{content: var(--GX-Image_Logo_WorkWithPlus_VideoCall);}
+.GX_Image_Logo_WorkWithPlus_Web_Class{content: var(--GX-Image_Logo_WorkWithPlus_Web);}
+.GX_Image_NotAuthorizedImage_Class{content: var(--GX-Image_NotAuthorizedImage);}
+.GX_Image_GAMActionMenu_Class{content: var(--GX-Image_GAMActionMenu);}
+.GX_Image_contacto_Class{content: var(--GX-Image_contacto);}
+.GX_Image_c_Class{content: var(--GX-Image_c);}
+.GX_Image_css_Class{content: var(--GX-Image_css);}
+.GX_Image_genexus_Class{content: var(--GX-Image_genexus);}
+.GX_Image_html_Class{content: var(--GX-Image_html);}
+.GX_Image_java_Class{content: var(--GX-Image_java);}
+.GX_Image_javascript_Class{content: var(--GX-Image_javascript);}
+.GX_Image_python_Class{content: var(--GX-Image_python);}
+.GX_Image_springboot_Class{content: var(--GX-Image_springboot);}
+.GX_Image_android_Class{content: var(--GX-Image_android);}
+.GX_Image_slogan_head_Class{content: var(--GX-Image_slogan_head);}
+.GX_Image_wwpweb_Class{content: var(--GX-Image_wwpweb);}
+.GX_Image_wwpsd_Class{content: var(--GX-Image_wwpsd);}
+.GX_Image_basedatos_Class{content: var(--GX-Image_basedatos);}
+.GX_Image_Logo_Small_Class{content: var(--GX-Image_Logo_Small);}
+.GX_Image_Gente_Trabajando_Class{content: var(--GX-Image_Gente_Trabajando);}
+.GX_Image_EnfoqueCliente_Class{content: var(--GX-Image_EnfoqueCliente);}
+.GX_Image_TecnologiaServicio_Class{content: var(--GX-Image_TecnologiaServicio);}
+.GX_Image_Compromiso_Class{content: var(--GX-Image_Compromiso);}
+.GX_Image_ImgProductos_Class{content: var(--GX-Image_ImgProductos);}
+.GX_Image_LogoModerno_Class{content: var(--GX-Image_LogoModerno);}
+.GX_Image_bg_header_Class{content: var(--GX-Image_bg_header);}
+.GX_Image_bg_recents_Class{content: var(--GX-Image_bg_recents);}
+.GX_Image_fondoBoton_Class{content: var(--GX-Image_fondoBoton);}
+.GX_Image_boton_fondoblanco_150_Class{content: var(--GX-Image_boton_fondoblanco_150);}
+.GX_Image_selectedTab_Class{content: var(--GX-Image_selectedTab);}
+.GX_Image_unSelectedTab_Class{content: var(--GX-Image_unSelectedTab);}
+.GX_Image_menuarrow_Class{content: var(--GX-Image_menuarrow);}
+.GX_Image_LandindPurusContactBackgroundBanner_Class{content: var(--GX-Image_LandindPurusContactBackgroundBanner);}
+.GX_Image_WWPBaseObjects_sitios_Class{content: var(--GX-Image_WWPBaseObjects_sitios);}
+.GX_Image_WWPBaseObjects_InfoContact_Class{content: var(--GX-Image_WWPBaseObjects_InfoContact);}
+.GX_Image_WWPBaseObjects_ImgSitioWeb_Class{content: var(--GX-Image_WWPBaseObjects_ImgSitioWeb);}
+.GX_Image_WWPBaseObjects_BackSitio_Class{content: var(--GX-Image_WWPBaseObjects_BackSitio);}
+.GX_Image_Ecommerce_Class{content: var(--GX-Image_Ecommerce);}
+.GX_Image_WWPBaseObjects_ImgBlog_Class{content: var(--GX-Image_WWPBaseObjects_ImgBlog);}
+.GX_Image_WWPBaseObjects_Noticias_Class{content: var(--GX-Image_WWPBaseObjects_Noticias);}
+.GX_Image_WWPBaseObjects_Coporativas_Class{content: var(--GX-Image_WWPBaseObjects_Coporativas);}
+.GX_Image_WWPBaseObjects_Portafolio_Class{content: var(--GX-Image_WWPBaseObjects_Portafolio);}
+.GX_Image_WWPBaseObjects_Background_Blur_Class{content: var(--GX-Image_WWPBaseObjects_Background_Blur);}
+.GX_Image_WWPBaseObjects_BackgroundAzul_Class{content: var(--GX-Image_WWPBaseObjects_BackgroundAzul);}
+.GX_Image_DegradoAzul_Class{content: var(--GX-Image_DegradoAzul);}
+.GX_Image_Lineas_Class{content: var(--GX-Image_Lineas);}
+.GX_Image_Lineas_Dobles_Class{content: var(--GX-Image_Lineas_Dobles);}
+.GX_Image_LandingPage_Class{content: var(--GX-Image_LandingPage);}
+.GX_Image_landign_Class{content: var(--GX-Image_landign);}
+.GX_Image_landingPageLeads_Class{content: var(--GX-Image_landingPageLeads);}
+.GX_Image_landingPageVentas_Class{content: var(--GX-Image_landingPageVentas);}
+.GX_Image_landingPageEventos_Class{content: var(--GX-Image_landingPageEventos);}
+.GX_Image_WWPBaseObjects_CrearLanding_Class{content: var(--GX-Image_WWPBaseObjects_CrearLanding);}
+.GX_Image_LandinP_Class{content: var(--GX-Image_LandinP);}
+.GX_Image_ApiServiceBack_Class{content: var(--GX-Image_ApiServiceBack);}
+.GX_Image_GestionAPI_Class{content: var(--GX-Image_GestionAPI);}
+.GX_Image_queAPI_Class{content: var(--GX-Image_queAPI);}
+.GX_Image_apiBanner_Class{content: var(--GX-Image_apiBanner);}
+.GX_Image_ApiFunction_Class{content: var(--GX-Image_ApiFunction);}
+.GX_Image_codigoJava_Class{content: var(--GX-Image_codigoJava);}
+.GX_Image_appMobileBackground_Class{content: var(--GX-Image_appMobileBackground);}
+.GX_Image_appDesglose_Class{content: var(--GX-Image_appDesglose);}
+.GX_Image_Movil_Class{content: var(--GX-Image_Movil);}
+.GX_Image_appNegocio_Class{content: var(--GX-Image_appNegocio);}
+.GX_Image_appVentas_Class{content: var(--GX-Image_appVentas);}
+.GX_Image_appBlog_Class{content: var(--GX-Image_appBlog);}
+.GX_Image_appNativa_Class{content: var(--GX-Image_appNativa);}
+.GX_Image_appHibrida_Class{content: var(--GX-Image_appHibrida);}
+.GX_Image_appPwa_Class{content: var(--GX-Image_appPwa);}
+.GX_Image_appMobileBack_Class{content: var(--GX-Image_appMobileBack);}
+.GX_Image_Desarrollo_Class{content: var(--GX-Image_Desarrollo);}
+}

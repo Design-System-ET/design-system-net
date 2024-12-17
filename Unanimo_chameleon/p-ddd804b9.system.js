@@ -1,0 +1,2 @@
+System.register([],(function(t){"use strict";return{execute:function(){t("default",e);function e(t){return{name:"Node REPL",contains:[{className:"meta.prompt",starts:{end:/ |$/,starts:{end:"$",subLanguage:"javascript"}},variants:[{begin:/^>(?=[ ]|$)/},{begin:/^\.\.\.(?=[ ]|$)/}]}]}}}}}));
+//# sourceMappingURL=p-ddd804b9.system.js.map

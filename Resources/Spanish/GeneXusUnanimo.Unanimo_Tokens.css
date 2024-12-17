@@ -1,0 +1,417 @@
+@layer GeneXusUnanimo.Unanimo{
+:root
+{
+	--spacing_inset-xs : 4px;
+	--spacing_inset-s : 8px;
+	--spacing_inset-m : 16px;
+	--spacing_inset-l : 32px;
+	--spacing_stack-xs : 2px;
+	--spacing_stack-s : 4px;
+	--spacing_stack-m : 8px;
+	--spacing_stack-l : 16px;
+	--spacing_stack-xl : 24px;
+	--spacing_stack-xxl : 32px;
+	--spacing_stack-xxxl : 64px;
+	--spacing_stack-xxxxl : 128px;
+	--spacing_inline-xs : 2px;
+	--spacing_inline-m : 4px;
+	--spacing_inline-l : 8px;
+	--spacing_inline-xl : 16px;
+	--spacing_inline-xxl : 24px;
+	--spacing_inline-xxxl : 32px;
+	--spacing_letter-spacing-xs : 0.2px;
+	--spacing_letter-spacing-s : 0.4px;
+	--spacing_letter-spacing-m : 0.8px;
+	--spacing_letter-spacing-l : 1.6px;
+	--spacing_letter-spacing-xl : 3.2px;
+	--fonts_primary-light : SourceSansPro-Light;
+	--fonts_primary-regular : SourceSansPro-Regular;
+	--fonts_primary-semibold : SourceSansPro-SemiBold;
+	--fonts_primary-bold : SourceSansPro-Bold;
+	--fontsizes_xs : 11px;
+	--fontsizes_s : 14px;
+	--fontsizes_m : 18px;
+	--fontsizes_l : 22px;
+	--fontsizes_xl : 28px;
+	--borders_extra-small : 1px;
+	--borders_small : 2px;
+	--shadows_xxxs : 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+	--shadows_xxs : 0px 2px 2px 0px rgba(0, 0, 0, 0.14);
+	--shadows_xs : 0px 3px 4px 0px rgba(0, 0, 0, 0.14);
+	--shadows_s : 0px 4px 5px 0px rgba(0, 0, 0, 0.14);
+	--shadows_m : 0px 6px 10px 0px rgba(0, 0, 0, 0.14);
+	--shadows_l : 0px 8px 10px 1px rgba(0, 0, 0, 0.14);
+	--shadows_xl : 0px 9px 12px 1px rgba(0, 0, 0, 0.14);
+	--shadows_xxl : 0px 12px 17px 2px rgba(0, 0, 0, 0.14);
+	--radius_xs : 1px;
+	--radius_s : 2px;
+	--radius_m : 3px;
+	--radius_l : 4px;
+	--radius_xl : 6px;
+	--opacity_s : 0.1;
+	--opacity_m : 0.25;
+	--opacity_l : 0.5;
+
+}
+
+:root:is([gx-data-color-scheme="light"],:not([gx-data-color-scheme]))
+{
+	--colors_primary : #696ef2;
+	--colors_secondary : #13142c;
+	--colors_surface : #ffffff;
+	--colors_alt-surface : #f3f4f6;
+	--colors_surface-negative : #121212;
+	--colors_elevation-01 : var(--colors_surface);
+	--colors_elevation-02 : var(--colors_surface);
+	--colors_elevation-03 : var(--colors_surface);
+	--colors_elevation-04 : var(--colors_surface);
+	--colors_sidebar-bg : var(--colors_secondary);
+	--colors_item-hover : var(--colors_secondary-hover);
+	--colors_item-active : var(--colors_secondary-active);
+	--colors_row-hover : var(--colors_gray01);
+	--colors_row-active : rgba(105, 110, 242, 0.2);
+	--colors_header-bg : var(--colors_secondary);
+	--colors_header-separator-bg : var(--colors_primary);
+	--colors_form-container-bg : var(--colors_surface);
+	--colors_footer-actions-bg : var(--colors_alt-surface);
+	--colors_attribute-bg : var(--colors_surface);
+	--colors_attribute-select-bg : var(--colors_surface);
+	--colors_overlay-bg : var(--colors_surface);
+	--colors_primary-enabled : var(--colors_primary);
+	--colors_primary-active : #3015b0;
+	--colors_primary-hover : #413cd4;
+	--colors_primary-hover-20 : #d9daf3;
+	--colors_primary-disabled : var(--colors_gray03);
+	--colors_secondary-enabled : var(--colors_secondary);
+	--colors_secondary-active : #2a2c5f;
+	--colors_secondary-hover : #202143;
+	--colors_secondary-disabled : var(--colors_gray03);
+	--colors_gray01 : #e0e0e0;
+	--colors_gray02 : #c3c4c8;
+	--colors_gray03 : #939498;
+	--colors_gray04 : #575965;
+	--colors_error-dark : #f02031;
+	--colors_error-light : #ffeaee;
+	--colors_warning-dark : #ff8000;
+	--colors_warning-light : #ffe7e6;
+	--colors_success-dark : #02a08b;
+	--colors_success-light : #e1f3f1;
+	--colors_destructive : #f44336;
+	--colors_zebra-grid : #fafafa;
+	--colors_on-primary : var(--colors_surface);
+	--colors_on-secondary : var(--colors_surface);
+	--colors_on-background : #000000;
+	--colors_on-alert : var(--colors_surface-negative);
+	--colors_on-disabled : var(--colors_gray02);
+	--colors_border-primary-enabled : var(--colors_primary);
+	--colors_border-primary-active : var(--colors_primary-active);
+	--colors_border-primary-hover : var(--colors_primary-hover);
+	--colors_border-primary-disabled : var(--colors_gray03);
+	--colors_border-secondary-enabled : var(--colors_secondary);
+	--colors_border-secondary-active : var(--colors_secondary-active);
+	--colors_border-secondary-hover : var(--colors_secondary-hover);
+	--colors_border-secondary-disabled : var(--colors_gray03);
+	--colors_border-tertiary-enabled : var(--colors_tertiary);
+	--colors_border-tertiary-active : var(--colors_tertiary-active);
+	--colors_border-tertiary-hover : var(--colors_tertiary-hover);
+	--colors_border-tertiary-disabled : var(--colors_gray03);
+	--colors_border-gray-01 : var(--colors_gray01);
+	--colors_border-gray-02 : var(--colors_gray02);
+	--colors_border-gray-03 : var(--colors_gray03);
+	--colors_border-gray-04 : var(--colors_gray04);
+	--colors_border-error : var(--colors_error-dark);
+	--colors_border-warning : var(--colors_warning-dark);
+	--colors_border-success : var(--colors_success-dark);
+
+}
+
+[gx-data-color-scheme="dark"]
+{
+	--colors_primary : #a9acf8;
+	--colors_secondary : #34334e;
+	--colors_surface : #121212;
+	--colors_alt-surface : #1c1c1e;
+	--colors_surface-negative : #ffffff;
+	--colors_elevation-01 : #242426;
+	--colors_elevation-02 : #2c2c2e;
+	--colors_elevation-03 : #353537;
+	--colors_elevation-04 : #3e3e40;
+	--colors_sidebar-bg : var(--colors_elevation-01);
+	--colors_item-hover : var(--colors_elevation-04);
+	--colors_item-active : var(--colors_gray01);
+	--colors_row-hover : var(--colors_elevation-04);
+	--colors_row-active : var(--colors_gray01);
+	--colors_header-bg : var(--colors_elevation-01);
+	--colors_header-separator-bg : var(--colors_gray01);
+	--colors_form-container-bg : var(--colors_elevation-01);
+	--colors_footer-actions-bg : var(--colors_elevation-01);
+	--colors_attribute-bg : transparent;
+	--colors_attribute-select-bg : var(--colors_alt-surface);
+	--colors_overlay-bg : var(--colors_elevation-02);
+	--colors_primary-enabled : var(--colors_primary);
+	--colors_primary-active : #858af6;
+	--colors_primary-hover : #ccccfb;
+	--colors_primary-hover-20 : #5a5edc33;
+	--colors_primary-disabled : var(--colors_gray03);
+	--colors_secondary-enabled : var(--colors_secondary);
+	--colors_secondary-active : #666483;
+	--colors_secondary-hover : #53516e;
+	--colors_secondary-disabled : var(--colors_gray03);
+	--colors_gray01 : #575965;
+	--colors_gray02 : #939498;
+	--colors_gray03 : #c3c4c8;
+	--colors_gray04 : #e0e0e0;
+	--colors_error-dark : #f9464e;
+	--colors_error-light : #ffeaee;
+	--colors_warning-dark : #ffab13;
+	--colors_warning-light : #ffe7e6;
+	--colors_success-dark : #50beae;
+	--colors_success-light : #e1f3f1;
+	--colors_destructive : #ef5350;
+	--colors_zebra-grid : #323234;
+	--colors_on-primary : var(--colors_surface);
+	--colors_on-secondary : #e9e9e9;
+	--colors_on-background : var(--colors_on-secondary);
+	--colors_on-alert : var(--colors_surface-negative);
+	--colors_on-disabled : var(--colors_gray02);
+	--colors_border-primary-enabled : var(--colors_primary);
+	--colors_border-primary-active : var(--colors_primary-active);
+	--colors_border-primary-hover : var(--colors_primary-hover);
+	--colors_border-primary-disabled : var(--colors_gray03);
+	--colors_border-secondary-enabled : var(--colors_secondary);
+	--colors_border-secondary-active : var(--colors_secondary-active);
+	--colors_border-secondary-hover : var(--colors_secondary-hover);
+	--colors_border-secondary-disabled : var(--colors_gray03);
+	--colors_border-gray-01 : var(--colors_gray04);
+	--colors_border-gray-02 : var(--colors_gray03);
+	--colors_border-gray-03 : var(--colors_gray02);
+	--colors_border-gray-04 : var(--colors_gray01);
+	--colors_border-error : var(--colors_error-dark);
+	--colors_border-warning : var(--colors_warning-dark);
+	--colors_border-success : var(--colors_success-dark);
+
+}
+:root
+{
+	--GX-Image_GeneXusUnanimo_resize_ico : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.resize_ico.png);
+	--GX-Image_GeneXusUnanimo_arrow_desc : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.arrow_desc.svg);
+	--GX-Image_GeneXusUnanimo_arrow_asc : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.arrow_asc.svg);
+	--GX-Image_GeneXusUnanimo_dot_green : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.dot_green.svg);
+	--GX-Image_GeneXusUnanimo_dot_yellow : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.dot_yellow.svg);
+	--GX-Image_GeneXusUnanimo_dot_red : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.dot_red.svg);
+	--GX-Image_GeneXusUnanimo_dot_purple : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.dot_purple.svg);
+	--GX-Image_GeneXusUnanimo_dot_gray : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.dot_gray.svg);
+	--GX-Image_GeneXusUnanimo_projects : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.projects.svg);
+	--GX-Image_GeneXusUnanimo_video : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.video.svg);
+	--GX-Image_GeneXusUnanimo_featured_green : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.featured_green.svg);
+	--GX-Image_GeneXusUnanimo_minus : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.minus.svg);
+	--GX-Image_GeneXusUnanimo_plus : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.plus.svg);
+	--GX-Image_GeneXusUnanimo_filter : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.filter.svg);
+	--GX-Image_GeneXusUnanimo_minus_light : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.minus_light.svg);
+	--GX-Image_GeneXusUnanimo_plus_light : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.plus_light.svg);
+	--GX-Image_GeneXusUnanimo_duplicate : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.duplicate.svg);
+	--GX-Image_GeneXusUnanimo_genexus_logo : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.genexus_logo.svg);
+	--GX-Image_GeneXusUnanimo_profile : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.profile.svg);
+	--GX-Image_GeneXusUnanimo_sign_out : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.sign_out.svg);
+	--GX-Image_GeneXusUnanimo_column_not_fixed : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.column_not_fixed.svg);
+	--GX-Image_GeneXusUnanimo_success_ico : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.success_ico.svg);
+	--GX-Image_GeneXusUnanimo_info : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.info.svg);
+	--GX-Image_GeneXusUnanimo_dark : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.dark.svg);
+	--GX-Image_GeneXusUnanimo_light : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.light.svg);
+	--GX-Image_GeneXusUnanimo_arrow_select : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.arrow_select.svg);
+	--GX-Image_GeneXusUnanimo_arrow_select_default : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.arrow_select_default.svg);
+	--GX-Image_GeneXusUnanimo_delete : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.delete.svg);
+	--GX-Image_GeneXusUnanimo_send : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.send.svg);
+	--GX-Image_GeneXusUnanimo_audio : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.audio.svg);
+	--GX-Image_GeneXusUnanimo_image : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.image.svg);
+	--GX-Image_GeneXusUnanimo_filter_many_applied : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.filter_many_applied.svg);
+	--GX-Image_GeneXusUnanimo_upload : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.upload.svg);
+	--GX-Image_GeneXusUnanimo_photo : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.photo.svg);
+	--GX-Image_GeneXusUnanimo_favorite : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.favorite.svg);
+	--GX-Image_GeneXusUnanimo_favorite_off : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.favorite_off.svg);
+	--GX-Image_GeneXusUnanimo_notification : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.notification.svg);
+	--GX-Image_GeneXusUnanimo_edit : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.edit.svg);
+	--GX-Image_GeneXusUnanimo_grid_view : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.grid_view.svg);
+	--GX-Image_GeneXusUnanimo_list_view : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.list_view.svg);
+	--GX-Image_GeneXusUnanimo_security : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.security.svg);
+	--GX-Image_GeneXusUnanimo_prompt_ico : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.prompt_ico.svg);
+	--GX-Image_GeneXusUnanimo_language : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.language.svg);
+	--GX-Image_GeneXusUnanimo_featured : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.featured.svg);
+	--GX-Image_GeneXusUnanimo_list_view_white : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.list_view_white.svg);
+	--GX-Image_GeneXusUnanimo_resize_column : url(../GeneXusUnanimo.Unanimo/GeneXusUnanimo.resize_column.svg);
+}
+
+:root:is([gx-data-color-scheme="light"],:not([gx-data-color-scheme]))
+{
+	--GX-Image_GeneXusUnanimo_show_more : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.show_more.svg);
+	--GX-Image_GeneXusUnanimo_error_ico : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.error_ico.svg);
+	--GX-Image_GeneXusUnanimo_warning_ico : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.warning_ico.svg);
+	--GX-Image_GeneXusUnanimo_success_ico_green : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.success_ico_green.svg);
+	--GX-Image_GeneXusUnanimo_arrow_first : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.arrow_first.svg);
+	--GX-Image_GeneXusUnanimo_arrow_left : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.arrow_left.svg);
+	--GX-Image_GeneXusUnanimo_arrow_right : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.arrow_right.svg);
+	--GX-Image_GeneXusUnanimo_arrow_last : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.arrow_last.svg);
+	--GX-Image_GeneXusUnanimo_close_ico : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.close_ico.svg);
+	--GX-Image_GeneXusUnanimo_password_show : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.password_show.svg);
+	--GX-Image_GeneXusUnanimo_password_hidden : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.password_hidden.svg);
+	--GX-Image_GeneXusUnanimo_edit_light : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.edit_light.svg);
+	--GX-Image_GeneXusUnanimo_delete_light : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.delete_light.svg);
+	--GX-Image_GeneXusUnanimo_download_ico : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.download_ico.svg);
+	--GX-Image_GeneXusUnanimo_calendar_ico : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.calendar_ico.svg);
+	--GX-Image_GeneXusUnanimo_prompt_light : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.prompt_light.svg);
+	--GX-Image_GeneXusUnanimo_search : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.search.svg);
+	--GX-Image_GeneXusUnanimo_filter_light : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.filter_light.svg);
+	--GX-Image_GeneXusUnanimo_filter_applied : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.filter_applied.svg);
+	--GX-Image_GeneXusUnanimo_arrow_left_light : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.arrow_left_light.svg);
+	--GX-Image_GeneXusUnanimo_arrow_right_light : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.arrow_right_light.svg);
+	--GX-Image_GeneXusUnanimo_info_ico_purple : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.info_ico_purple.svg);
+	--GX-Image_GeneXusUnanimo_filter_outlined_light : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.filter_outlined_light.svg);
+	--GX-Image_GeneXusUnanimo_resize_column_light : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.resize_column_light.svg);
+	--GX-Image_GeneXusUnanimo_arrow_asc_light : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.arrow_asc_light.svg);
+	--GX-Image_GeneXusUnanimo_arrow_desc_light : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.arrow_desc_light.svg);
+	--GX-Image_GeneXusUnanimo_refresh : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.refresh.svg);
+	--GX-Image_GeneXusUnanimo_settings : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.settings.svg);
+	--GX-Image_GeneXusUnanimo_dropdown_avatar : url(../GeneXusUnanimo.Unanimo/color-scheme_light/GeneXusUnanimo.dropdown_avatar.svg);
+}
+
+[gx-data-color-scheme="dark"]
+{
+	--GX-Image_GeneXusUnanimo_show_more : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.show_more.svg);
+	--GX-Image_GeneXusUnanimo_error_ico : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.error_ico.svg);
+	--GX-Image_GeneXusUnanimo_warning_ico : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.warning_ico.svg);
+	--GX-Image_GeneXusUnanimo_success_ico_green : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.success_ico_green.svg);
+	--GX-Image_GeneXusUnanimo_arrow_first : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.arrow_first.svg);
+	--GX-Image_GeneXusUnanimo_arrow_left : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.arrow_left.svg);
+	--GX-Image_GeneXusUnanimo_arrow_right : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.arrow_right.svg);
+	--GX-Image_GeneXusUnanimo_arrow_last : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.arrow_last.svg);
+	--GX-Image_GeneXusUnanimo_close_ico : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.close_ico.svg);
+	--GX-Image_GeneXusUnanimo_password_show : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.password_show.svg);
+	--GX-Image_GeneXusUnanimo_password_hidden : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.password_hidden.svg);
+	--GX-Image_GeneXusUnanimo_edit_light : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.edit_light.svg);
+	--GX-Image_GeneXusUnanimo_delete_light : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.delete_light.svg);
+	--GX-Image_GeneXusUnanimo_download_ico : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.download_ico.svg);
+	--GX-Image_GeneXusUnanimo_calendar_ico : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.calendar_ico.svg);
+	--GX-Image_GeneXusUnanimo_prompt_light : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.prompt_light.svg);
+	--GX-Image_GeneXusUnanimo_search : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.search.svg);
+	--GX-Image_GeneXusUnanimo_filter_light : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.filter_light.svg);
+	--GX-Image_GeneXusUnanimo_filter_applied : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.filter_applied.svg);
+	--GX-Image_GeneXusUnanimo_arrow_left_light : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.arrow_left_light.svg);
+	--GX-Image_GeneXusUnanimo_arrow_right_light : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.arrow_right_light.svg);
+	--GX-Image_GeneXusUnanimo_minus_light : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.minus_light.svg);
+	--GX-Image_GeneXusUnanimo_plus_light : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.plus_light.svg);
+	--GX-Image_GeneXusUnanimo_info_ico_purple : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.info_ico_purple.svg);
+	--GX-Image_GeneXusUnanimo_filter_outlined_light : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.filter_outlined_light.svg);
+	--GX-Image_GeneXusUnanimo_resize_column_light : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.resize_column_light.svg);
+	--GX-Image_GeneXusUnanimo_arrow_asc_light : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.arrow_asc_light.svg);
+	--GX-Image_GeneXusUnanimo_arrow_desc_light : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.arrow_desc_light.svg);
+	--GX-Image_GeneXusUnanimo_refresh : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.refresh.svg);
+	--GX-Image_GeneXusUnanimo_settings : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.settings.svg);
+	--GX-Image_GeneXusUnanimo_dropdown_avatar : url(../GeneXusUnanimo.Unanimo/color-scheme_dark/GeneXusUnanimo.dropdown_avatar.svg);
+}
+.GX_Image_GeneXusUnanimo_show_more_Class{content: var(--GX-Image_GeneXusUnanimo_show_more);}
+.GX_Image_GeneXusUnanimo_show_more_Class{content: var(--GX-Image_GeneXusUnanimo_show_more);}
+.GX_Image_GeneXusUnanimo_error_ico_Class{content: var(--GX-Image_GeneXusUnanimo_error_ico);}
+.GX_Image_GeneXusUnanimo_error_ico_Class{content: var(--GX-Image_GeneXusUnanimo_error_ico);}
+.GX_Image_GeneXusUnanimo_warning_ico_Class{content: var(--GX-Image_GeneXusUnanimo_warning_ico);}
+.GX_Image_GeneXusUnanimo_warning_ico_Class{content: var(--GX-Image_GeneXusUnanimo_warning_ico);}
+.GX_Image_GeneXusUnanimo_success_ico_green_Class{content: var(--GX-Image_GeneXusUnanimo_success_ico_green);}
+.GX_Image_GeneXusUnanimo_success_ico_green_Class{content: var(--GX-Image_GeneXusUnanimo_success_ico_green);}
+.GX_Image_GeneXusUnanimo_arrow_first_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_first);}
+.GX_Image_GeneXusUnanimo_arrow_first_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_first);}
+.GX_Image_GeneXusUnanimo_arrow_left_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_left);}
+.GX_Image_GeneXusUnanimo_arrow_left_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_left);}
+.GX_Image_GeneXusUnanimo_arrow_right_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_right);}
+.GX_Image_GeneXusUnanimo_arrow_right_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_right);}
+.GX_Image_GeneXusUnanimo_arrow_last_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_last);}
+.GX_Image_GeneXusUnanimo_arrow_last_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_last);}
+.GX_Image_GeneXusUnanimo_resize_ico_Class{content: var(--GX-Image_GeneXusUnanimo_resize_ico);}
+.GX_Image_GeneXusUnanimo_close_ico_Class{content: var(--GX-Image_GeneXusUnanimo_close_ico);}
+.GX_Image_GeneXusUnanimo_close_ico_Class{content: var(--GX-Image_GeneXusUnanimo_close_ico);}
+.GX_Image_GeneXusUnanimo_arrow_desc_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_desc);}
+.GX_Image_GeneXusUnanimo_arrow_asc_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_asc);}
+.GX_Image_GeneXusUnanimo_password_show_Class{content: var(--GX-Image_GeneXusUnanimo_password_show);}
+.GX_Image_GeneXusUnanimo_password_show_Class{content: var(--GX-Image_GeneXusUnanimo_password_show);}
+.GX_Image_GeneXusUnanimo_password_hidden_Class{content: var(--GX-Image_GeneXusUnanimo_password_hidden);}
+.GX_Image_GeneXusUnanimo_password_hidden_Class{content: var(--GX-Image_GeneXusUnanimo_password_hidden);}
+.GX_Image_GeneXusUnanimo_dot_green_Class{content: var(--GX-Image_GeneXusUnanimo_dot_green);}
+.GX_Image_GeneXusUnanimo_dot_yellow_Class{content: var(--GX-Image_GeneXusUnanimo_dot_yellow);}
+.GX_Image_GeneXusUnanimo_dot_red_Class{content: var(--GX-Image_GeneXusUnanimo_dot_red);}
+.GX_Image_GeneXusUnanimo_dot_purple_Class{content: var(--GX-Image_GeneXusUnanimo_dot_purple);}
+.GX_Image_GeneXusUnanimo_dot_gray_Class{content: var(--GX-Image_GeneXusUnanimo_dot_gray);}
+.GX_Image_GeneXusUnanimo_edit_light_Class{content: var(--GX-Image_GeneXusUnanimo_edit_light);}
+.GX_Image_GeneXusUnanimo_edit_light_Class{content: var(--GX-Image_GeneXusUnanimo_edit_light);}
+.GX_Image_GeneXusUnanimo_delete_light_Class{content: var(--GX-Image_GeneXusUnanimo_delete_light);}
+.GX_Image_GeneXusUnanimo_delete_light_Class{content: var(--GX-Image_GeneXusUnanimo_delete_light);}
+.GX_Image_GeneXusUnanimo_projects_Class{content: var(--GX-Image_GeneXusUnanimo_projects);}
+.GX_Image_GeneXusUnanimo_download_ico_Class{content: var(--GX-Image_GeneXusUnanimo_download_ico);}
+.GX_Image_GeneXusUnanimo_download_ico_Class{content: var(--GX-Image_GeneXusUnanimo_download_ico);}
+.GX_Image_GeneXusUnanimo_video_Class{content: var(--GX-Image_GeneXusUnanimo_video);}
+.GX_Image_GeneXusUnanimo_calendar_ico_Class{content: var(--GX-Image_GeneXusUnanimo_calendar_ico);}
+.GX_Image_GeneXusUnanimo_calendar_ico_Class{content: var(--GX-Image_GeneXusUnanimo_calendar_ico);}
+.GX_Image_GeneXusUnanimo_prompt_light_Class{content: var(--GX-Image_GeneXusUnanimo_prompt_light);}
+.GX_Image_GeneXusUnanimo_prompt_light_Class{content: var(--GX-Image_GeneXusUnanimo_prompt_light);}
+.GX_Image_GeneXusUnanimo_featured_green_Class{content: var(--GX-Image_GeneXusUnanimo_featured_green);}
+.GX_Image_GeneXusUnanimo_minus_Class{content: var(--GX-Image_GeneXusUnanimo_minus);}
+.GX_Image_GeneXusUnanimo_plus_Class{content: var(--GX-Image_GeneXusUnanimo_plus);}
+.GX_Image_GeneXusUnanimo_search_Class{content: var(--GX-Image_GeneXusUnanimo_search);}
+.GX_Image_GeneXusUnanimo_search_Class{content: var(--GX-Image_GeneXusUnanimo_search);}
+.GX_Image_GeneXusUnanimo_filter_light_Class{content: var(--GX-Image_GeneXusUnanimo_filter_light);}
+.GX_Image_GeneXusUnanimo_filter_light_Class{content: var(--GX-Image_GeneXusUnanimo_filter_light);}
+.GX_Image_GeneXusUnanimo_filter_applied_Class{content: var(--GX-Image_GeneXusUnanimo_filter_applied);}
+.GX_Image_GeneXusUnanimo_filter_applied_Class{content: var(--GX-Image_GeneXusUnanimo_filter_applied);}
+.GX_Image_GeneXusUnanimo_filter_Class{content: var(--GX-Image_GeneXusUnanimo_filter);}
+.GX_Image_GeneXusUnanimo_arrow_left_light_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_left_light);}
+.GX_Image_GeneXusUnanimo_arrow_left_light_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_left_light);}
+.GX_Image_GeneXusUnanimo_arrow_right_light_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_right_light);}
+.GX_Image_GeneXusUnanimo_arrow_right_light_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_right_light);}
+.GX_Image_GeneXusUnanimo_minus_light_Class{content: var(--GX-Image_GeneXusUnanimo_minus_light);}
+.GX_Image_GeneXusUnanimo_minus_light_Class{content: var(--GX-Image_GeneXusUnanimo_minus_light);}
+.GX_Image_GeneXusUnanimo_plus_light_Class{content: var(--GX-Image_GeneXusUnanimo_plus_light);}
+.GX_Image_GeneXusUnanimo_plus_light_Class{content: var(--GX-Image_GeneXusUnanimo_plus_light);}
+.GX_Image_GeneXusUnanimo_info_ico_purple_Class{content: var(--GX-Image_GeneXusUnanimo_info_ico_purple);}
+.GX_Image_GeneXusUnanimo_info_ico_purple_Class{content: var(--GX-Image_GeneXusUnanimo_info_ico_purple);}
+.GX_Image_GeneXusUnanimo_filter_outlined_light_Class{content: var(--GX-Image_GeneXusUnanimo_filter_outlined_light);}
+.GX_Image_GeneXusUnanimo_filter_outlined_light_Class{content: var(--GX-Image_GeneXusUnanimo_filter_outlined_light);}
+.GX_Image_GeneXusUnanimo_resize_column_light_Class{content: var(--GX-Image_GeneXusUnanimo_resize_column_light);}
+.GX_Image_GeneXusUnanimo_resize_column_light_Class{content: var(--GX-Image_GeneXusUnanimo_resize_column_light);}
+.GX_Image_GeneXusUnanimo_arrow_asc_light_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_asc_light);}
+.GX_Image_GeneXusUnanimo_arrow_asc_light_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_asc_light);}
+.GX_Image_GeneXusUnanimo_arrow_desc_light_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_desc_light);}
+.GX_Image_GeneXusUnanimo_arrow_desc_light_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_desc_light);}
+.GX_Image_GeneXusUnanimo_refresh_Class{content: var(--GX-Image_GeneXusUnanimo_refresh);}
+.GX_Image_GeneXusUnanimo_refresh_Class{content: var(--GX-Image_GeneXusUnanimo_refresh);}
+.GX_Image_GeneXusUnanimo_settings_Class{content: var(--GX-Image_GeneXusUnanimo_settings);}
+.GX_Image_GeneXusUnanimo_settings_Class{content: var(--GX-Image_GeneXusUnanimo_settings);}
+.GX_Image_GeneXusUnanimo_duplicate_Class{content: var(--GX-Image_GeneXusUnanimo_duplicate);}
+.GX_Image_GeneXusUnanimo_genexus_logo_Class{content: var(--GX-Image_GeneXusUnanimo_genexus_logo);}
+.GX_Image_GeneXusUnanimo_profile_Class{content: var(--GX-Image_GeneXusUnanimo_profile);}
+.GX_Image_GeneXusUnanimo_sign_out_Class{content: var(--GX-Image_GeneXusUnanimo_sign_out);}
+.GX_Image_GeneXusUnanimo_column_not_fixed_Class{content: var(--GX-Image_GeneXusUnanimo_column_not_fixed);}
+.GX_Image_GeneXusUnanimo_success_ico_Class{content: var(--GX-Image_GeneXusUnanimo_success_ico);}
+.GX_Image_GeneXusUnanimo_info_Class{content: var(--GX-Image_GeneXusUnanimo_info);}
+.GX_Image_GeneXusUnanimo_dark_Class{content: var(--GX-Image_GeneXusUnanimo_dark);}
+.GX_Image_GeneXusUnanimo_light_Class{content: var(--GX-Image_GeneXusUnanimo_light);}
+.GX_Image_GeneXusUnanimo_arrow_select_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_select);}
+.GX_Image_GeneXusUnanimo_arrow_select_default_Class{content: var(--GX-Image_GeneXusUnanimo_arrow_select_default);}
+.GX_Image_GeneXusUnanimo_delete_Class{content: var(--GX-Image_GeneXusUnanimo_delete);}
+.GX_Image_GeneXusUnanimo_send_Class{content: var(--GX-Image_GeneXusUnanimo_send);}
+.GX_Image_GeneXusUnanimo_dropdown_avatar_Class{content: var(--GX-Image_GeneXusUnanimo_dropdown_avatar);}
+.GX_Image_GeneXusUnanimo_dropdown_avatar_Class{content: var(--GX-Image_GeneXusUnanimo_dropdown_avatar);}
+.GX_Image_GeneXusUnanimo_audio_Class{content: var(--GX-Image_GeneXusUnanimo_audio);}
+.GX_Image_GeneXusUnanimo_image_Class{content: var(--GX-Image_GeneXusUnanimo_image);}
+.GX_Image_GeneXusUnanimo_filter_many_applied_Class{content: var(--GX-Image_GeneXusUnanimo_filter_many_applied);}
+.GX_Image_GeneXusUnanimo_upload_Class{content: var(--GX-Image_GeneXusUnanimo_upload);}
+.GX_Image_GeneXusUnanimo_photo_Class{content: var(--GX-Image_GeneXusUnanimo_photo);}
+.GX_Image_GeneXusUnanimo_favorite_Class{content: var(--GX-Image_GeneXusUnanimo_favorite);}
+.GX_Image_GeneXusUnanimo_favorite_off_Class{content: var(--GX-Image_GeneXusUnanimo_favorite_off);}
+.GX_Image_GeneXusUnanimo_notification_Class{content: var(--GX-Image_GeneXusUnanimo_notification);}
+.GX_Image_GeneXusUnanimo_edit_Class{content: var(--GX-Image_GeneXusUnanimo_edit);}
+.GX_Image_GeneXusUnanimo_grid_view_Class{content: var(--GX-Image_GeneXusUnanimo_grid_view);}
+.GX_Image_GeneXusUnanimo_list_view_Class{content: var(--GX-Image_GeneXusUnanimo_list_view);}
+.GX_Image_GeneXusUnanimo_security_Class{content: var(--GX-Image_GeneXusUnanimo_security);}
+.GX_Image_GeneXusUnanimo_prompt_ico_Class{content: var(--GX-Image_GeneXusUnanimo_prompt_ico);}
+.GX_Image_GeneXusUnanimo_language_Class{content: var(--GX-Image_GeneXusUnanimo_language);}
+.GX_Image_GeneXusUnanimo_featured_Class{content: var(--GX-Image_GeneXusUnanimo_featured);}
+.GX_Image_GeneXusUnanimo_list_view_white_Class{content: var(--GX-Image_GeneXusUnanimo_list_view_white);}
+.GX_Image_GeneXusUnanimo_resize_column_Class{content: var(--GX-Image_GeneXusUnanimo_resize_column);}
+}

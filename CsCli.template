@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+	
+	<PropertyGroup>
+		<TargetFramework>$(TargetFramework)</TargetFramework>
+		<AssemblyName>{AssemblyName}</AssemblyName>
+		<ProjectGuid>{Guid}</ProjectGuid>
+		<ApplicationIcon />
+		<OutputType>{OutputType}</OutputType>
+		<PostgresqlSupport>{PostgresqlSupport}</PostgresqlSupport>
+		<PublishIISAssets>false</PublishIISAssets>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Grpc.AspNetCore" Version="2.27.0" />
+		<PackageReference Include="Grpc.Core.Api" Version="2.27.0" />
+		<PackageReference Include="Grpc.Net.Client" Version="2.27.0" />
+		<PackageReference Include="Grpc.Tools" Version="2.27.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="proto\" />
+	</ItemGroup>
+	<ItemGroup>
+		<Protobuf Include="{Protobuffer}" GrpcServices="Client" >
+			<Link>{ProtobufferShort}</Link>
+		</Protobuf>
+	</ItemGroup>
+	
+	<ItemGroup>
+{ProjectReference}
+	</ItemGroup>
+
+	<ItemGroup>
+{ExternalReference}
+	</ItemGroup>
+	<ItemGroup>
+{CompileItems}
+	</ItemGroup>
+	
+	<Import Project="..\DotNetCoreBaseProject.targets"/>
+</Project>

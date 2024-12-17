@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "DesignSystem.Programs.newblogwwgetfilterdata,newblogwwgetfilterdata" %>

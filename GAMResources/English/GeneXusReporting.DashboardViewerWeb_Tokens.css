@@ -1,0 +1,13 @@
+@layer GeneXusReporting.DashboardViewerWeb{
+:root:is([gx-data-color-scheme="light"],:not([gx-data-color-scheme]))
+{
+	--borders_gxqv-border : #e0e0e0;
+
+}
+
+[gx-data-color-scheme="dark"]
+{
+	--borders_gxqv-border : #242426;
+
+}
+}

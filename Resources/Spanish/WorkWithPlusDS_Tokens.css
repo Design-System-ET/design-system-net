@@ -1,0 +1,12 @@
+@layer WorkWithPlusDS{
+:root
+{
+	--colors_white : #FFFFFF;
+	--colors_green : #b6ff23;
+	--colors_black : #000000;
+	--colors_base : #0000ff;
+	--colors_greenshadow : #3AA11B;
+	--colors_orange : #ff913a;
+
+}
+}

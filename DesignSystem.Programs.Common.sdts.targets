@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+<ItemGroup>
+</ItemGroup>
+
+<ItemGroup>
+ 	<Compile Include="$(WebDirectory)\type_SdtGxMap.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtGxMap_Circle.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtGxMap_Point.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtGxMap_Polygon.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtGxMap_Polygon_Path.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtGxMap_Line.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtGxMap_Line_Point.cs" />
+ 	<Compile Include="$(WebDirectory)\type_SdtGxMap_RoutePoint.cs" />
+ 	<Compile Include="$(WebDirectory)\workwithplus\type_SdtWWPConfFormattingVariable.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtBlobData.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtDVB_SDTComboData_Item.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtDVB_SDTDropDownOptionsData_Item.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtDVB_SDTDropDownOptionsTitleSettingsIcons.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtDVelop_Menu_Item.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtGoogleDocsResult.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtGoogleDocsResult_Doc.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtGridStateCollection_Item.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtProgramNames_ProgramName.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtSDTHomeLandingSampleLogos_SDTHomeLandingSampleLogosItem.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtSDTHomeTestimonials_SDTHomeTestimonialsItem.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtSDTLandingPurusStudios_SDTLandingPurusStudiosItem.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtWizardSteps_WizardStepsItem.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtWWPColumnsSelector.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtWWPColumnsSelector_Column.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtWWPContext.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtWWPGridState.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtWWPGridState_FilterValue.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtWWPGridState_DynamicFilter.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtWWPTransactionContext.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtWWPTransactionContext_Attribute.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtWWP_DesignSystemSettings.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtWWP_SearchResults_WWP_SearchResultsItem.cs" />
+ 	<Compile Include="$(WebDirectory)\wwpbaseobjects\type_SdtWWP_SearchResults_WWP_SearchResultsItem_ResultItem.cs" />
+
+</ItemGroup>
+
+</Project>

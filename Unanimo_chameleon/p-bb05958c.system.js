@@ -1,0 +1,2 @@
+System.register([],(function(e){"use strict";return{execute:function(){e({a:u,b:n,e:r});var t=new CSSStyleSheet({disabled:true});function n(e){e.push(t)}function u(e){var n=new CSSStyleSheet({disabled:true});n.replace(e);for(var u=0;u<n.cssRules.length;u++){t.insertRule(n.cssRules.item(u).cssText)}}function r(){t.disabled=false}}}}));
+//# sourceMappingURL=p-bb05958c.system.js.map

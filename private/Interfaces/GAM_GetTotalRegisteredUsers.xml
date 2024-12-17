@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CallableObject guid="8ec89ae6-e971-4da5-8f59-38fbdf0e4c73" name="GAM_GetTotalRegisteredUsers" description="GAM_Get Total Registered Users" namespace="GeneXus.Security.Backend">
+  <Signature name="parm">
+    <Parameter name="ReturnValue" accessor="out">
+      <Field name="GAM_GetTotalRegisteredUsersSDT" description="GAM_Get Total Registered Users SDT">
+        <Fields>
+          <Field name="TotalUsers" description="Total Users">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>Numeric</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>10</Value>
+              </Property>
+              <Property>
+                <Name>Picture</Name>
+                <Value>ZZZZZZZZZ9</Value>
+              </Property>
+            </Properties>
+          </Field>
+        </Fields>
+      </Field>
+    </Parameter>
+  </Signature>
+</CallableObject>

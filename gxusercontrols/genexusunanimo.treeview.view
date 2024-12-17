@@ -1,0 +1,25 @@
+<ch-tree id="ch-treeview" toggle-checkboxes="{{gxTpr_ToggleCheckboxes}}{{ToggleCheckboxes}}">
+	{{#TreeviewItems}}
+    <ch-tree-item id="{{gxTpr_id}}{{id}}" class="ch-treeview-item" {{^SingleSelection}}checkbox{{/SingleSelection}} {{#isOpen}}opened{{/isOpen}} left-icon="{{gxTpr_icon}}{{icon}}">
+      {{gxTpr_text}}{{text}}
+	  {{#hasSubItems}}
+      <ch-tree {{^SingleSelection}}checkbox{{/SingleSelection}} slot="tree">
+	  	{{#TreeviewSubItems}}
+        <ch-tree-item id="{{gxTpr_id}}{{id}}" class="ch-treeview-item" {{^SingleSelection}}checkbox{{/SingleSelection}} {{#isOpen}}opened{{/isOpen}} left-icon="{{gxTpr_icon}}{{icon}}">
+          {{gxTpr_text}}{{text}}
+		  {{#hasSubItems}}
+          <ch-tree {{^SingleSelection}}checkbox{{/SingleSelection}} slot="tree">
+		  	{{#TreeviewSubSubItems}}
+            <ch-tree-item id="{{gxTpr_id}}{{id}}" {{^SingleSelection}}checkbox{{/SingleSelection}} class="ch-treeview-item" left-icon="{{gxTpr_icon}}{{icon}}">
+              {{gxTpr_text}}{{text}}
+            </ch-tree-item>
+			{{/TreeviewSubSubItems}}
+          </ch-tree>
+		  {{/hasSubItems}}
+        </ch-tree-item>
+		{{/TreeviewSubItems}}
+      </ch-tree>
+	  {{/hasSubItems}}
+    </ch-tree-item>
+	{{/TreeviewItems}}
+</ch-tree>

@@ -1,0 +1,2 @@
+System.register([],(function(t){"use strict";return{execute:function(){t("default",e);function e(t){return{name:"Plain text",aliases:["text","txt"],disableAutodetect:!0}}}}}));
+//# sourceMappingURL=p-33301734.system.js.map

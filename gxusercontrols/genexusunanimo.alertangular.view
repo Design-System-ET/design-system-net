@@ -1,0 +1,13 @@
+{{=<% %>=}}
+<div class="alert alert-<%Type:info|warning|success|error%>" [ngClass]="{'alert-fixed': Position=='Fixed to bottom', 'alert-multiple':ShowMultiple}">
+	<div class="inline-left-xxxl inline-right-xxl" style="flex-grow: 1">
+		<div class="row"> <span class="alert-title">{{gxTpr_Title}}{{Title}}</span> </div>
+		<div class="row"> <span class="alert-message">{{gxTpr_Message}}{{Message}}</span> </div>
+	</div>
+	<div class="inline-left-xl inline-right-xl" style="flex-grow: 0">
+		<button type="button" class="alert-close" data-dismiss="alert" aria-label="Close" <%Close%>><span aria-hidden="true">&times;</span></button>
+	</div>
+	<div *ngIf="ShowMultiple" class="alert-badge">
+		<span class="alert-badge-text">{{gxTpr_Count}}{{Count}}{{^Count}}0{{/Count}}</span>
+	</div>
+</div>

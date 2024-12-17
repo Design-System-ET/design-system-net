@@ -1,0 +1,2 @@
+function a(a){return{name:"Julia REPL",contains:[{className:"meta.prompt",begin:/^julia>/,relevance:10,starts:{end:/^(?![ ]{6})/,subLanguage:"julia"}}],aliases:["jldoctest"]}}export{a as default};
+//# sourceMappingURL=p-c4e6eff8.js.map

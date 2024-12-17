@@ -1,0 +1,93 @@
+@layer WWPBaseObjects.WorkWithPlusBaseDS{
+:root
+{
+	--colors_headerforecolor : #555;
+	--colors_pdf : #ea4c3a;
+	--colors_excelcolor : #08743b;
+	--colors_danger : #f56a67;
+	--colors_danger_condform : #dd4b39;
+	--colors_danger_condform_row_background : #f2dede;
+	--colors_danger_condform_action : #e5cccc;
+	--colors_danger_condform_action_hover : rgba(245,106,103,0.5);
+	--colors_warning : #f39c12;
+	--colors_warning_condform : #fb6e52;
+	--colors_warning_condform_row_background : #faf2cc;
+	--colors_warning_condform_action : #fed6be;
+	--colors_warning_condform_action_hover : rgba(251,110,82,0.5);
+	--colors_success_condform : #00a65a;
+	--colors_success_condform_row_background : #dff0d8;
+	--colors_success_condform_action : #b9ccb7;
+	--colors_success_condform_action_hover : rgba(0,166,90,0.5);
+	--colors_info_condform : #3c8dbc;
+	--colors_info_condform_row_background : #e0f1ff;
+	--colors_info_condform_action : #bcdcf5;
+	--colors_info_condform_action_hover : rgba(60,141,188,0.5);
+	--colors_infolight : #00c0ef;
+	--fonts_primary-regular : muli,sans-serif;
+	--fontsizes_xs : 11px;
+	--fontsizes_s : 14px;
+	--fontsizes_m : 18px;
+	--fontsizes_l : 22px;
+	--fontsizes_xl : 28px;
+	--fontsizes_xxl : 34px;
+	--fontsizes_font-icon-xxs : 10px;
+	--fontsizes_font-icon-xs : 12px;
+	--fontsizes_font-icon-s : 16px;
+	--fontsizes_font-icon-m : 19px;
+	--fontsizes_font-icon-l : 24px;
+	--fontsizes_font-icon-xl : 36px;
+	--borders_xs : 1px;
+	--borders_s : 2px;
+	--borders_m : 3px;
+	--radius_s : 2px;
+	--radius_m : 4px;
+	--radius_l : 6px;
+
+}
+
+[gx-data-base-color="Custom"]
+{
+	--colors_basecolor : Blue;
+	--colors_basecolorforecolor : Blue;
+	--colors_actionborder_and_focuscolor : rgba(0,0,230,255);
+	--colors_actionhover : rgba(0,0,245,255);
+	--colors_actionhoverborder : rgba(0,0,235,255);
+	--colors_basecolorshadow : rgba(0, 0, 255, 0.7);
+	--colors_baseforecolor80 : rgba(255,255,255,0.8);
+	--colors_basecolor30 : rgba(0, 0, 255, 0.3);
+	--colors_basecolor20 : rgba(0, 0, 255, 0.2);
+	--colors_basecolor10 : rgba(0, 0, 255, 0.1);
+	--colors_baseforecolor : #FFF;
+
+}
+
+[gx-data-background-color="Light"]
+{
+	--colors_gray01 : #fbfbfb;
+	--colors_gray02 : #f7f7f7;
+	--colors_gray03 : #f5f4f4;
+	--colors_gray04 : #eee;
+	--colors_gray05 : #d9d9d9;
+	--colors_gray06 : #c8c8c8;
+	--colors_gray07 : #8c8d8e;
+	--colors_gray08 : #575b5d;
+	--colors_gxqv-color-01 : #182f53;
+	--colors_gxqv-color-02 : #a7e9e1;
+	--colors_gxqv-color-03 : #f57a4d;
+	--colors_gxqv-color-04 : #fbbc58;
+	--colors_gxqv-color-05 : #9c3725;
+	--colors_gxqv-color-06 : #2ed3c6;
+	--colors_gxqv-color-07 : #aa6890;
+	--colors_gxqv-color-08 : #c53b3d;
+	--colors_gxqv-color-09 : #8d89a3;
+	--colors_gxqv-color-10 : #095d6a;
+	--colors_backgroundcolor : white;
+	--colors_databackgroundcolor : #fff;
+	--colors_gridforecolor : #000;
+	--colors_gridactioniconcolor : #fff;
+	--colors_horizontalmenu_submenuforecolor : #575B5D;
+	--colors_gridtitlecolor : rgba(0,0,235,255);
+	--colors_horizontalbackgroundcolor_forecolor : #727272;
+
+}
+}

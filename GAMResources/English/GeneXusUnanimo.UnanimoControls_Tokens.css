@@ -1,0 +1,13 @@
+@layer GeneXusUnanimo.UnanimoControls{
+:root:is([gx-data-color-scheme="light"],:not([gx-data-color-scheme]))
+{
+	--colors_mask-bg : #0000001a;
+
+}
+
+[gx-data-color-scheme="dark"]
+{
+	--colors_mask-bg : #00000080;
+
+}
+}

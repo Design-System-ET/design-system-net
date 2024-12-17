@@ -1,0 +1,6 @@
+{{=<% %>=}}
+<ch-step-list>
+	<ch-step-list-item *ngFor="let stepItem of StepItems" class="{{gxTpr_Class}}{{Class}}{{^Class}}ch-step{{/Class}}" (click)="SelectedItem=stepItem.id; ItemClick();">
+		{{gxTpr_stepItem.text}}{{stepItem.text}}
+	</ch-step-list-item>
+</ch-step-list>

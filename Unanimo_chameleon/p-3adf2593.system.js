@@ -1,0 +1,2 @@
+System.register([],(function(n){"use strict";return{execute:function(){var t=n("i",(function(n,t,r){return n.splice(r,0,t)}));var r=n("r",(function(n,t){return n.splice(t,1)[0]}))}}}));
+//# sourceMappingURL=p-3adf2593.system.js.map

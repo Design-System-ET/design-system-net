@@ -1,0 +1,2 @@
+System.register([],(function(t){"use strict";return{execute:function(){t("default",n);function n(t){return{aliases:["pycon"],contains:[{className:"meta.prompt",starts:{end:/ |$/,starts:{end:"$",subLanguage:"python"}},variants:[{begin:/^>>>(?=[ ]|$)/},{begin:/^\.\.\.(?=[ ]|$)/}]}]}}}}}));
+//# sourceMappingURL=p-09f052a6.system.js.map

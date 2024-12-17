@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\darkm\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.12.2</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\darkm\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <None Include="$(NuGetPackageRoot)genexus.reorganization.core\1.30.0\contentFiles\any\net8.0\Reor.deps.json" Condition="Exists('$(NuGetPackageRoot)genexus.reorganization.core\1.30.0\contentFiles\any\net8.0\Reor.deps.json')">
+      <NuGetPackageId>GeneXus.Reorganization.Core</NuGetPackageId>
+      <NuGetPackageVersion>1.30.0</NuGetPackageVersion>
+      <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Reor.deps.json</TargetPath>
+      <Private>True</Private>
+      <Link>Reor.deps.json</Link>
+    </None>
+    <None Include="$(NuGetPackageRoot)genexus.reorganization.core\1.30.0\contentFiles\any\net8.0\Reor.runtimeconfig.json" Condition="Exists('$(NuGetPackageRoot)genexus.reorganization.core\1.30.0\contentFiles\any\net8.0\Reor.runtimeconfig.json')">
+      <NuGetPackageId>GeneXus.Reorganization.Core</NuGetPackageId>
+      <NuGetPackageVersion>1.30.0</NuGetPackageVersion>
+      <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>Reor.runtimeconfig.json</TargetPath>
+      <Private>True</Private>
+      <Link>Reor.runtimeconfig.json</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <None Include="$(NuGetPackageRoot)genexus.netcorestartup\1.30.0\contentFiles\any\net8.0\GxNetCoreStartup.deps.json" Condition="Exists('$(NuGetPackageRoot)genexus.netcorestartup\1.30.0\contentFiles\any\net8.0\GxNetCoreStartup.deps.json')">
+      <NuGetPackageId>GeneXus.NetCoreStartup</NuGetPackageId>
+      <NuGetPackageVersion>1.30.0</NuGetPackageVersion>
+      <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>GxNetCoreStartup.deps.json</TargetPath>
+      <Private>True</Private>
+      <Link>GxNetCoreStartup.deps.json</Link>
+    </None>
+    <None Include="$(NuGetPackageRoot)genexus.netcorestartup\1.30.0\contentFiles\any\net8.0\GxNetCoreStartup.runtimeconfig.json" Condition="Exists('$(NuGetPackageRoot)genexus.netcorestartup\1.30.0\contentFiles\any\net8.0\GxNetCoreStartup.runtimeconfig.json')">
+      <NuGetPackageId>GeneXus.NetCoreStartup</NuGetPackageId>
+      <NuGetPackageVersion>1.30.0</NuGetPackageVersion>
+      <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>GxNetCoreStartup.runtimeconfig.json</TargetPath>
+      <Private>True</Private>
+      <Link>GxNetCoreStartup.runtimeconfig.json</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <None Include="$(NuGetPackageRoot)genexus.datainitialization.core\1.30.0\contentFiles\any\net8.0\GXDataInitialization.deps.json" Condition="Exists('$(NuGetPackageRoot)genexus.datainitialization.core\1.30.0\contentFiles\any\net8.0\GXDataInitialization.deps.json')">
+      <NuGetPackageId>GeneXus.DataInitialization.Core</NuGetPackageId>
+      <NuGetPackageVersion>1.30.0</NuGetPackageVersion>
+      <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>GXDataInitialization.deps.json</TargetPath>
+      <Private>True</Private>
+      <Link>GXDataInitialization.deps.json</Link>
+    </None>
+    <None Include="$(NuGetPackageRoot)genexus.datainitialization.core\1.30.0\contentFiles\any\net8.0\GXDataInitialization.runtimeconfig.json" Condition="Exists('$(NuGetPackageRoot)genexus.datainitialization.core\1.30.0\contentFiles\any\net8.0\GXDataInitialization.runtimeconfig.json')">
+      <NuGetPackageId>GeneXus.DataInitialization.Core</NuGetPackageId>
+      <NuGetPackageVersion>1.30.0</NuGetPackageVersion>
+      <NuGetItemType>None</NuGetItemType>
+      <Pack>false</Pack>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>GXDataInitialization.runtimeconfig.json</TargetPath>
+      <Private>True</Private>
+      <Link>GXDataInitialization.runtimeconfig.json</Link>
+    </None>
+  </ItemGroup>
+</Project>

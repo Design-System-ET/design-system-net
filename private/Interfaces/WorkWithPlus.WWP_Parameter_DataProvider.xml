@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CallableObject guid="452295ee-a51c-73f7-9e55-48e2a5e7e802" name="WorkWithPlus.WWP_Parameter_DataProvider" description="WWP_Parameter_Data Provider" namespace="DesignSystem.Programs">
+  <Signature name="parm">
+    <Parameter name="ReturnValue" accessor="out" collection="true">
+      <Field name="WWP_Parameter" description="WWP_Parameter_Transaction_Description">
+        <Fields>
+          <Field name="WWPParameterKey" description="WWP_ParameterKey_Attribute_Description">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>VarChar</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>200</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="WWPParameterCategory" description="WWP_ParameterCategory_Attribute_Description">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>VarChar</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>200</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="WWPParameterDescription" description="WWP_ParameterDescription_Attribute_Description">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>VarChar</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>200</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="WWPParameterValue" description="WWP_ParameterValue_Attribute_Description">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>LongVarChar</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>2097152</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="WWPParameterValueTrimmed" description="WWP_ParameterValue_Attribute_Description">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>VarChar</Value>
+              </Property>
+              <Property>
+                <Name>Length</Name>
+                <Value>30</Value>
+              </Property>
+            </Properties>
+          </Field>
+          <Field name="WWPParameterDisableDelete" description="WWPParameter Disable Delete">
+            <Properties>
+              <Property>
+                <Name>Type</Name>
+                <Value>Boolean</Value>
+              </Property>
+            </Properties>
+          </Field>
+        </Fields>
+      </Field>
+    </Parameter>
+  </Signature>
+</CallableObject>

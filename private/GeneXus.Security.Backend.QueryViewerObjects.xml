@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Objects xmlns="qv">
+  <Object name="GAM_GetBackendMenu" id="4" type="DataProvider" IntegratedSecurityLevel="SecurityLow" xmlns="qv">
+    <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
+  </Object>
+  <Object name="GAM_GetCurrentAccountMenu" id="5" type="DataProvider" IntegratedSecurityLevel="SecurityLow" xmlns="qv">
+    <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
+  </Object>
+  <Object name="GAM_GetTotalUsers" id="6" type="DataProvider" IntegratedSecurityLevel="SecurityLow" xmlns="qv">
+    <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
+  </Object>
+  <Object name="GAM_GetTotalSessions" id="7" type="DataProvider" IntegratedSecurityLevel="SecurityLow" xmlns="qv">
+    <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
+  </Object>
+  <Object name="GAM_GetTotalSessionsByApplication" id="8" type="DataProvider" IntegratedSecurityLevel="SecurityLow" xmlns="qv">
+    <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
+  </Object>
+  <Object name="GAM_GetTotalSessionsByDay" id="9" type="DataProvider" IntegratedSecurityLevel="SecurityLow" xmlns="qv">
+    <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
+  </Object>
+  <Object name="GAM_GetTotalRegisteredUsers" id="10" type="DataProvider" IntegratedSecurityLevel="SecurityLow" xmlns="qv">
+    <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
+  </Object>
+  <Object name="GAM_GetTotalActiveSessions" id="11" type="DataProvider" IntegratedSecurityLevel="SecurityLow" xmlns="qv">
+    <DefaultOutput type="OutputTypePivotTable" xmlns="qv" />
+  </Object>
+</Objects>

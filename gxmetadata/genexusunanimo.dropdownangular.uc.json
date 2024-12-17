@@ -1,0 +1,131 @@
+{
+	"Name": "GeneXusUnanimo.DropdownAngular",
+	"Target": "ANGULAR",
+	"IsControlType": false,
+	"Template": "{{=<% %>=}}<div class=\"dropdown\"    (mouseover)=\"doMouseover()\"     (mouseout)=\"doMouseout()\"    (click)=\"doOpen()\">    <div class=\"dd-flex-container\">        <div *ngIf=\"ShowVerticalSeparator\" class=\"dd-vertical-separator\"></div>        <div *ngIf=\"UserFullName && DisplayType === \'Text\' || DisplayType === \'Avatar and Text\'\"        class=\"dd-text-container\">            <div class=\"row\"> <span class=\"dd-username\">{{UserFullName}}</span> </div>            <div class=\"row\"> <span class=\"dd-companyname\">{{UserCompany}}</span> </div>        </div>        <div *ngIf=\"DisplayType === \'Avatar\' || DisplayType === \'Avatar and Text\' || DisplayType === \'Text into options box\'\"        class=\"dd-avatar-container\" id=\"imgContainer\"> 			<img *ngIf=\"UserPhoto\" [attr.src]=\"UserPhoto\" class=\"dd-avatar\">		</div>    </div>    <div [ngClass]=\"{\'dropdown-content\':true,\'dropdown-content--visible\':Open}\" >        <div *ngIf=\"DisplayType === \'Text into options box\'\" class=\"dd-text-container\">            <div class=\"row\"> <span class=\"dd-username\">{{UserFullName}}</span> </div>            <div class=\"row\"> <span class=\"dd-companyname\">{{UserCompany}}</span> </div>        </div>        <ng-container *ngFor=\"let dropItem of DropdownItems\">            <div *ngIf=\"dropItem.separator\" class=\"dd-dropdown-separator\"></div>            <div id=\"{{dropItem.id}}\" class=\"dd-option-container\"                (click)=\"SelectedItemId=dropItem.id; SelectedItemTarget=dropItem.link; ItemClick();\"> <img                    alt=\"{{dropItem.alternativeText}}\" class=\"dd-option-icon\" src=\"{{dropItem.icon}}\"> <span                    class=\"dd-option\">{{dropItem.title}}</span> </div>        </ng-container> <!-- default logout event -->        <div *ngIf=\"ShowLogoutOption\" class=\"dd-option-container\" (click)=\"this.handleLogout($event)\"> <img                alt=\"logout_icon\" class=\"dd-option-icon\" src=\"{{LogoutIcon}}\"> <span class=\"dd-option\">Logout</span>        </div>    </div></div><div [ngClass]=\"{\'dd-overlay dd-overlay--visible\':Open}\" (click)=\"doOpen()\"></div>", 
+	"Events": [
+		{
+			"Name": "Logout",
+			"On": "click",
+			"Parameters": ""
+		} ,
+		{
+			"Name": "ItemClick",
+			"On": "itemclick",
+			"Parameters": ""
+		} 
+	],
+	"Properties": [
+		{
+			"Id": "UserPhoto",
+			"Name": "UserPhoto",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "UserFullName",
+			"Name": "UserFullName",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "UserCompany",
+			"Name": "UserCompany",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "DisplayType",
+			"Name": "DisplayType",
+			"Type": "enum",
+			"Default": "Avatar"
+		} ,
+		{
+			"Id": "ExpandBehavior",
+			"Name": "ExpandBehavior",
+			"Type": "enum",
+			"Default": "Hover"
+		} ,
+		{
+			"Id": "ShowVerticalSeparator",
+			"Name": "ShowVerticalSeparator",
+			"Type": "boolean",
+			"Default": "true"
+		} ,
+		{
+			"Id": "ShowLogoutOption",
+			"Name": "ShowLogoutOption",
+			"Type": "boolean",
+			"Default": "true"
+		} ,
+		{
+			"Id": "DropdownItems",
+			"Name": "DropdownItems",
+			"Type": "sdt",
+			"Default": ""
+		} ,
+		{
+			"Id": "SelectedItemId",
+			"Name": "SelectedItemId",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "SelectedItemTarget",
+			"Name": "SelectedItemTarget",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "LogoutIcon",
+			"Name": "LogoutIcon",
+			"Type": "string",
+			"Default": ""
+		} ,
+		{
+			"Id": "Open",
+			"Name": "Open",
+			"Type": "boolean",
+			"Default": ""
+		} 
+	],
+	"Methods": {
+		"Public": [
+			{
+				"Name": "doOpen",
+				"Source": "    if (this.ExpandBehavior === \'Click\') {      this.Open = ! this.Open;    }  ",
+				"Return": "",
+				"Parameters": [
+				]
+			} ,
+			{
+				"Name": "doMouseover",
+				"Source": "    if (this.ExpandBehavior === \'Hover\') {      this.Open = true;    }  ",
+				"Return": "",
+				"Parameters": [
+				]
+			} ,
+			{
+				"Name": "doMouseout",
+				"Source": "    if (this.ExpandBehavior === \'Hover\') {      this.Open = false;    }  ",
+				"Return": "",
+				"Parameters": [
+				]
+			} 
+		],
+		"Private": [
+		]
+	},
+	"Scripts": {
+		"AfterShow": [
+		],
+		"BeforeShow": [
+		]
+	},
+	"Dependencies": [
+	],
+	"Imports": [
+	],
+	"Styles": [
+	]
+}

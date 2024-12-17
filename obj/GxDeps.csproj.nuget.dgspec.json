@@ -1,0 +1,124 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\PROYECTOS\\KBs\\Design System\\NETMySQL002\\web\\GxDeps.csproj": {}
+  },
+  "projects": {
+    "C:\\PROYECTOS\\KBs\\Design System\\NETMySQL002\\web\\GxDeps.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\PROYECTOS\\KBs\\Design System\\NETMySQL002\\web\\GxDeps.csproj",
+        "projectName": "GxDeps",
+        "projectPath": "C:\\PROYECTOS\\KBs\\Design System\\NETMySQL002\\web\\GxDeps.csproj",
+        "packagesPath": "C:\\Users\\darkm\\.nuget\\packages\\",
+        "outputPath": "C:\\PROYECTOS\\KBs\\Design System\\NETMySQL002\\web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\PROYECTOS\\KBs\\Design System\\NETMySQL002\\NuGet.Config",
+          "C:\\Users\\darkm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/genexuslabs/13fb82d9-57a8-49ef-95bb-0ec8324e470c/_packaging/dotnet-prereleases/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "GeneXus.Classes.Core": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            },
+            "GeneXus.Classes.Web.Core": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            },
+            "GeneXus.DataInitialization.Core": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            },
+            "GeneXus.Excel.Core": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            },
+            "GeneXus.Mail.Core": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            },
+            "GeneXus.Maps.Core": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            },
+            "GeneXus.NetCoreStartup": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            },
+            "GeneXus.PdfReportsCS.Core": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            },
+            "GeneXus.Reorganization.Core": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            },
+            "GeneXus.Search.Core": {
+              "target": "Package",
+              "version": "[1.30.0, 1.30.0]"
+            },
+            "iTextSharp-LGPL": {
+              "target": "Package",
+              "version": "[4.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

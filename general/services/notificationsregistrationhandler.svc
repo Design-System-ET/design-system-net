@@ -1,0 +1,1 @@
+<%@ServiceHost Service= "DesignSystem.Programs.general.services.anotificationsregistrationhandler,general.services.anotificationsregistrationhandler" %>
